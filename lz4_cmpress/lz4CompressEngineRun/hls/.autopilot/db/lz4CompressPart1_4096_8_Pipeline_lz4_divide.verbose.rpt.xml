@@ -1,0 +1,187 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'lz4CompressPart1_4096_8_Pipeline_lz4_divide'" level="0">
+<item name = "Date">Fri Oct 31 14:49:09 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">lz4CompressEngineRun</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">7.00 ns, 5.065 ns, 0.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- lz4_divide">?, ?, 2, 2, 2, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 254, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 118, -</column>
+<column name="Register">-, -, 206, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln95_fu_299_p2">+, 0, 0, 14, 9, 4</column>
+<column name="i_11_fu_333_p2">+, 0, 0, 39, 32, 32</column>
+<column name="lit_count_3_fu_286_p2">+, 0, 0, 39, 32, 1</column>
+<column name="ap_block_pp0_stage0_01001_grp2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_01001_grp3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_11001_grp1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_subdone">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3_pp0_stage0_iter1_grp1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3_pp0_stage0_iter1_grp2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3_pp0_stage0_iter1_grp3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_141">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_417">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_421">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_425">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op50_write_state3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op58_write_state3">and, 0, 0, 2, 1, 1</column>
+<column name="has_match_fu_231_p2">icmp, 0, 0, 15, 8, 1</column>
+<column name="icmp_ln68_fu_206_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln82_fu_253_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="lit_overflow_fu_247_p2">icmp, 0, 0, 27, 20, 1</column>
+<column name="or_ln82_fu_270_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln106_fu_323_p3">select, 0, 0, 8, 1, 8</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln82_1_fu_258_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln82_fu_264_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_phi_mux_has_next_value_1_phi_fu_167_p4">14, 3, 1, 3</column>
+<column name="boosterStream_blk_n">9, 2, 1, 2</column>
+<column name="currentEncodedValue_1_fu_96">9, 2, 32, 64</column>
+<column name="has_next_value_reg_152">9, 2, 1, 2</column>
+<column name="i_fu_84">9, 2, 32, 64</column>
+<column name="lenOffset_Stream_blk_n">9, 2, 1, 2</column>
+<column name="lit_count_fu_92">9, 2, 32, 64</column>
+<column name="lit_outStream_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
+<column name="ap_block_pp0_stage0_subdone_grp1_done_reg">1, 0, 1, 0</column>
+<column name="ap_block_pp0_stage0_subdone_grp2_done_reg">1, 0, 1, 0</column>
+<column name="ap_block_pp0_stage0_subdone_grp3_done_reg">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="currentEncodedValue_1_fu_96">32, 0, 32, 0</column>
+<column name="has_match_reg_416">1, 0, 1, 0</column>
+<column name="has_next_value_reg_152">1, 0, 1, 0</column>
+<column name="i_10_reg_386">32, 0, 32, 0</column>
+<column name="i_fu_84">32, 0, 32, 0</column>
+<column name="lit_count_2_reg_391">32, 0, 32, 0</column>
+<column name="lit_count_flag_fu_88">1, 0, 32, 31</column>
+<column name="lit_count_fu_92">32, 0, 32, 0</column>
+<column name="lit_overflow_reg_421">1, 0, 1, 0</column>
+<column name="or_ln82_reg_425">1, 0, 1, 0</column>
+<column name="tCh_reg_400">8, 0, 8, 0</column>
+<column name="tLen_reg_405">8, 0, 8, 0</column>
+<column name="tOffset_reg_411">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, lz4CompressPart1&lt;4096, 8&gt;_Pipeline_lz4_divide, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, lz4CompressPart1&lt;4096, 8&gt;_Pipeline_lz4_divide, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, lz4CompressPart1&lt;4096, 8&gt;_Pipeline_lz4_divide, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, lz4CompressPart1&lt;4096, 8&gt;_Pipeline_lz4_divide, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, lz4CompressPart1&lt;4096, 8&gt;_Pipeline_lz4_divide, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, lz4CompressPart1&lt;4096, 8&gt;_Pipeline_lz4_divide, return value</column>
+<column name="currentEncodedValue">in, 32, ap_none, currentEncodedValue, scalar</column>
+<column name="input_size_5">in, 32, ap_none, input_size_5, scalar</column>
+<column name="lenOffset_Stream_din">out, 64, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_full_n">in, 1, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_write">out, 1, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_num_data_valid">in, 10, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_fifo_cap">in, 10, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="sub_i">in, 32, ap_none, sub_i, scalar</column>
+<column name="boosterStream_dout">in, 32, ap_fifo, boosterStream, pointer</column>
+<column name="boosterStream_empty_n">in, 1, ap_fifo, boosterStream, pointer</column>
+<column name="boosterStream_read">out, 1, ap_fifo, boosterStream, pointer</column>
+<column name="boosterStream_num_data_valid">in, 4, ap_fifo, boosterStream, pointer</column>
+<column name="boosterStream_fifo_cap">in, 4, ap_fifo, boosterStream, pointer</column>
+<column name="lit_outStream_din">out, 8, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_full_n">in, 1, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_write">out, 1, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_num_data_valid">in, 17, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_fifo_cap">in, 17, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_count_out">out, 32, ap_vld, lit_count_out, pointer</column>
+<column name="lit_count_out_ap_vld">out, 1, ap_vld, lit_count_out, pointer</column>
+<column name="lit_count_flag_out">out, 32, ap_vld, lit_count_flag_out, pointer</column>
+<column name="lit_count_flag_out_ap_vld">out, 1, ap_vld, lit_count_flag_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

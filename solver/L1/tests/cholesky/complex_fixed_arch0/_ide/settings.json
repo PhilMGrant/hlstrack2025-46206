@@ -1,0 +1,18 @@
+{
+    "clangd.fallbackFlags": [
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/.",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/.",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/.",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/.",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/.",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L2/include",
+        "-ID:/Xillinx_Project/Comp/hlstrack2025-master/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.",
+        "-ID:\\Xilinx\\Vitis\\2024.2\\include",
+        "-ID:\\Xilinx\\Vitis\\2024.2\\include\\etc",
+        "-ID:\\Xilinx\\Vitis\\2024.2\\include\\ap_sysc",
+        "-ID:\\Xilinx\\Vitis\\2024.2\\win64\\tools\\auto_cc\\include",
+        "-ID:\\Xilinx\\Vitis\\2024.2\\win64\\tools\\systemc\\include"
+    ]
+}

@@ -1,0 +1,137 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 15,767       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  4,241       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  2,364       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  2,557       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  1,494       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  1,378       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  1,378       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  1,384       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  1,457       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  1,469       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  1,459       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  1,264       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  1,264       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  1,233       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  1,221       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  1,197       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++----------------------------------------+--------------------------+-----------------+----------------+----------------+-------------+---------------+
+| Function                               | Location                 | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance | HW Transforms |
++----------------------------------------+--------------------------+-----------------+----------------+----------------+-------------+---------------+
+| + kernel_cholesky_0                    | kernel_cholesky_0.cpp:24 | 15,767          | 1,494          | 1,469          | 1,233       | 1,197         |
+|  + cholesky<false, 3, hls::x_co...     | cholesky.hpp:720         | 15,763          |                |                |             |               |
+|   + choleskyTop<false, 3, xf::so...    | cholesky.hpp:687         | 15,695          |                |                |             |               |
+|    + choleskyAlt<false, 3, xf::so...   | cholesky.hpp:422         | 15,693          |                |                |             |               |
+|     + operator=                        | hls_x_complex.h:75       |   396 (2 calls) |                |                |             |               |
+|        x_complex                       | hls_x_complex.h:48       |    14 (2 calls) |                |                |             |               |
+|     + x_conj<ap_fixed<16, 1, AP_RN...  | hls_x_complex.h:343      |   133           |                |                |             |               |
+|        imag                            | hls_x_complex.h:70       |     2           |                |                |             |               |
+|        imag                            | hls_x_complex.h:72       |     4           |                |                |             |               |
+|     + operator=<ap_fixed<16, 1, AP...  | hls_x_complex.h:82       |   508 (3 calls) |                |                |             |               |
+|      + x_complex<ap_fixed<16, 1, AP... | hls_x_complex.h:57       |   481 (3 calls) |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     6 (3 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     6 (3 calls) |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |    21 (3 calls) |                |                |             |               |
+|     + operator-                        | hls_x_complex.h:258      |   263           |                |                |             |               |
+|        real                            | hls_x_complex.h:65       |     2           |                |                |             |               |
+|        real                            | hls_x_complex.h:67       |     4           |                |                |             |               |
+|        imag                            | hls_x_complex.h:70       |     2           |                |                |             |               |
+|        imag                            | hls_x_complex.h:72       |     4           |                |                |             |               |
+|     + x_conj<ap_fixed<16, 1, AP_RN...  | hls_x_complex.h:351      |   142           |                |                |             |               |
+|      + x_conj<ap_fixed<16, 1, AP_RN... | hls_x_complex.h:343      |   133           |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     2           |                |                |             |               |
+|         imag                           | hls_x_complex.h:72       |     4           |                |                |             |               |
+|     + operator*                        | hls_x_complex.h:119      | 3,616 (2 calls) |                |                |             |               |
+|      + operator*=                      | hls_x_complex.h:96       | 3,608 (2 calls) |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     8 (4 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     8 (4 calls) |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |    14 (2 calls) |                |                |             |               |
+|     + operator=<ap_fixed<32, 2, AP...  | hls_x_complex.h:82       |   142           |                |                |             |               |
+|      + x_complex<ap_fixed<32, 2, AP... | hls_x_complex.h:57       |   133           |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     2           |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     2           |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |     7           |                |                |             |               |
+|     + operator+=                       | hls_x_complex.h:177      |   637           |                |                |             |               |
+|        real                            | hls_x_complex.h:65       |     2           |                |                |             |               |
+|        imag                            | hls_x_complex.h:70       |     2           |                |                |             |               |
+|     + operator=<ap_fixed<35, 5, AP...  | hls_x_complex.h:82       | 1,490 (2 calls) |                |                |             |               |
+|      + x_complex<ap_fixed<35, 5, AP... | hls_x_complex.h:57       | 1,472 (2 calls) |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     4 (2 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     4 (2 calls) |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |    14 (2 calls) |                |                |             |               |
+|     + cholesky_prod_sum_mult<ap_fi...  | cholesky.hpp:282         | 1,074           |                |                |             |               |
+|        real                            | hls_x_complex.h:65       |     2           |                |                |             |               |
+|        imag                            | hls_x_complex.h:70       |     2           |                |                |             |               |
+|        real                            | hls_x_complex.h:67       |     4           |                |                |             |               |
+|        imag                            | hls_x_complex.h:72       |     4           |                |                |             |               |
+|     + operator=<ap_fixed<34, 2, AP...  | hls_x_complex.h:82       |   936 (2 calls) |                |                |             |               |
+|      + x_complex<ap_fixed<34, 2, AP... | hls_x_complex.h:57       |   918 (2 calls) |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     4 (2 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     4 (2 calls) |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |    14 (2 calls) |                |                |             |               |
+|     + x_conj<ap_fixed<16, 1, AP_RN...  | hls_x_complex.h:351      |   726 (3 calls) |                |                |             |               |
+|      + x_conj<ap_fixed<16, 1, AP_RN... | hls_x_complex.h:343      |   699 (3 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     6 (3 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:72       |    12 (3 calls) |                |                |             |               |
+|     + operator+=<ap_fixed<16, 1, A...  | hls_x_complex.h:186      |   663           |                |                |             |               |
+|        real                            | hls_x_complex.h:65       |     2           |                |                |             |               |
+|        imag                            | hls_x_complex.h:70       |     2           |                |                |             |               |
+|     + operator=<ap_fixed<16, 1, AP...  | hls_x_complex.h:82       |   420 (3 calls) |                |                |             |               |
+|      + x_complex<ap_fixed<16, 1, AP... | hls_x_complex.h:57       |   393 (3 calls) |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     6 (3 calls) |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     6 (3 calls) |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |    21 (3 calls) |                |                |             |               |
+|     + operator-                        | hls_x_complex.h:244      |   639           |                |                |             |               |
+|      + operator-=                      | hls_x_complex.h:220      |   635           |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     2           |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     2           |                |                |             |               |
+|     + cholesky_sqrt_op<ap_fixed<17...  | cholesky.hpp:224         | 1,425           |                |                |             |               |
+|        real                            | hls_x_complex.h:65       |     2           |                |                |             |               |
+|        imag                            | hls_x_complex.h:72       |     4           |                |                |             |               |
+|        real                            | hls_x_complex.h:67       |     8 (2 calls) |                |                |             |               |
+|      + x_sqrt<17, 2, AP_RND_CONV, A... | x_matrix_utils.hpp:87    |   868           |                |                |             |               |
+|         sqrt                           | sqrtdouble.cpp:6         |     2           |                |                |             |               |
+|     + operator=<ap_fixed<17, 2, AP...  | hls_x_complex.h:82       |   170           |                |                |             |               |
+|      + x_complex<ap_fixed<17, 2, AP... | hls_x_complex.h:57       |   161           |                |                |             |               |
+|         real                           | hls_x_complex.h:65       |     2           |                |                |             |               |
+|         imag                           | hls_x_complex.h:70       |     2           |                |                |             |               |
+|         x_complex                      | hls_x_complex.h:48       |     7           |                |                |             |               |
+|     + x_real<ap_fixed<34, 2, AP_RN...  | hls_x_complex.h:363      |     6           |                |                |             |               |
+|        real                            | hls_x_complex.h:64       |     4           |                |                |             |               |
+|     + cholesky_rsqrt<34, 2, AP_RND...  | cholesky.hpp:261         | 1,709           |                |                |             |               |
+|      + x_sqrt<34, 2, AP_RND_CONV, A... | x_matrix_utils.hpp:87    |   856           |                |                |             |               |
+|         sqrt                           | sqrtdouble.cpp:6         |     2           |                |                |             |               |
+|  + choleskyAlt<false, 3, xf::so...     | cholesky.hpp:422         |                 | 1,418          | 1,312          | 1,076       | 1,076         |
+|     cholesky_prod_sum_mult<ap_fi...    | cholesky.hpp:282         |                 |   94           |   94           |             |               |
+|     x_conj<ap_fixed<16, 1, AP_RN...    | hls_x_complex.h:351      |                 |   75 (3 calls) |   75 (3 calls) |             |               |
+|     operator*=                         | hls_x_complex.h:96       |                 |  185           |  185           |             |               |
+|     cholesky_sqrt_op<ap_fixed<17...    | cholesky.hpp:224         |                 |  217           |  217           |             |               |
+|     cholesky_rsqrt<34, 2, AP_RND...    | cholesky.hpp:261         |                 |  236           |  236           |             |               |
++----------------------------------------+--------------------------+-----------------+----------------+----------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

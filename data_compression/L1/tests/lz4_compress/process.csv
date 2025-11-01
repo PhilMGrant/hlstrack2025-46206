@@ -1,0 +1,7 @@
+"NAME","COSIM CATEGORY","COSIM STALLING TIME","FIFO EMPTY","FIFO FULL","COSIM STALL NO START","COSIM STALL NO CONTINUE","COSIM AVG II","COSIM MAX II","COSIM MIN II","COSIM AVG LATENCY","COSIM MAX LATENCY","COSIM MIN LATENCY","COSIM DISTRIBUTION GRAPH"
+"lzCompress_6_4_65536_6_1_4096_64_U0","write_block","1.18%","0.00%","1.18%","0.00%","0.00%","N/A","N/A","N/A",4187,4187,4187,"Link"
+"lzBestMatchFilter_6_65536_U0","read_block and write_block","37.95%","37.93%","0.02%","0.00%","0.00%","N/A","N/A","N/A",4210,4210,4210,"Link"
+"lzBooster_255_16384_64_U0","read_block and write_block","13.12%","12.01%","1.11%","0.00%","0.00%","N/A","N/A","N/A",4216,4216,4216,"Link"
+"lz4Compress_4096_1_U0","read_block","71.19%","71.19%","0.00%","0.00%","0.00%","N/A","N/A","N/A",4500,4500,4500,"Link"
+"lz4CompressPart1_4096_1_U0","none","77.10%","71.19%","0.00%","0.00%","5.90%","N/A","N/A","N/A",4500,4500,4500,"Link"
+"lz4CompressPart2_U0","read_block","46.87%","46.87%","0.00%","0.00%","0.00%","N/A","N/A","N/A",4499,4499,4499,"Link"

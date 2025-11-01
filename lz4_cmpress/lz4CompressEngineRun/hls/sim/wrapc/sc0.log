@@ -1,0 +1,6 @@
+   Build using "D:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_lz4CompressEngineRun.cpp
+   Compiling lz4_compress_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_lz4CompressEngineRun_util.cpp
+   Compiling apatb_lz4CompressEngineRun_ir.ll
+   Generating cosim.tv.exe

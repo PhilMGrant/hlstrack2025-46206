@@ -1,0 +1,37 @@
+<dict>
+  <key>main-file</key>
+  <string>../lz4_compress_test.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../lz4_compress_test.cpp</string>
+      <key>line</key>
+      <integer>32</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;PARALLEL_BLOCK&apos; macro redefined</string>
+      <key>ID</key>
+      <integer>910</integer>
+      <key>WarningOption</key>
+      <string>macro-redefined</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>note</string>
+      <key>filename</key>
+      <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/s2mm.hpp</string>
+      <key>line</key>
+      <integer>306</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>previous definition is here</string>
+      <key>ID</key>
+      <integer>71</integer>
+    </dict>
+  </array>
+</dict>

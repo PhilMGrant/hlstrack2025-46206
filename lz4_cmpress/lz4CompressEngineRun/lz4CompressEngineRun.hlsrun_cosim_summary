@@ -1,0 +1,226 @@
+<ENTRY>
+{
+ "thisFile": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\lz4CompressEngineRun.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/31/25 14:49:56",
+ "timestampMillis": "1761893396055",
+ "buildStep": {
+  "cmdId": "349fd9af-0e25-4c97-8b3f-d09ba6969342",
+  "name": "vitis-run",
+  "logFile": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\logs\\lz4CompressEngineRun.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config D:\\Xillinx_Project\\PROJECT\\lz4_cmpress\\hls_config.cfg --work_dir lz4CompressEngineRun ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "D:\\Xillinx_Project\\PROJECT\\lz4_cmpress\\hls_config.cfg",
+   "--work_dir",
+   "lz4CompressEngineRun"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Xillinx_Project\\PROJECT\\lz4_cmpress"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/31/25 14:49:56",
+ "timestampMillis": "1761893396056",
+ "status": {
+  "cmdId": "349fd9af-0e25-4c97-8b3f-d09ba6969342",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402834",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "lz4CompressEngineRun",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402836",
+ "buildStep": {
+  "cmdId": "18500666-9b1d-466a-b167-5960cd9304d3",
+  "name": "",
+  "logFile": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Xillinx_Project\\PROJECT\\lz4_cmpress"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402837",
+ "status": {
+  "cmdId": "18500666-9b1d-466a-b167-5960cd9304d3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402837",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\hls\\sim\\report\\lz4CompressEngineRun_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402839",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402840",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402840",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:02",
+ "timestampMillis": "1761893402841",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\lz4_cmpress\\lz4CompressEngineRun\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/31/25 14:50:46",
+ "timestampMillis": "1761893446036",
+ "status": {
+  "cmdId": "18500666-9b1d-466a-b167-5960cd9304d3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/31/25 14:50:46",
+ "timestampMillis": "1761893446184",
+ "status": {
+  "cmdId": "349fd9af-0e25-4c97-8b3f-d09ba6969342",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:46",
+ "timestampMillis": "1761893446184",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/31/25 14:50:46",
+ "timestampMillis": "1761893446184",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

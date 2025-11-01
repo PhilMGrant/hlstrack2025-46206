@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2'
+================================================================
+* Date:           Fri Oct 31 14:49:04 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        lz4CompressEngineRun
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  4.800 ns|     0.70 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        6|        6|  42.000 ns|  42.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_84_2  |        5|        5|         1|          -|          -|     5|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     24|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     32|    -|
+|Register         |        -|    -|      85|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      85|     56|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln84_fu_242_p2   |         +|   0|  0|  11|           3|           1|
+    |ap_block_state2      |       and|   0|  0|   2|           1|           1|
+    |icmp_ln84_fu_186_p2  |      icmp|   0|  0|  11|           3|           3|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  24|           7|           5|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm       |  14|          3|    1|          3|
+    |i_1_fu_58       |   9|          2|    3|          6|
+    |inStream_blk_n  |   9|          2|    1|          2|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |  32|          7|    5|         11|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+---+----+-----+-----------+
+    |              Name              | FF| LUT| Bits| Const Bits|
+    +--------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                       |  2|   0|    2|          0|
+    |arrayidx42_3_promoted185_fu_74  |  8|   0|    8|          0|
+    |arrayidx48_promoted187_fu_78    |  8|   0|    8|          0|
+    |arrayidx54_promoted179_fu_62    |  8|   0|    8|          0|
+    |arrayidx61_promoted181_fu_66    |  8|   0|    8|          0|
+    |arrayidx71_promoted183_fu_70    |  8|   0|    8|          0|
+    |i_1_fu_58                       |  3|   0|    3|          0|
+    |present_window_1_fu_86          |  8|   0|    8|          0|
+    |present_window_2_fu_90          |  8|   0|    8|          0|
+    |present_window_3_fu_94          |  8|   0|    8|          0|
+    |present_window_4_fu_98          |  8|   0|    8|          0|
+    |present_window_fu_82            |  8|   0|    8|          0|
+    +--------------------------------+---+----+-----+-----------+
+    |Total                           | 85|   0|   85|          0|
+    +--------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |                          Source Object                          |    C Type    |
++-------------------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 1024, 64>_Outline_VITIS_LOOP_84_2|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 1024, 64>_Outline_VITIS_LOOP_84_2|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 1024, 64>_Outline_VITIS_LOOP_84_2|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 1024, 64>_Outline_VITIS_LOOP_84_2|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 1024, 64>_Outline_VITIS_LOOP_84_2|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 1024, 64>_Outline_VITIS_LOOP_84_2|  return value|
+|inStream_dout                        |   in|    8|     ap_fifo|                                                         inStream|       pointer|
+|inStream_empty_n                     |   in|    1|     ap_fifo|                                                         inStream|       pointer|
+|inStream_read                        |  out|    1|     ap_fifo|                                                         inStream|       pointer|
+|present_window_4_out                 |  out|    8|      ap_vld|                                             present_window_4_out|       pointer|
+|present_window_4_out_ap_vld          |  out|    1|      ap_vld|                                             present_window_4_out|       pointer|
+|present_window_3_out                 |  out|    8|      ap_vld|                                             present_window_3_out|       pointer|
+|present_window_3_out_ap_vld          |  out|    1|      ap_vld|                                             present_window_3_out|       pointer|
+|present_window_2_out                 |  out|    8|      ap_vld|                                             present_window_2_out|       pointer|
+|present_window_2_out_ap_vld          |  out|    1|      ap_vld|                                             present_window_2_out|       pointer|
+|present_window_1_out                 |  out|    8|      ap_vld|                                             present_window_1_out|       pointer|
+|present_window_1_out_ap_vld          |  out|    1|      ap_vld|                                             present_window_1_out|       pointer|
+|present_window_out                   |  out|    8|      ap_vld|                                               present_window_out|       pointer|
+|present_window_out_ap_vld            |  out|    1|      ap_vld|                                               present_window_out|       pointer|
+|arrayidx48_promoted187_out           |  out|    8|      ap_vld|                                       arrayidx48_promoted187_out|       pointer|
+|arrayidx48_promoted187_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx48_promoted187_out|       pointer|
+|arrayidx42_3_promoted185_out         |  out|    8|      ap_vld|                                     arrayidx42_3_promoted185_out|       pointer|
+|arrayidx42_3_promoted185_out_ap_vld  |  out|    1|      ap_vld|                                     arrayidx42_3_promoted185_out|       pointer|
+|arrayidx71_promoted183_out           |  out|    8|      ap_vld|                                       arrayidx71_promoted183_out|       pointer|
+|arrayidx71_promoted183_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx71_promoted183_out|       pointer|
+|arrayidx61_promoted181_out           |  out|    8|      ap_vld|                                       arrayidx61_promoted181_out|       pointer|
+|arrayidx61_promoted181_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx61_promoted181_out|       pointer|
+|arrayidx54_promoted179_out           |  out|    8|      ap_vld|                                       arrayidx54_promoted179_out|       pointer|
+|arrayidx54_promoted179_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx54_promoted179_out|       pointer|
++-------------------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+

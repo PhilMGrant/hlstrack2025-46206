@@ -1,0 +1,275 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>7.000</TargetClockPeriod>
+  <AchievedClockPeriod>5.788</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>5.788</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>5.788</CP_SYNTH>
+  <CP_TARGET>7.000</CP_TARGET>
+  <SLACK_FINAL>1.212</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>1.212</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>1.212</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>1.212</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>90</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>3477</FF>
+    <LATCH>0</LATCH>
+    <LUT>3881</LUT>
+    <SRL>89</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="lz4CompressEngineRun" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="15">bestMatchStream_U boosterStream_U compressdStream_U core_idx_c_U entry_proc_U0 input_size_c1_U input_size_c2_U input_size_c_U lz4Compress_4096_8_U0 lzBestMatchFilter_6_65536_U0 lzBooster_255_16384_64_U0 lzCompress_6_4_65536_6_1_1024_64_U0 start_for_lz4Compress_4096_8_U0_U start_for_lzBestMatchFilter_6_65536_U0_U start_for_lzBooster_255_16384_64_U0_U</SubModules>
+    <Resources BRAM="90" FF="3477" LUT="3881" LogicLUT="3792" RAMB36="45" SRL="89"/>
+    <LocalResources FF="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/bestMatchStream_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d8_S">
+    <Resources FF="9" LUT="38" LogicLUT="11" SRL="27"/>
+    <LocalResources FF="9" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/boosterStream_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d8_S">
+    <Resources FF="9" LUT="45" LogicLUT="13" SRL="32"/>
+    <LocalResources FF="9" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/compressdStream_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d8_S">
+    <Resources FF="9" LUT="43" LogicLUT="16" SRL="27"/>
+    <LocalResources FF="9" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_idx_c_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d5_S">
+    <Resources FF="9" LUT="16" LogicLUT="13" SRL="3"/>
+    <LocalResources FF="9" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/entry_proc_U0" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_entry_proc">
+    <Resources FF="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/input_size_c1_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d2_S_x">
+    <Resources FF="70" LUT="53" LogicLUT="53"/>
+    <LocalResources FF="6" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/input_size_c2_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d2_S_x">
+    <Resources FF="70" LUT="35" LogicLUT="35"/>
+    <LocalResources FF="6" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/input_size_c_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d2_S_x">
+    <Resources FF="70" LUT="59" LogicLUT="59"/>
+    <LocalResources FF="6" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s">
+    <SubModules count="6">input_size_c_U lenOffset_Stream_U lit_outStream_U lz4CompressPart1_4096_8_U0 lz4CompressPart2_U0 start_for_lz4CompressPart2_U0_U</SubModules>
+    <Resources BRAM="34" FF="936" LUT="720" LogicLUT="720" RAMB36="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/input_size_c_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w32_d2_S">
+    <Resources FF="70" LUT="25" LogicLUT="25"/>
+    <LocalResources FF="6" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lenOffset_Stream_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w64_d512_B">
+    <Resources BRAM="2" FF="41" LUT="75" LogicLUT="75" RAMB36="1"/>
+    <LocalResources FF="41" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lit_outStream_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_fifo_w8_d65536_B">
+    <Resources BRAM="32" FF="69" LUT="54" LogicLUT="54" RAMB36="16"/>
+    <LocalResources FF="69" LUT="53" LogicLUT="53"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s">
+    <SubModules count="1">grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158</SubModules>
+    <Resources FF="383" LUT="260" LogicLUT="260"/>
+    <LocalResources FF="176" LUT="54" LogicLUT="54"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="207" LUT="206" LogicLUT="206"/>
+    <LocalResources FF="205" LUT="160" LogicLUT="160"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="46" LogicLUT="46"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lz4CompressPart2_U0" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lz4CompressPart2">
+    <SubModules count="1">grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91</SubModules>
+    <Resources FF="369" LUT="301" LogicLUT="301"/>
+    <LocalResources FF="38" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lz4CompressPart2_U0/grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lz4CompressPart2.v" ORIG_REF_NAME="lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="331" LUT="297" LogicLUT="297"/>
+    <LocalResources FF="329" LUT="277" LogicLUT="277"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/lz4CompressPart2_U0/grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lz4Compress_4096_8_U0/start_for_lz4CompressPart2_U0_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lz4Compress_4096_8_s.v" ORIG_REF_NAME="lz4CompressEngineRun_start_for_lz4CompressPart2_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBestMatchFilter_6_65536_U0" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_lzBestMatchFilter_6_65536_s">
+    <SubModules count="1">grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135</SubModules>
+    <Resources FF="448" LUT="246" LogicLUT="246"/>
+    <LocalResources FF="179" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBestMatchFilter_6_65536_U0/grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzBestMatchFilter_6_65536_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="269" LUT="236" LogicLUT="236"/>
+    <LocalResources FF="267" LUT="116" LogicLUT="116"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBestMatchFilter_6_65536_U0/grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="120" LogicLUT="120"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBooster_255_16384_64_U0" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_lzBooster_255_16384_64_s">
+    <SubModules count="2">grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_169 local_mem_U</SubModules>
+    <Resources BRAM="8" FF="299" LUT="251" LogicLUT="251" RAMB36="4"/>
+    <LocalResources FF="82" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBooster_255_16384_64_U0/grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_169" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzBooster_255_16384_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="217" LUT="223" LogicLUT="223"/>
+    <LocalResources FF="215" LUT="177" LogicLUT="177"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBooster_255_16384_64_U0/grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_169/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="46" LogicLUT="46"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzBooster_255_16384_64_U0/local_mem_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzBooster_255_16384_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W">
+    <Resources BRAM="8" LUT="8" LogicLUT="8" RAMB36="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s">
+    <SubModules count="9">dict_1_U dict_2_U dict_3_U dict_U grp_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2_fu_158 grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush_fu_150 grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_fu_174 grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover_fu_197 grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes_fu_208</SubModules>
+    <Resources BRAM="48" FF="1532" LUT="2375" LogicLUT="2375" RAMB36="24"/>
+    <LocalResources FF="173" LUT="51" LogicLUT="51"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W">
+    <Resources BRAM="12" RAMB36="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W">
+    <Resources BRAM="12" RAMB36="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W">
+    <Resources BRAM="12" RAMB36="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W">
+    <Resources BRAM="12" RAMB36="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2_fu_158" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2">
+    <Resources FF="45" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush_fu_150" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="11" LUT="19" LogicLUT="19"/>
+    <LocalResources FF="9" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush_fu_150/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_fu_174" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="1279" LUT="2238" LogicLUT="2238"/>
+    <LocalResources FF="1277" LUT="2187" LogicLUT="2187"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_fu_174/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="51" LogicLUT="51"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover_fu_197" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="14" LUT="25" LogicLUT="25"/>
+    <LocalResources FF="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover_fu_197/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes_fu_208" DEPTH="2" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" ORIG_REF_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="10" LUT="27" LogicLUT="27"/>
+    <LocalResources FF="8" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/lzCompress_6_4_65536_6_1_1024_64_U0/grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes_fu_208/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes.v" ORIG_REF_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_lz4Compress_4096_8_U0_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0">
+    <Resources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_lzBestMatchFilter_6_65536_U0_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0">
+    <Resources FF="4" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_lzBooster_255_16384_64_U0_U" DEPTH="1" FILE_NAME="lz4CompressEngineRun.v" ORIG_REF_NAME="lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.172" DATAPATH_LOGIC_DELAY="1.309" DATAPATH_NET_DELAY="3.863" ENDPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[0]" LOGIC_LEVELS="5" MAX_FANOUT="17" SLACK="1.212" STARTPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" LINE_NUMBER="350"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="225"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.172" DATAPATH_LOGIC_DELAY="1.309" DATAPATH_NET_DELAY="3.863" ENDPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[1]" LOGIC_LEVELS="5" MAX_FANOUT="17" SLACK="1.212" STARTPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" LINE_NUMBER="350"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="225"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.172" DATAPATH_LOGIC_DELAY="1.309" DATAPATH_NET_DELAY="3.863" ENDPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[2]" LOGIC_LEVELS="5" MAX_FANOUT="17" SLACK="1.212" STARTPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" LINE_NUMBER="350"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="225"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.172" DATAPATH_LOGIC_DELAY="1.309" DATAPATH_NET_DELAY="3.863" ENDPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[3]" LOGIC_LEVELS="5" MAX_FANOUT="17" SLACK="1.212" STARTPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" LINE_NUMBER="350"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="225"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.172" DATAPATH_LOGIC_DELAY="1.309" DATAPATH_NET_DELAY="3.863" ENDPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[4]" LOGIC_LEVELS="5" MAX_FANOUT="17" SLACK="1.212" STARTPOINT_PIN="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" LINE_NUMBER="350"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="102"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="lz4CompressEngineRun_fifo_w64_d512_B.v" LINE_NUMBER="225"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/lz4CompressEngineRun_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/lz4CompressEngineRun_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/lz4CompressEngineRun_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/lz4CompressEngineRun_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/lz4CompressEngineRun_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/lz4CompressEngineRun_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/lz4CompressEngineRun_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

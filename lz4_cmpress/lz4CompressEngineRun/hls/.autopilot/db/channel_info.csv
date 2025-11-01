@@ -1,0 +1,10 @@
+,core_idx_c_U,,chan_status1.csv
+,compressdStream_U,,chan_status2.csv
+,input_size_c2_U,,chan_status3.csv
+,bestMatchStream_U,,chan_status4.csv
+,input_size_c1_U,,chan_status5.csv
+,boosterStream_U,,chan_status6.csv
+,input_size_c_U,,chan_status7.csv
+lz4Compress_4096_8_U0,lit_outStream_U,,chan_status8.csv
+lz4Compress_4096_8_U0,lenOffset_Stream_U,,chan_status9.csv
+lz4Compress_4096_8_U0,input_size_c_U,,chan_status10.csv

@@ -1,0 +1,259 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp,-ID:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp,-ID:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.top=lz4CompressEngineRun' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=7ns' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=10%' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.7ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.argv=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt.encoded' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'csim.argv=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt.encoded' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'syn.compile.pragma_strict_mode=1' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=syn' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(16)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_lz4CompressEngineRun.cpp
+   Compiling lz4_compress_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_lz4CompressEngineRun_util.cpp
+   Compiling apatb_lz4CompressEngineRun_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+------- Compression Ratio: 2.09045 -------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1248
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\Xillinx_Project\PROJECT\lz4_cmpress\lz4CompressEngineRun\hls\sim\verilog>set PATH= 
+
+D:\Xillinx_Project\PROJECT\lz4_cmpress\lz4CompressEngineRun\hls\sim\verilog>call D:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_lz4CompressEngineRun_top glbl -Oenable_linking_all_libraries  -prj lz4CompressEngineRun.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s lz4CompressEngineRun  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_lz4CompressEngineRun_top glbl -Oenable_linking_all_libraries -prj lz4CompressEngineRun.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s lz4CompressEngineRun 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_autofifo_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_inStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_autofifo_lz4Out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_lz4Out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_autofifo_lz4OutSize.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_lz4OutSize
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_autofifo_lz4Out_eos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_lz4Out_eos
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_automem_max_lit_limit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_max_lit_limit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_lz4CompressEngineRun_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_fifo_w32_d2_S_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d2_S_x
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d2_S_x_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_fifo_w32_d5_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d5_S
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d5_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_fifo_w32_d8_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d8_S
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w32_d8_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_fifo_w64_d512_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w64_d512_B
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w64_d512_B_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_fifo_w8_d65536_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w8_d65536_B
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_fifo_w8_d65536_B_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lz4CompressPart1_4096_8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lz4CompressPart2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lz4CompressPart2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lz4Compress_4096_8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lz4Compress_4096_8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzBestMatchFilter_6_65536_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzBooster_255_16384_64_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_sparsemux_11_3_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_sparsemux_11_3_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_sparsemux_13_3_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_sparsemux_13_3_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_sparsemux_17_3_408_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_sparsemux_17_3_408_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_start_for_lz4CompressPart2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lz4CompressPart2_U0
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lz4CompressPart2_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0
+INFO: [VRFC 10-311] analyzing module lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.lz4CompressEngineRun_entry_proc
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_flow_contro...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_sparsemux_1...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_sparsemux_1...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzCompress_...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzBestMatch...
+Compiling module xil_defaultlib.lz4CompressEngineRun_sparsemux_1...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzBestMatch...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzBooster_2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzBooster_2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lzBooster_2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lz4Compress...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lz4Compress...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lz4Compress...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lz4Compress...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w8_d65...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w8_d65...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w64_d5...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w64_d5...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_lz4Compress...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d5...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d5...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d8...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d8...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_fifo_w32_d2...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun_start_for_l...
+Compiling module xil_defaultlib.lz4CompressEngineRun
+Compiling module xil_defaultlib.AESL_autofifo_inStream
+Compiling module xil_defaultlib.AESL_autofifo_lz4Out
+Compiling module xil_defaultlib.AESL_autofifo_lz4Out_eos
+Compiling module xil_defaultlib.AESL_autofifo_lz4OutSize
+Compiling module xil_defaultlib.AESL_automem_max_lit_limit
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_2
+Compiling module xil_defaultlib.df_fifo_intf_default
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=11)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=7)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.upc_loop_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_lz4CompressEngineRun_top
+Compiling module work.glbl
+Built simulation snapshot lz4CompressEngineRun
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 31 13:41:20 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/lz4CompressEngineRun/xsim_script.tcl
+# xsim {lz4CompressEngineRun} -autoloadwcfg -tclbatch {lz4CompressEngineRun.tcl}
+Time resolution is 1 ps
+source lz4CompressEngineRun.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "116000"
+// RTL Simulation : 1 / 1 [n/a] @ "28956000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 28997500 ps : File "D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/lz4CompressEngineRun.autotb.v" Line 568
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 31 13:41:24 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+------- Compression Ratio: 2.09045 -------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1248
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 1 seconds. Total elapsed time: 53.318 seconds; peak allocated memory: 333.742 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 58s

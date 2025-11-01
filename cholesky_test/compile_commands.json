@@ -1,0 +1,53 @@
+[
+  {
+    "directory": "D:\\Xillinx_Project\\PROJECT\\cholesky_test",
+    "arguments": [
+      "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=kernel_cholesky_0",
+      "-DMATRIX_DIM=3",
+      "-DMATRIX_LOWER_TRIANGULAR=0",
+      "-DSEL_ARCH=0",
+      "-D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L2/include",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.",
+      "-c",
+      "D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp"
+    ],
+    "file": "D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp"
+  },
+  {
+    "directory": "D:\\Xillinx_Project\\PROJECT\\cholesky_test",
+    "arguments": [
+      "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx\\Vitis\\2024.2\\include",
+      "-DMATRIX_DIM=3",
+      "-DMATRIX_LOWER_TRIANGULAR=0",
+      "-DSEL_ARCH=0",
+      "-D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/.",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw",
+      "-I../../host",
+      "-ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.",
+      "-c",
+      "D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp"
+    ],
+    "file": "D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp"
+  }
+]

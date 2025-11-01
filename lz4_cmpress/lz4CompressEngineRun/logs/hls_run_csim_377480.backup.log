@@ -1,0 +1,57 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp,-ID:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp,-ID:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.top=lz4CompressEngineRun' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=7ns' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=10%' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.7ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.argv=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt.encoded' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'csim.argv=D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt.encoded' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'syn.compile.pragma_strict_mode=1' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=syn' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from D:/Xillinx_Project/PROJECT/lz4_cmpress/hls_config.cfg(16)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp:18:
+In file included from D:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp:32:9: warning: 'PARALLEL_BLOCK' macro redefined [-Wmacro-redefined]
+#define PARALLEL_BLOCK 1
+        ^
+D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/s2mm.hpp:306:9: note: previous definition is here
+#define PARALLEL_BLOCK 8
+        ^
+2 warnings generated.
+------- Compression Ratio: 2.09045 -------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1248
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.441 seconds; peak allocated memory: 263.633 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 17s

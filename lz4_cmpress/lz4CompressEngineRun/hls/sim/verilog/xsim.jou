@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Oct 31 14:50:41 2025
+# Process ID         : 428996
+# Current directory  : D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/lz4CompressEngineRun/xsim_script.tcl}
+# Log file           : D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog/xsim.log
+# Journal file       : D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/sim/verilog\xsim.jou
+# Running On         : TheJackdaw
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 7840H w/ Radeon 780M Graphics      
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33492 MB
+# Swap memory        : 14519 MB
+# Total Virtual      : 48011 MB
+# Available Virtual  : 13293 MB
+#-----------------------------------------------------------
+source xsim.dir/lz4CompressEngineRun/xsim_script.tcl
+source lz4CompressEngineRun.tcl

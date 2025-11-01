@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'lz4Compress_4096_8_s'
+================================================================
+* Date:           Fri Oct 31 14:49:11 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        lz4CompressEngineRun
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  6.300 ns|     0.70 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+---------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                            |                           |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |          Instance          |           Module          |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------+---------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |lz4CompressPart1_4096_8_U0  |lz4CompressPart1_4096_8_s  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |lz4CompressPart2_U0         |lz4CompressPart2           |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +----------------------------+---------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      6|    -|
+|FIFO             |       36|    -|     423|    229|    -|
+|Instance         |        -|    -|     867|   1900|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       36|    0|    1290|   2135|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       12|    0|       1|      4|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+---------------------------+---------+----+-----+------+-----+
+    |          Instance          |           Module          | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +----------------------------+---------------------------+---------+----+-----+------+-----+
+    |lz4CompressPart1_4096_8_U0  |lz4CompressPart1_4096_8_s  |        0|   0|  451|   629|    0|
+    |lz4CompressPart2_U0         |lz4CompressPart2           |        0|   0|  416|  1271|    0|
+    +----------------------------+---------------------------+---------+----+-----+------+-----+
+    |Total                       |                           |        0|   0|  867|  1900|    0|
+    +----------------------------+---------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------+---------+-----+----+-----+-------+-----+---------+
+    |        Name        | BRAM_18K|  FF | LUT| URAM| Depth | Bits| Size:D*B|
+    +--------------------+---------+-----+----+-----+-------+-----+---------+
+    |input_size_c_U      |        0|   99|   0|    -|      2|   32|       64|
+    |lenOffset_Stream_U  |        4|  161|   0|    -|    512|   64|    32768|
+    |lit_outStream_U     |       32|  163|   0|    -|  65536|    8|   524288|
+    +--------------------+---------+-----+----+-----+-------+-----+---------+
+    |Total               |       36|  423|   0|    0|  66050|  104|   557120|
+    +--------------------+---------+-----+----+-----+-------+-----+---------+
+
+    * Expression: 
+    +------------------+----------+----+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+----+---+----+------------+------------+
+    |ap_idle           |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue  |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done      |       and|   0|  0|   2|           1|           1|
+    +------------------+----------+----+---+----+------------+------------+
+    |Total             |          |   0|  0|   6|           3|           3|
+    +------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++------------------------+-----+-----+------------+----------------------+--------------+
+|boosterStream_dout      |   in|   32|     ap_fifo|         boosterStream|       pointer|
+|boosterStream_empty_n   |   in|    1|     ap_fifo|         boosterStream|       pointer|
+|boosterStream_read      |  out|    1|     ap_fifo|         boosterStream|       pointer|
+|lz4Out_din              |  out|    8|     ap_fifo|                lz4Out|       pointer|
+|lz4Out_full_n           |   in|    1|     ap_fifo|                lz4Out|       pointer|
+|lz4Out_write            |  out|    1|     ap_fifo|                lz4Out|       pointer|
+|max_lit_limit_address0  |  out|    3|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_ce0       |  out|    1|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_d0        |  out|   32|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_q0        |   in|   32|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_we0       |  out|    1|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_address1  |  out|    3|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_ce1       |  out|    1|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_d1        |  out|   32|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_q1        |   in|   32|   ap_memory|         max_lit_limit|         array|
+|max_lit_limit_we1       |  out|    1|   ap_memory|         max_lit_limit|         array|
+|input_size_dout         |   in|   32|     ap_fifo|            input_size|       pointer|
+|input_size_empty_n      |   in|    1|     ap_fifo|            input_size|       pointer|
+|input_size_read         |  out|    1|     ap_fifo|            input_size|       pointer|
+|lz4Out_eos_din          |  out|    1|     ap_fifo|            lz4Out_eos|       pointer|
+|lz4Out_eos_full_n       |   in|    1|     ap_fifo|            lz4Out_eos|       pointer|
+|lz4Out_eos_write        |  out|    1|     ap_fifo|            lz4Out_eos|       pointer|
+|lz4OutSize_din          |  out|   32|     ap_fifo|            lz4OutSize|       pointer|
+|lz4OutSize_full_n       |   in|    1|     ap_fifo|            lz4OutSize|       pointer|
+|lz4OutSize_write        |  out|    1|     ap_fifo|            lz4OutSize|       pointer|
+|index_dout              |   in|   32|     ap_fifo|                 index|       pointer|
+|index_empty_n           |   in|    1|     ap_fifo|                 index|       pointer|
+|index_read              |  out|    1|     ap_fifo|                 index|       pointer|
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
+|ap_continue             |   in|    1|  ap_ctrl_hs|  lz4Compress<4096, 8>|  return value|
++------------------------+-----+-----+------------+----------------------+--------------+
+

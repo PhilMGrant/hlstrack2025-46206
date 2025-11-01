@@ -1,0 +1,56 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1998] cannot find relative file path '../../host' in directory(s): D:/Xillinx_Project/PROJECT/cholesky_test
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L2/include -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -I../../host -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.top=kernel_cholesky_0' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=5ns' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=10%' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=syn' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(13)
+WARNING: [HLS 200-1998] cannot find relative file path '../../../../host' in directory(s): D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0/solution D:/Xillinx_Project/PROJECT/cholesky_test
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make: 'csim.exe' is up to date.
+Running 1 fixed point tests per matrix type on 3 x 3 matrices with LowerTriangular set to 0
+RESULTS_TABLE,Test,IMAT,L Matching,DUT Ratio,LAPACK Ratio,Relative Ratio Difference
+RESULTS_TABLE,0,1,1,0.333333,0.333333,0
+RESULTS_TABLE,0,2,0,0.747014,0.382765,36.4248
+RESULTS_TABLE,0,3,0,0.479545,0.354167,12.5378
+RESULTS_TABLE,0,4,0,0.508553,0.491726,1.68267
+RESULTS_TABLE,0,5,0,0.723448,0.496184,22.7264
+RESULTS_TABLE,0,6,0,0.521222,0.192952,32.8271
+RESULTS_TABLE,0,7,0,0.289557,0.258333,3.12245
+RESULTS_TABLE,0,9,0,0.481557,0.441006,4.05514
+SUMMARY_TABLE,imat,Min Ratio, Max Ratio,Min Diff (Smaller),Max Diff (Larger),Same,Better,Worse
+SUMMARY_TABLE,1,0.333333,0.333333,0,0,1,0,0
+SUMMARY_TABLE,2,0.747014,0.747014,0,36.4248,0,0,1
+SUMMARY_TABLE,3,0.479545,0.479545,0,12.5378,0,0,1
+SUMMARY_TABLE,4,0.508553,0.508553,0,1.68267,0,0,1
+SUMMARY_TABLE,5,0.723448,0.723448,0,22.7264,0,0,1
+SUMMARY_TABLE,6,0.521222,0.521222,0,32.8271,0,0,1
+SUMMARY_TABLE,7,0.289557,0.289557,0,3.12245,0,0,1
+SUMMARY_TABLE,8,30,0,0,0,0,0,0
+SUMMARY_TABLE,9,0.481557,0.481557,0,4.05514,0,0,1
+SUMMARY_TABLE,all,0.289557,0.747014,0,36.4248,1,0,7
+TB:Pass
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 9
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.227 seconds; peak allocated memory: 263.316 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

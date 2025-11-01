@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "D:\\Xillinx_Project\\Comp\\hlstrack2025-master\\security\\L1\\tests\\hmac\\sha256",
+  "mapping": {
+    "test.cpp": "hmac_sha256_test",
+    "gld.dat": "hmac_sha256_test"
+  }
+}

@@ -1,0 +1,40 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1998] cannot find relative file path '../../host' in directory(s): D:/Xillinx_Project/PROJECT/cholesky_test
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L2/include -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -I../../host -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.top=kernel_cholesky_0' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=6ns' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=10%' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.6ns.
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=syn' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(13)
+WARNING: [HLS 200-1998] cannot find relative file path '../../../../host' in directory(s): D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0/solution D:/Xillinx_Project/PROJECT/cholesky_test
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.079 seconds; current allocated memory: 262.320 MB.
+INFO: [HLS 200-10] Analyzing design file '../solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' ... 
+WARNING: [HLS 207-5292] unused parameter 'info' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw/../../../L2/include/hw/MatrixDecomposition/potrf.hpp:170:39)
+WARNING: [HLS 207-5292] unused parameter 'rows' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/qrf.hpp:70:38)
+WARNING: [HLS 207-5292] unused parameter 'cols' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/qrf.hpp:70:54)
+WARNING: [HLS 207-5292] unused parameter 'x' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/qrf.hpp:70:62)
+WARNING: [HLS 207-5292] unused parameter 'x' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/qrf.hpp:76:78)
+WARNING: [HLS 207-5292] unused parameter 'x' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/qrf.hpp:87:76)
+WARNING: [HLS 207-5292] unused parameter 'extra_pass' (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/qrf.hpp:306:21)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.196 seconds; current allocated memory: 271.770 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 15,767 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0/hls/syn/report/csynth_design_size.rpt
+ERROR: [HLS 214-272] In function 'ap_fixed<34, 2, (ap_q_mode)4, (ap_o_mode)0, 0> xf::solver::x_sqrt<34, 2, (ap_q_mode)4, (ap_o_mode)0, 0>(ap_fixed<34, 2, (ap_q_mode)4, (ap_o_mode)0, 0>)', Pragma conflict happens on 'INLINE' and 'PIPELINE' pragmas: same function (D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw/utils/x_matrix_utils.hpp:87:0)
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 35.516 seconds; peak allocated memory: 272.504 MB.

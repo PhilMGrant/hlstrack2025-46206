@@ -1,0 +1,627 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 31 14:52:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 60150
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 432556
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.348 ; gain = 467.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_entry_proc' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_entry_proc' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s_dict_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_flow_control_loop_pipe_sequential_init' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_flow_control_loop_pipe_sequential_init' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_sparsemux_9_2_408_1_1' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_9_2_408_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_9_2_408_1_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_sparsemux_9_2_408_1_1' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_9_2_408_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_sparsemux_11_3_8_1_1' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_11_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_sparsemux_11_3_8_1_1' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_11_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzBestMatchFilter_6_65536_s' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_sparsemux_13_3_32_1_1' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_13_3_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_sparsemux_13_3_32_1_1' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_sparsemux_13_3_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzBestMatchFilter_6_65536_s' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzBooster_255_16384_64_s' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_s_local_mem_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_Pipeline_lz_booster.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lzBooster_255_16384_64_s' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBooster_255_16384_64_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lz4Compress_4096_8_s' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4Compress_4096_8_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lz4CompressPart1_4096_8_s' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart1_4096_8_Pipeline_lz4_divide.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lz4CompressPart1_4096_8_s' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart1_4096_8_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lz4CompressPart2' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lz4CompressPart2' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w8_d65536_B' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w8_d65536_B.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w8_d65536_B_ram' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w8_d65536_B.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w8_d65536_B_ram' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w8_d65536_B.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w8_d65536_B' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w8_d65536_B.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w64_d512_B' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w64_d512_B.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w64_d512_B_ram' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w64_d512_B.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w64_d512_B_ram' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w64_d512_B.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w64_d512_B' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w64_d512_B.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lz4CompressPart2_U0' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4CompressPart2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lz4CompressPart2_U0_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4CompressPart2_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lz4CompressPart2_U0_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4CompressPart2_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lz4CompressPart2_U0' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4CompressPart2_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_lz4Compress_4096_8_s' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4Compress_4096_8_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d5_S' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d5_S_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d5_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d5_S_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d5_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d5_S' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d8_S' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d8_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d8_S_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d8_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d8_S_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d8_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d8_S' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d8_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S_x' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S_x.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S_x_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S_x.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S_x_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S_x.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_fifo_w32_d2_S_x' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_fifo_w32_d2_S_x.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lz4Compress_4096_8_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBestMatchFilter_6_65536_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0_ShiftReg' [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0_ShiftReg' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_start_for_lzBooster_255_16384_64_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'lz4CompressEngineRun' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port addr[1] in module lz4CompressEngineRun_fifo_w32_d2_S_x_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module lz4CompressEngineRun_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[16] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[15] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[14] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[13] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[12] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[11] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[10] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[9] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[8] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[7] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[6] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[5] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[4] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[3] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[2] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[1] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[0] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[16] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[15] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[14] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[13] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[12] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[11] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[10] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[9] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[8] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[7] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[6] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[5] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[4] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[3] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[2] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[1] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[0] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[9] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[8] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[7] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[6] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[5] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[4] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[3] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[2] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[1] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[0] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[9] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[8] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[7] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[6] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[5] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[4] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[3] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[2] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[1] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_fifo_cap[0] in module lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[16] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[15] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[14] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[13] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[12] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[11] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[10] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[9] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[8] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[7] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[6] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[5] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[4] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[3] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[2] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[1] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_num_data_valid[0] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[16] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[15] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[14] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[13] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[12] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[11] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[10] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[9] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[8] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[7] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[6] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[5] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[4] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[3] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[2] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[1] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lit_outStream_fifo_cap[0] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[9] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[8] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[7] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[6] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[5] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[4] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[3] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[2] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[1] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lenOffset_Stream_num_data_valid[0] in module lz4CompressEngineRun_lz4CompressPart2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1167.848 ; gain = 631.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1167.848 ; gain = 631.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1167.848 ; gain = 631.176
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.182 . Memory (MB): peak = 1167.848 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/lz4CompressEngineRun_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/lz4CompressEngineRun_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1261.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1261.559 ; gain = 0.449
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1261.559 ; gain = 724.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1261.559 ; gain = 724.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1261.559 ; gain = 724.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'match_offset_1_reg_3177_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress.v:935]
+WARNING: [Synth 8-3936] Found unconnected internal register 'match_offset_4_reg_3324_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress.v:977]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'compare_window_14_reg_611_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v:368]
+WARNING: [Synth 8-3936] Found unconnected internal register 'compare_window_13_reg_616_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v:367]
+WARNING: [Synth 8-3936] Found unconnected internal register 'compare_window_12_reg_621_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v:366]
+WARNING: [Synth 8-3936] Found unconnected internal register 'compare_window_11_reg_626_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter.v:365]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'lit_len_tmp_2_reg_1107_reg' and it is trimmed from '32' to '4' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress.v:597]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lit_len_tmp_fu_172_reg' and it is trimmed from '32' to '16' bits. [d:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bdf/hdl/verilog/lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress.v:616]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1261.559 ; gain = 724.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 13    
+	   3 Input   32 Bit       Adders := 10    
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 7     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   4 Input   10 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 19    
+	   3 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 14    
+	   2 Input    1 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	              408 Bit    Registers := 5     
+	              340 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 60    
+	               31 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               20 Bit    Registers := 6     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 20    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 57    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 33    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 226   
++---RAMs : 
+	             511K Bit	(65535 X 8 bit)          RAMs := 1     
+	             128K Bit	(16384 X 8 bit)          RAMs := 1     
+	             102K Bit	(256 X 408 bit)          RAMs := 4     
+	              31K Bit	(511 X 64 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input  408 Bit        Muxes := 1     
+	   2 Input  408 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 23    
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 2     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 22    
+	   2 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 8     
+	   6 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 11    
+	   5 Input    3 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 36    
+	   3 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 185   
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 1284.316 ; gain = 747.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                   | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_U/ram_reg                                      | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_1_U/ram_reg                                    | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_2_U/ram_reg                                    | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_3_U/ram_reg                                    | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst                                          | lzBooster_255_16384_64_U0/local_mem_U/ram_reg       | 16 K x 8(READ_FIRST)   | W |   | 16 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
+|inst/lz4Compress_4096_8_U0/lit_outStream_U    | U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg | 63 K x 8(READ_FIRST)   | W |   | 63 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
+|inst/lz4Compress_4096_8_U0/lenOffset_Stream_U | U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg  | 511 x 64(READ_FIRST)   | W |   | 511 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++----------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:49 . Memory (MB): peak = 1371.215 ; gain = 834.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 1416.938 ; gain = 880.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                   | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_U/ram_reg                                      | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_1_U/ram_reg                                    | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_2_U/ram_reg                                    | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst/lzCompress_6_4_65536_6_1_1024_64_U0      | dict_3_U/ram_reg                                    | 256 x 408(READ_FIRST)  | W |   | 256 x 408(WRITE_FIRST) |   | R | Port A and B     | 0      | 6      | 
+|inst                                          | lzBooster_255_16384_64_U0/local_mem_U/ram_reg       | 16 K x 8(READ_FIRST)   | W |   | 16 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
+|inst/lz4Compress_4096_8_U0/lit_outStream_U    | U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg | 63 K x 8(READ_FIRST)   | W |   | 63 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
+|inst/lz4Compress_4096_8_U0/lenOffset_Stream_U | U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg  | 511 x 64(READ_FIRST)   | W |   | 511 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++----------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_1_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_2_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzCompress_6_4_65536_6_1_1024_64_U0/dict_3_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzBooster_255_16384_64_U0/local_mem_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzBooster_255_16384_64_U0/local_mem_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzBooster_255_16384_64_U0/local_mem_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lzBooster_255_16384_64_U0/local_mem_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lit_outStream_U/U_lz4CompressEngineRun_fifo_w8_d65536_B_ram/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 1442.219 ; gain = 905.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:01:00 . Memory (MB): peak = 1614.289 ; gain = 1077.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:01:00 . Memory (MB): peak = 1614.289 ; gain = 1077.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:01:01 . Memory (MB): peak = 1614.289 ; gain = 1077.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:01:01 . Memory (MB): peak = 1614.289 ; gain = 1077.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:01 . Memory (MB): peak = 1622.602 ; gain = 1085.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:01:01 . Memory (MB): peak = 1622.602 ; gain = 1085.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[4] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[7] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   315|
+|2     |LUT1     |   385|
+|3     |LUT2     |   911|
+|4     |LUT3     |   612|
+|5     |LUT4     |  1102|
+|6     |LUT5     |   829|
+|7     |LUT6     |   579|
+|8     |RAMB36E1 |    45|
+|12    |SRL16E   |    89|
+|13    |FDRE     |  3445|
+|14    |FDSE     |    32|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:01:01 . Memory (MB): peak = 1622.602 ; gain = 1085.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 568 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:58 . Memory (MB): peak = 1622.602 ; gain = 992.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:01:02 . Memory (MB): peak = 1622.602 ; gain = 1085.930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1631.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1635.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 60035a1
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:01:10 . Memory (MB): peak = 1635.441 ; gain = 1329.133
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1635.441 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 9c9f72ca321408b5
+INFO: [Coretcl 2-1174] Renamed 54 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1635.441 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Xillinx_Project/PROJECT/lz4_cmpress/lz4CompressEngineRun/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 14:53:25 2025...

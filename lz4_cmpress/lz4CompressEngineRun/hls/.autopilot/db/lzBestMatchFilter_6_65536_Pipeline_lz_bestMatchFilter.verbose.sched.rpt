@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vitis HLS Report for 'lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter'
+================================================================
+* Date:           Fri Oct 31 14:48:59 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        lz4CompressEngineRun
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.951 ns|     0.70 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- lz_bestMatchFilter  |        ?|        ?|         3|          2|          2|     ?|       yes|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%outValue = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:346]   --->   Operation 7 'alloca' 'outValue' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%compareValue = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 8 'alloca' 'compareValue' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%compareValue_1 = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 9 'alloca' 'compareValue_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%compareValue_2 = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 10 'alloca' 'compareValue_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%compareValue_3 = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 11 'alloca' 'compareValue_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%compareValue_4 = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 12 'alloca' 'compareValue_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %compressdStream, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %compressdStream, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bestMatchStream, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%input_size_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %input_size_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 16 'read' 'input_size_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%compare_window_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %compare_window" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 17 'read' 'compare_window_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%compare_window_1_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %compare_window_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 18 'read' 'compare_window_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%compare_window_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %compare_window_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 19 'read' 'compare_window_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%compare_window_3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %compare_window_3" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 20 'read' 'compare_window_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%compare_window_4_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %compare_window_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 21 'read' 'compare_window_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%compare_window_5_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %compare_window_5" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325]   --->   Operation 22 'read' 'compare_window_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_5_read, i32 %compareValue_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 23 'store' 'store_ln365' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 24 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_4_read, i32 %compareValue_3" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 24 'store' 'store_ln365' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_3_read, i32 %compareValue_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 25 'store' 'store_ln365' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_2_read, i32 %compareValue_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 26 'store' 'store_ln365' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_1_read, i32 %compareValue" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 27 'store' 'store_ln365' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%store_ln346 = store i32 %compare_window_read, i32 %outValue" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:346]   --->   Operation 28 'store' 'store_ln346' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 29 [1/1] (1.58ns)   --->   "%store_ln339 = store i32 6, i32 %i" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 29 'store' 'store_ln339' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln339 = br void %VITIS_LOOP_347_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 30 'br' 'br_ln339' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.14>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%i_8 = load i32 %i" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 31 'load' 'i_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%compare_window_15 = load i32 %compareValue"   --->   Operation 32 'load' 'compare_window_15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%compare_window_14 = load i32 %compareValue_1"   --->   Operation 33 'load' 'compare_window_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%compare_window_13 = load i32 %compareValue_2"   --->   Operation 34 'load' 'compare_window_13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%compare_window_12 = load i32 %compareValue_3"   --->   Operation 35 'load' 'compare_window_12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%compare_window_11 = load i32 %compareValue_4"   --->   Operation 36 'load' 'compare_window_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (2.55ns)   --->   "%icmp_ln339 = icmp_ult  i32 %i_8, i32 %input_size_2_read" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 37 'icmp' 'icmp_ln339' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln339 = br i1 %icmp_ln339, void %for.inc76.preheader.exitStub, void %VITIS_LOOP_347_2.split_ifconv" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 38 'br' 'br_ln339' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (2.55ns)   --->   "%i_9 = add i32 %i_8, i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 39 'add' 'i_9' <Predicate = (icmp_ln339)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_11, i32 %compareValue_3" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 40 'store' 'store_ln365' <Predicate = (icmp_ln339)> <Delay = 1.58>
+ST_2 : Operation 41 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_12, i32 %compareValue_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 41 'store' 'store_ln365' <Predicate = (icmp_ln339)> <Delay = 1.58>
+ST_2 : Operation 42 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_13, i32 %compareValue_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 42 'store' 'store_ln365' <Predicate = (icmp_ln339)> <Delay = 1.58>
+ST_2 : Operation 43 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compare_window_14, i32 %compareValue" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 43 'store' 'store_ln365' <Predicate = (icmp_ln339)> <Delay = 1.58>
+ST_2 : Operation 44 [1/1] (1.58ns)   --->   "%store_ln339 = store i32 %i_9, i32 %i" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 44 'store' 'store_ln339' <Predicate = (icmp_ln339)> <Delay = 1.58>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%outValue_load_1 = load i32 %outValue"   --->   Operation 90 'load' 'outValue_load_1' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %compare_window_12_out, i32 %compare_window_11"   --->   Operation 91 'write' 'write_ln0' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %compare_window_13_out, i32 %compare_window_12"   --->   Operation 92 'write' 'write_ln0' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %compare_window_14_out, i32 %compare_window_13"   --->   Operation 93 'write' 'write_ln0' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %compare_window_15_out, i32 %compare_window_14"   --->   Operation 94 'write' 'write_ln0' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %compare_window_16_out, i32 %compare_window_15"   --->   Operation 95 'write' 'write_ln0' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %compare_window_17_out, i32 %outValue_load_1"   --->   Operation 96 'write' 'write_ln0' <Predicate = (!icmp_ln339)> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 97 'ret' 'ret_ln0' <Predicate = (!icmp_ln339)> <Delay = 1.58>
+
+State 3 <SV = 2> <Delay = 5.95>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%outValue_load = load i32 %outValue"   --->   Operation 45 'load' 'outValue_load' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] ( I:3.15ns O:3.15ns )   --->   "%compareValue_10 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %compressdStream" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:352]   --->   Operation 46 'read' 'compareValue_10' <Predicate = (icmp_ln339)> <Delay = 3.15> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%match_length = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %outValue_load, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:356]   --->   Operation 47 'partselect' 'match_length' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln365 = zext i8 %match_length" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 48 'zext' 'zext_ln365' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%compareLen = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %compare_window_15, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:366]   --->   Operation 49 'partselect' 'compareLen' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%compareLen_1 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %compare_window_14, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:366]   --->   Operation 50 'partselect' 'compareLen_1' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (1.91ns)   --->   "%add_ln368 = add i9 %zext_ln365, i9 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:368]   --->   Operation 51 'add' 'add_ln368' <Predicate = (icmp_ln339)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln365_1 = zext i8 %compareLen_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 52 'zext' 'zext_ln365_1' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%compareLen_2 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %compare_window_13, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:366]   --->   Operation 53 'partselect' 'compareLen_2' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (1.91ns)   --->   "%add_ln368_1 = add i9 %zext_ln365, i9 2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:368]   --->   Operation 54 'add' 'add_ln368_1' <Predicate = (icmp_ln339)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln365_2 = zext i8 %compareLen_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 55 'zext' 'zext_ln365_2' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%compareLen_3 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %compare_window_12, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:366]   --->   Operation 56 'partselect' 'compareLen_3' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (1.91ns)   --->   "%add_ln368_2 = add i9 %zext_ln365, i9 3" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:368]   --->   Operation 57 'add' 'add_ln368_2' <Predicate = (icmp_ln339)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln365_3 = zext i8 %compareLen_3" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 58 'zext' 'zext_ln365_3' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%compareLen_4 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %compare_window_11, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:366]   --->   Operation 59 'partselect' 'compareLen_4' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (1.91ns)   --->   "%add_ln368_3 = add i9 %zext_ln365, i9 4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:368]   --->   Operation 60 'add' 'add_ln368_3' <Predicate = (icmp_ln339)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln365_4 = zext i8 %compareLen_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 61 'zext' 'zext_ln365_4' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%compareLen_5 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %compareValue_10, i32 8" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:366]   --->   Operation 62 'partselect' 'compareLen_5' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (1.91ns)   --->   "%add_ln368_4 = add i9 %zext_ln365, i9 5" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:368]   --->   Operation 63 'add' 'add_ln368_4' <Predicate = (icmp_ln339)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln374 = zext i8 %compareLen_5" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 64 'zext' 'zext_ln374' <Predicate = (icmp_ln339)> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (1.91ns)   --->   "%icmp_ln374 = icmp_ult  i8 %match_length, i8 %compareLen" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 65 'icmp' 'icmp_ln374' <Predicate = (icmp_ln339)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 66 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%best_match = xor i1 %icmp_ln374, i1 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 66 'xor' 'best_match' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 67 [1/1] (1.82ns)   --->   "%icmp_ln374_1 = icmp_ult  i9 %add_ln368, i9 %zext_ln365_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 67 'icmp' 'icmp_ln374_1' <Predicate = (icmp_ln339)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 68 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%xor_ln374 = xor i1 %icmp_ln374_1, i1 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 68 'xor' 'xor_ln374' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 69 [1/1] (1.82ns)   --->   "%icmp_ln374_2 = icmp_ult  i9 %add_ln368_1, i9 %zext_ln365_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 69 'icmp' 'icmp_ln374_2' <Predicate = (icmp_ln339)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%xor_ln374_1 = xor i1 %icmp_ln374_2, i1 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 70 'xor' 'xor_ln374_1' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 71 [1/1] (1.82ns)   --->   "%icmp_ln374_3 = icmp_ult  i9 %add_ln368_2, i9 %zext_ln365_3" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 71 'icmp' 'icmp_ln374_3' <Predicate = (icmp_ln339)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%xor_ln374_2 = xor i1 %icmp_ln374_3, i1 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 72 'xor' 'xor_ln374_2' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 73 [1/1] (1.82ns)   --->   "%icmp_ln374_4 = icmp_ult  i9 %add_ln368_3, i9 %zext_ln365_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 73 'icmp' 'icmp_ln374_4' <Predicate = (icmp_ln339)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%xor_ln374_3 = xor i1 %icmp_ln374_4, i1 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 74 'xor' 'xor_ln374_3' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 75 [1/1] (1.82ns)   --->   "%icmp_ln374_5 = icmp_ult  i9 %add_ln368_4, i9 %zext_ln374" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 75 'icmp' 'icmp_ln374_5' <Predicate = (icmp_ln339)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%xor_ln374_4 = xor i1 %icmp_ln374_5, i1 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 76 'xor' 'xor_ln374_4' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%and_ln374 = and i1 %xor_ln374, i1 %xor_ln374_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 77 'and' 'and_ln374' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%and_ln374_1 = and i1 %and_ln374, i1 %best_match" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 78 'and' 'and_ln374_1' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%and_ln374_2 = and i1 %xor_ln374_3, i1 %xor_ln374_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 79 'and' 'and_ln374_2' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 80 [1/1] (0.00ns) (grouped into LUT with out node best_match_1)   --->   "%and_ln374_3 = and i1 %and_ln374_2, i1 %xor_ln374_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 80 'and' 'and_ln374_3' <Predicate = (icmp_ln339)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 81 [1/1] (0.97ns) (out node of the LUT)   --->   "%best_match_1 = and i1 %and_ln374_3, i1 %and_ln374_1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 81 'and' 'best_match_1' <Predicate = (icmp_ln339)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 82 [1/1] (1.58ns)   --->   "%store_ln365 = store i32 %compareValue_10, i32 %compareValue_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365]   --->   Operation 82 'store' 'store_ln365' <Predicate = (icmp_ln339)> <Delay = 1.58>
+ST_3 : Operation 83 [1/1] (1.58ns)   --->   "%store_ln346 = store i32 %compare_window_15, i32 %outValue" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:346]   --->   Operation 83 'store' 'store_ln346' <Predicate = (icmp_ln339)> <Delay = 1.58>
+
+State 4 <SV = 3> <Delay = 3.84>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "%specpipeline_ln340 = specpipeline void @_ssdm_op_SpecPipeline, i32 2, i32 0, i32 0, i32 0, void @empty_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:340]   --->   Operation 84 'specpipeline' 'specpipeline_ln340' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%specloopname_ln339 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 85 'specloopname' 'specloopname_ln339' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node outValue_5)   --->   "%outValue_4 = partset i32 @_ssdm_op_PartSet.i32.i32.i24.i32.i32, i32 %outValue_load, i24 0, i32 8, i32 31" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:382]   --->   Operation 86 'partset' 'outValue_4' <Predicate = (!best_match_1)> <Delay = 0.00>
+ST_4 : Operation 87 [1/1] (0.69ns) (out node of the LUT)   --->   "%outValue_5 = select i1 %best_match_1, i32 %outValue_load, i32 %outValue_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374]   --->   Operation 87 'select' 'outValue_5' <Predicate = true> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 88 [1/1] ( I:3.15ns O:3.15ns )   --->   "%write_ln384 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %bestMatchStream, i32 %outValue_5" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:384]   --->   Operation 88 'write' 'write_ln384' <Predicate = true> <Delay = 3.15> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "%br_ln339 = br void %VITIS_LOOP_347_2" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339]   --->   Operation 89 'br' 'br_ln339' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.000ns, clock uncertainty: 0.700ns.
+
+ <State 1>: 1.588ns
+The critical path consists of the following:
+	'alloca' operation 32 bit ('compareValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365) [22]  (0.000 ns)
+	'store' operation 0 bit ('store_ln365', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365) of variable 'compare_window_5_read', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:325 on local variable 'compareValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365 [33]  (1.588 ns)
+
+ <State 2>: 4.140ns
+The critical path consists of the following:
+	'load' operation 32 bit ('i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339 [42]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln339', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) [48]  (2.552 ns)
+	'store' operation 0 bit ('store_ln365', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365) of variable 'compare_window' on local variable 'compareValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:365 [95]  (1.588 ns)
+
+ <State 3>: 5.951ns
+The critical path consists of the following:
+	fifo read operation ('compareValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:352) on port 'compressdStream' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:352) [54]  (3.150 ns)
+	'icmp' operation 1 bit ('icmp_ln374_5', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374) [83]  (1.823 ns)
+	'xor' operation 1 bit ('xor_ln374_4', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374) [84]  (0.000 ns)
+	'and' operation 1 bit ('and_ln374_2', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374) [87]  (0.000 ns)
+	'and' operation 1 bit ('and_ln374_3', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374) [88]  (0.000 ns)
+	'and' operation 1 bit ('best_match', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374) [89]  (0.978 ns)
+
+ <State 4>: 3.848ns
+The critical path consists of the following:
+	'select' operation 32 bit ('outValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:374) [91]  (0.698 ns)
+	fifo write operation ('write_ln384', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:384) on port 'bestMatchStream' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:384) [92]  (3.150 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

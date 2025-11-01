@@ -1,0 +1,856 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 394, Column: 2 }
+Function:        _ZN2xf11compressionL11lz4CompressILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS3_IS4_ILi8EELi0EEEPjjRNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - Callee:          'void xf::compression::details::lz4CompressPart1<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, unsigned int, unsigned int*, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 396, Column: 5 }
+Function:        _ZN2xf11compressionL11lz4CompressILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS3_IS4_ILi8EELi0EEEPjjRNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - Callee:          'xf::compression::details::lz4CompressPart2(hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 135, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 68, Column: 2 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                       Line: 58, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 70, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzBestMatchFilter<6, 65536>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                       Line: 325, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 71, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzBooster<255, 16384, 64>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                       Line: 600, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 72, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 347, Column: 27 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_347_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 363, Column: 20 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_363_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 372, Column: 27 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_372_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 103, Column: 27 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 128, Column: 27 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_128_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 142, Column: 20 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 158, Column: 27 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 166, Column: 31 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 189, Column: 27 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_189_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 325, Column: 0 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_347_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:347:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzBestMatchFilter<6, 65536>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 325, Column: 0 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_363_3
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:363:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzBestMatchFilter<6, 65536>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 325, Column: 0 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_372_4
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:372:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzBestMatchFilter<6, 65536>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 325, Column: 0 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_333_1
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:333:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzBestMatchFilter<6, 65536>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:103:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_128_4
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:128:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_5
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:142:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_158_6
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:158:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_7
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_189_8
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:189:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        dict_flush
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:75:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 58, Column: 0 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_69_1
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:69:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 394, Column: 2 }
+Function:        _ZN2xf11compressionL11lz4CompressILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS3_IS4_ILi8EELi0EEEPjjRNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - Callee:          'void xf::compression::details::lz4CompressPart1<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, unsigned int, unsigned int*, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 396, Column: 5 }
+Function:        _ZN2xf11compressionL11lz4CompressILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS3_IS4_ILi8EELi0EEEPjjRNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - Callee:          'xf::compression::details::lz4CompressPart2(hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 135, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 68, Column: 2 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                       Line: 58, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 70, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzBestMatchFilter<6, 65536>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                       Line: 325, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 71, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzBooster<255, 16384, 64>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                       Line: 600, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 72, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_lz4CompressEngineRun_ir
+Args:            
+  - Callee:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_lz4CompressEngineRun_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 82, Column: 13 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          present_window
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                   Line: 329, Column: 18 }
+Function:        _ZN2xf11compression17lzBestMatchFilterILi6ELi65536EEEvRN3hls6streamI7ap_uintILi32EELi0EEES7_j
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          compare_window
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 173, Column: 5 }
+Function:        _ZN2xf11compression7detailsL16lz4CompressPart2ERN3hls6streamIhLi0EEERNS3_I7ap_uintILi64EELi0EEERNS3_IS6_ILi8EELi0EEERNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        lz4_compress
+  - String:          ' '
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:173:5'
+  - String:          ' '
+  - Function:        'xf::compression::details::lz4CompressPart2(hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 135, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 68, Column: 5 }
+Function:        _ZN2xf11compression7detailsL16lz4CompressPart1ILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS4_IhLi0EEERNS4_IS5_ILi64EELi0EEEjPjj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        lz4_divide
+  - String:          ' '
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:68:5'
+  - String:          ' '
+  - Function:        'void xf::compression::details::lz4CompressPart1<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, unsigned int, unsigned int*, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 50, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 173, Column: 5 }
+Function:        _ZN2xf11compression7detailsL16lz4CompressPart2ERN3hls6streamIhLi0EEERNS3_I7ap_uintILi64EELi0EEERNS3_IS6_ILi8EELi0EEERNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        lz4_compress
+  - String:          '''('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:173:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 68, Column: 5 }
+Function:        _ZN2xf11compression7detailsL16lz4CompressPart1ILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS4_IhLi0EEERNS4_IS5_ILi64EELi0EEEjPjj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        lz4_divide
+  - String:          '''('
+  - LoopLoc:         'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:68:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 66, Column: 17 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=dict'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>'
+  - String:          ' '
+  - varLoc:          'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17'
+  - String:          ' '
+  - PragmaSrcLoc:    'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                       Line: 76, Column: 9 }
+  - VarName:         dict
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 76, Column: 9 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '4'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            dict
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                   Line: 66, Column: 17 }
+Function:        _ZN2xf11compression10lzCompressILi6ELi4ELi65536ELi6ELi1ELi1024ELi64EEEvRN3hls6streamI7ap_uintILi8EELi0EEERNS3_IS4_ILi32EELi0EEEj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          dict
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 394, Column: 2 }
+Function:        _ZN2xf11compressionL11lz4CompressILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS3_IS4_ILi8EELi0EEEPjjRNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - Callee:          'void xf::compression::details::lz4CompressPart1<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, unsigned int, unsigned int*, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                   Line: 396, Column: 5 }
+Function:        _ZN2xf11compressionL11lz4CompressILi4096ELi8EEEvRN3hls6streamI7ap_uintILi32EELi0EEERNS3_IS4_ILi8EELi0EEEPjjRNS3_IbLi0EEERNS3_IjLi0EEEj
+Args:            
+  - Callee:          'xf::compression::details::lz4CompressPart2(hls::stream<unsigned char, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 135, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 68, Column: 2 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzCompress<6, 4, 65536, 6, 1, 1024, 64>(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp', 
+                       Line: 58, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 70, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzBestMatchFilter<6, 65536>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                       Line: 325, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 71, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lzBooster<255, 16384, 64>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<32>, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp', 
+                       Line: 600, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                   Line: 72, Column: 5 }
+Function:        _Z20lz4CompressEngineRunRN3hls6streamI7ap_uintILi8EELi0EEES4_RNS0_IbLi0EEERNS0_IjLi0EEEPjjj
+Args:            
+  - Callee:          'void xf::compression::lz4Compress<4096, 8>(hls::stream<ap_uint<32>, 0>&, hls::stream<ap_uint<8>, 0>&, unsigned int*, unsigned int, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int)'
+    DebugLoc:        { File: 'D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp', 
+                       Line: 382, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lz4CompressEngineRun(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, unsigned int*, unsigned int, unsigned int)'
+    DebugLoc:        { File: ../data_compression/L1/tests/lz4_compress/lz4_compress_test.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

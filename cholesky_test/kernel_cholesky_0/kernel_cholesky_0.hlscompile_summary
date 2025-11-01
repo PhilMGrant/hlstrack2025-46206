@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\kernel_cholesky_0.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/01/25 16:28:39",
+ "timestampMillis": "1761985719036",
+ "buildStep": {
+  "cmdId": "b14a5dd9-1112-436c-b82f-3efedb738bf8",
+  "name": "v++",
+  "logFile": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\logs\\kernel_cholesky_0.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\Xillinx_Project\\PROJECT\\cholesky_test\\hls_config.cfg --work_dir kernel_cholesky_0 ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "D:\\Xillinx_Project\\PROJECT\\cholesky_test\\hls_config.cfg",
+   "--work_dir",
+   "kernel_cholesky_0"
+  ],
+  "iniFiles": [
+   {
+    "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\hls_config.cfg",
+    "content": "part=xc7z020clg484-1\n\n[hls]\nclock=6ns\nclock_uncertainty=10%\nflow_target=vivado\nsyn.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp\nsyn.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L2/include -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.\nsyn.top=kernel_cholesky_0\ntb.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp\ntb.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -I../../host -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.\nvivado.flow=syn\nvivado.rtl=verilog\npackage.output.syn=false"
+   }
+  ],
+  "cwd": "D:\\Xillinx_Project\\PROJECT\\cholesky_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/01/25 16:28:39",
+ "timestampMillis": "1761985719038",
+ "status": {
+  "cmdId": "b14a5dd9-1112-436c-b82f-3efedb738bf8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/01/25 16:28:46",
+ "timestampMillis": "1761985726664",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "kernel_cholesky_0",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Xillinx_Project\\PROJECT\\solver\\L1\\tests\\cholesky\\kernel\\kernel_cholesky_0.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/01/25 16:28:46",
+ "timestampMillis": "1761985726666",
+ "buildStep": {
+  "cmdId": "d3d32e19-cf36-42a4-9296-203af7a73b33",
+  "name": "",
+  "logFile": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Xillinx_Project\\PROJECT\\cholesky_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/01/25 16:28:46",
+ "timestampMillis": "1761985726667",
+ "status": {
+  "cmdId": "d3d32e19-cf36-42a4-9296-203af7a73b33",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:28:46",
+ "timestampMillis": "1761985726668",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:28:46",
+ "timestampMillis": "1761985726668",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:28:46",
+ "timestampMillis": "1761985726669",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802360",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802361",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802363",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802364",
+ "status": {
+  "cmdId": "d3d32e19-cf36-42a4-9296-203af7a73b33",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802591",
+ "status": {
+  "cmdId": "b14a5dd9-1112-436c-b82f-3efedb738bf8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802632",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\reports\\v++_compile_kernel_cholesky_0_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/01/25 16:30:02",
+ "timestampMillis": "1761985802633",
+ "report": {
+  "path": "D:/Xillinx_Project\\PROJECT\\cholesky_test\\kernel_cholesky_0\\reports\\.db\\v++_compile_kernel_cholesky_0_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

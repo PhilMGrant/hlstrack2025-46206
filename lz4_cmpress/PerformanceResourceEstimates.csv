@@ -1,0 +1,29 @@
+"MODULES & LOOPS","ISSUE TYPE","SLACK","LATENCY(CYCLES)","LATENCY(NS)","ITERATION LATENCY","INTERVAL","TRIP COUNT","PIPELINED","BRAM","DSP","FF","LUT","URAM"
+"lz4CompressEngineRun (5)",,-0.25,"-","-","-","-","-","dataflow",92,0,5282,8223,0
+"lzCompress_6_4_65536_6_1_1024_64_s (5)",,"-","-","-","-","-","-","no",48,0,2246,3954,0
+"lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush (1)",,"-",258,1.806E3,"-",257,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,13,39,0
+"dict_flush",,"-",256,1.792E3,1,1,256,"yes","-","-","-","-","-"
+"lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2 (1)",,"-",6,42.000,"-",6,"-","no",0,0,85,56,0
+"VITIS_LOOP_84_2",,"-",5,35.000,1,"-",5,"no","-","-","-","-","-"
+"lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress (1)",,"-","-","-","-",0,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,1922,3117,0
+"lz_compress",,"-","-","-",12,3,"-","yes","-","-","-","-","-"
+"lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover (1)",,"-",7,49.000,"-",6,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,14,96,0
+"lz_compress_leftover",,"-",5,35.000,2,1,5,"yes","-","-","-","-","-"
+"lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes (1)",,"-",66,462.000,"-",65,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,10,89,0
+"lz_left_bytes",,"-",64,448.000,2,1,64,"yes","-","-","-","-","-"
+"lzBestMatchFilter_6_65536_s (2)",,"-","-","-","-","-","-","no",0,0,667,684,0
+"lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter (1)",,"-","-","-","-",0,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,425,421,0
+"lz_bestMatchFilter",,"-","-","-",3,2,"-","yes","-","-","-","-","-"
+"lz_bestMatchFilter_left_over",,"-",6,42.000,1,"-",6,"no","-","-","-","-","-"
+"lzBooster_255_16384_64_s (2)",,-0.25,"-","-","-","-","-","no",8,0,381,921,0
+"lzBooster_255_16384_64_Pipeline_lz_booster (1)","Timing Violation",-0.25,"-","-","-",0,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,248,574,0
+"lz_booster",,"-","-","-",4,2,"-","yes","-","-","-","-","-"
+"lz_booster_left_bytes",,"-",64,448.000,1,"-",64,"no","-","-","-","-","-"
+"entry_proc",,"-",0,0.0,"-",0,"-","no",0,0,3,29,0
+"lz4Compress_4096_8_s (2)",,"-","-","-","-","-","-","dataflow",36,0,1290,2133,0
+"lz4CompressPart1_4096_8_s (1)",,"-","-","-","-","-","-","no",0,0,451,627,0
+"lz4CompressPart1_4096_8_Pipeline_lz4_divide (1)",,"-","-","-","-",0,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,206,370,0
+"lz4_divide",,"-","-","-",2,2,"-","yes","-","-","-","-","-"
+"lz4CompressPart2 (1)",,"-","-","-","-","-","-","no",0,0,416,1271,0
+"lz4CompressPart2_Pipeline_lz4_compress (1)",,"-","-","-","-",0,"-","loop auto-rewind stp (delay=0 clock cycles(s))",0,0,378,1151,0
+"lz4_compress",,"-","-","-",5,4,"-","yes","-","-","-","-","-"

@@ -1,0 +1,828 @@
+10/31/25 11:33:19: Running xcd server. This server was built by gradle.
+10/31/25 11:33:19: Server was asked to start on port: '65430'
+10/31/25 11:33:19: Server is using token UUID: 'cf6f4ef6-7353-4ff9-a0fa-40859e54f688'
+10/31/25 11:33:19: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 11:33:19: Attempting to start server on port '65430'
+10/31/25 11:33:19: Running Dispatch Server
+10/31/25 11:33:19: Version 2.2.0
+10/31/25 11:33:21: Dispatch Server: Accepted socket connection from client
+10/31/25 11:33:21: Starting Socket connection
+10/31/25 11:33:21: EXCHANGE_TOKEN received, server token: cf6f4ef6-7353-4ff9-a0fa-40859e54f688, passed token: cf6f4ef6-7353-4ff9-a0fa-40859e54f688
+10/31/25 11:33:21: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 11:33:21: SESSION_MGR: creating session with session uuid: '66949ef3-5305-4010-9db3-f653ec785e44' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:21: KERNEL_SVC: creating session with uuid: '66949ef3-5305-4010-9db3-f653ec785e44' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:21: GUIDANCE_SMGR: creating guidance session with uuid: '66949ef3-5305-4010-9db3-f653ec785e44' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:21: SYSTEM_DIAGRAM: creating session with uuid: '66949ef3-5305-4010-9db3-f653ec785e44' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:27: Dispatch Server: Accepted socket connection from client
+10/31/25 11:33:27: Starting Socket connection
+10/31/25 11:33:35: SESSION_MGR: closing session for UUID '66949ef3-5305-4010-9db3-f653ec785e44' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:35: KERNEL_SVC: closing session for UUID '66949ef3-5305-4010-9db3-f653ec785e44' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:35: GUIDANCE_SMGR: closing session for UUID '66949ef3-5305-4010-9db3-f653ec785e44' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:35: SYSTEM_DIAGRAM: closing session for UUID '66949ef3-5305-4010-9db3-f653ec785e44' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:33:35: STOP_SERVER received, server token: cf6f4ef6-7353-4ff9-a0fa-40859e54f688, passed token: cf6f4ef6-7353-4ff9-a0fa-40859e54f688
+10/31/25 11:33:35: Socket received request to stop server.
+10/31/25 11:33:35: Dispatch Server: do_await_stop
+10/31/25 11:33:35: SERVER: destructor for server bound to port 65430
+10/31/25 11:33:45: Running xcd server. This server was built by gradle.
+10/31/25 11:33:45: Server was asked to start on port: '52375'
+10/31/25 11:33:45: Server is using token UUID: '3abc34fa-27b2-40e8-a629-5b95904281ef'
+10/31/25 11:33:45: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 11:33:45: Attempting to start server on port '52375'
+10/31/25 11:33:45: Running Dispatch Server
+10/31/25 11:33:45: Version 2.2.0
+10/31/25 11:33:47: Dispatch Server: Accepted socket connection from client
+10/31/25 11:33:47: Starting Socket connection
+10/31/25 11:33:47: EXCHANGE_TOKEN received, server token: 3abc34fa-27b2-40e8-a629-5b95904281ef, passed token: 3abc34fa-27b2-40e8-a629-5b95904281ef
+10/31/25 11:33:47: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 11:33:47: SESSION_MGR: creating session with session uuid: '7712fd92-3546-4ab9-bbad-2efca99a1dd1' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:33:47: KERNEL_SVC: creating session with uuid: '7712fd92-3546-4ab9-bbad-2efca99a1dd1' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:33:47: GUIDANCE_SMGR: creating guidance session with uuid: '7712fd92-3546-4ab9-bbad-2efca99a1dd1' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:33:47: SYSTEM_DIAGRAM: creating session with uuid: '7712fd92-3546-4ab9-bbad-2efca99a1dd1' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:33:54: Dispatch Server: Accepted socket connection from client
+10/31/25 11:33:54: Starting Socket connection
+10/31/25 11:34:43: SESSION_MGR: closing session for UUID '7712fd92-3546-4ab9-bbad-2efca99a1dd1' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:34:43: KERNEL_SVC: closing session for UUID '7712fd92-3546-4ab9-bbad-2efca99a1dd1' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:34:43: GUIDANCE_SMGR: closing session for UUID '7712fd92-3546-4ab9-bbad-2efca99a1dd1' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:34:43: SYSTEM_DIAGRAM: closing session for UUID '7712fd92-3546-4ab9-bbad-2efca99a1dd1' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 11:34:43: STOP_SERVER received, server token: 3abc34fa-27b2-40e8-a629-5b95904281ef, passed token: 3abc34fa-27b2-40e8-a629-5b95904281ef
+10/31/25 11:34:43: Socket received request to stop server.
+10/31/25 11:34:43: Dispatch Server: do_await_stop
+10/31/25 11:34:43: SERVER: destructor for server bound to port 52375
+10/31/25 11:34:51: Running xcd server. This server was built by gradle.
+10/31/25 11:34:51: Server was asked to start on port: '52755'
+10/31/25 11:34:51: Server is using token UUID: 'fbcd77f5-1343-4435-a657-d2bc6acc9b35'
+10/31/25 11:34:51: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 11:34:51: Attempting to start server on port '52755'
+10/31/25 11:34:51: Running Dispatch Server
+10/31/25 11:34:51: Version 2.2.0
+10/31/25 11:34:52: Dispatch Server: Accepted socket connection from client
+10/31/25 11:34:52: Starting Socket connection
+10/31/25 11:34:52: EXCHANGE_TOKEN received, server token: fbcd77f5-1343-4435-a657-d2bc6acc9b35, passed token: fbcd77f5-1343-4435-a657-d2bc6acc9b35
+10/31/25 11:34:53: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 11:34:53: SESSION_MGR: creating session with session uuid: '55792333-3059-4831-bc46-9a9dd6d37c75' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:34:53: KERNEL_SVC: creating session with uuid: '55792333-3059-4831-bc46-9a9dd6d37c75' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:34:53: GUIDANCE_SMGR: creating guidance session with uuid: '55792333-3059-4831-bc46-9a9dd6d37c75' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:34:53: SYSTEM_DIAGRAM: creating session with uuid: '55792333-3059-4831-bc46-9a9dd6d37c75' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:34:59: Dispatch Server: Accepted socket connection from client
+10/31/25 11:34:59: Starting Socket connection
+10/31/25 11:35:46: SESSION_MGR: closing session for UUID '55792333-3059-4831-bc46-9a9dd6d37c75' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:46: KERNEL_SVC: closing session for UUID '55792333-3059-4831-bc46-9a9dd6d37c75' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:46: GUIDANCE_SMGR: closing session for UUID '55792333-3059-4831-bc46-9a9dd6d37c75' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:46: SYSTEM_DIAGRAM: closing session for UUID '55792333-3059-4831-bc46-9a9dd6d37c75' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:46: STOP_SERVER received, server token: fbcd77f5-1343-4435-a657-d2bc6acc9b35, passed token: fbcd77f5-1343-4435-a657-d2bc6acc9b35
+10/31/25 11:35:46: Socket received request to stop server.
+10/31/25 11:35:46: Dispatch Server: do_await_stop
+10/31/25 11:35:46: SERVER: destructor for server bound to port 52755
+10/31/25 11:35:55: Running xcd server. This server was built by gradle.
+10/31/25 11:35:55: Server was asked to start on port: '52841'
+10/31/25 11:35:55: Server is using token UUID: '6e9683a8-8d58-4098-a79b-e82cc31a18d7'
+10/31/25 11:35:55: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 11:35:55: Attempting to start server on port '52841'
+10/31/25 11:35:55: Running Dispatch Server
+10/31/25 11:35:55: Version 2.2.0
+10/31/25 11:35:57: Dispatch Server: Accepted socket connection from client
+10/31/25 11:35:57: Starting Socket connection
+10/31/25 11:35:57: EXCHANGE_TOKEN received, server token: 6e9683a8-8d58-4098-a79b-e82cc31a18d7, passed token: 6e9683a8-8d58-4098-a79b-e82cc31a18d7
+10/31/25 11:35:57: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 11:35:57: SESSION_MGR: creating session with session uuid: '2e7773aa-ea42-4325-bbc6-564c103662e6' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:57: KERNEL_SVC: creating session with uuid: '2e7773aa-ea42-4325-bbc6-564c103662e6' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:57: GUIDANCE_SMGR: creating guidance session with uuid: '2e7773aa-ea42-4325-bbc6-564c103662e6' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:35:57: SYSTEM_DIAGRAM: creating session with uuid: '2e7773aa-ea42-4325-bbc6-564c103662e6' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:36:04: Dispatch Server: Accepted socket connection from client
+10/31/25 11:36:04: Starting Socket connection
+10/31/25 11:36:43: Dispatch Server: Accepted socket connection from client
+10/31/25 11:36:43: Starting Socket connection
+10/31/25 11:37:58: Dispatch Server: Accepted socket connection from client
+10/31/25 11:37:58: Starting Socket connection
+10/31/25 11:38:53: SESSION_MGR: closing session for UUID '2e7773aa-ea42-4325-bbc6-564c103662e6' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:38:53: KERNEL_SVC: closing session for UUID '2e7773aa-ea42-4325-bbc6-564c103662e6' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:38:53: GUIDANCE_SMGR: closing session for UUID '2e7773aa-ea42-4325-bbc6-564c103662e6' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:38:53: SYSTEM_DIAGRAM: closing session for UUID '2e7773aa-ea42-4325-bbc6-564c103662e6' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 11:38:53: STOP_SERVER received, server token: 6e9683a8-8d58-4098-a79b-e82cc31a18d7, passed token: 6e9683a8-8d58-4098-a79b-e82cc31a18d7
+10/31/25 11:38:53: Socket received request to stop server.
+10/31/25 11:38:53: Dispatch Server: do_await_stop
+10/31/25 11:38:53: SERVER: destructor for server bound to port 52841
+10/31/25 12:06:11: Running xcd server. This server was built by gradle.
+10/31/25 12:06:11: Server was asked to start on port: '63910'
+10/31/25 12:06:11: Server is using token UUID: '33aafda5-0aa6-4fdd-b6c7-1edb23a6b115'
+10/31/25 12:06:11: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 12:06:11: Attempting to start server on port '63910'
+10/31/25 12:06:11: Running Dispatch Server
+10/31/25 12:06:11: Version 2.2.0
+10/31/25 12:06:13: Dispatch Server: Accepted socket connection from client
+10/31/25 12:06:13: Starting Socket connection
+10/31/25 12:06:13: EXCHANGE_TOKEN received, server token: 33aafda5-0aa6-4fdd-b6c7-1edb23a6b115, passed token: 33aafda5-0aa6-4fdd-b6c7-1edb23a6b115
+10/31/25 12:06:13: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 12:06:13: SESSION_MGR: creating session with session uuid: '683b7964-4a75-4b1f-af99-8fb779439dfc' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:13: KERNEL_SVC: creating session with uuid: '683b7964-4a75-4b1f-af99-8fb779439dfc' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:13: GUIDANCE_SMGR: creating guidance session with uuid: '683b7964-4a75-4b1f-af99-8fb779439dfc' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:13: SYSTEM_DIAGRAM: creating session with uuid: '683b7964-4a75-4b1f-af99-8fb779439dfc' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:19: Dispatch Server: Accepted socket connection from client
+10/31/25 12:06:19: Starting Socket connection
+10/31/25 12:06:24: SESSION_MGR: closing session for UUID '683b7964-4a75-4b1f-af99-8fb779439dfc' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:24: KERNEL_SVC: closing session for UUID '683b7964-4a75-4b1f-af99-8fb779439dfc' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:24: GUIDANCE_SMGR: closing session for UUID '683b7964-4a75-4b1f-af99-8fb779439dfc' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:24: SYSTEM_DIAGRAM: closing session for UUID '683b7964-4a75-4b1f-af99-8fb779439dfc' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:06:24: STOP_SERVER received, server token: 33aafda5-0aa6-4fdd-b6c7-1edb23a6b115, passed token: 33aafda5-0aa6-4fdd-b6c7-1edb23a6b115
+10/31/25 12:06:24: Socket received request to stop server.
+10/31/25 12:06:24: Dispatch Server: do_await_stop
+10/31/25 12:06:24: SERVER: destructor for server bound to port 63910
+10/31/25 12:06:46: Running xcd server. This server was built by gradle.
+10/31/25 12:06:46: Server was asked to start on port: '63944'
+10/31/25 12:06:46: Server is using token UUID: 'cf6fd66a-b293-496c-839b-f7827aa59fe9'
+10/31/25 12:06:46: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 12:06:46: Attempting to start server on port '63944'
+10/31/25 12:06:46: Running Dispatch Server
+10/31/25 12:06:46: Version 2.2.0
+10/31/25 12:06:47: Dispatch Server: Accepted socket connection from client
+10/31/25 12:06:47: Starting Socket connection
+10/31/25 12:06:47: EXCHANGE_TOKEN received, server token: cf6fd66a-b293-496c-839b-f7827aa59fe9, passed token: cf6fd66a-b293-496c-839b-f7827aa59fe9
+10/31/25 12:06:48: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 12:06:48: SESSION_MGR: creating session with session uuid: '47b0b75d-ca23-4ce2-a85a-e796574849a3' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:06:48: KERNEL_SVC: creating session with uuid: '47b0b75d-ca23-4ce2-a85a-e796574849a3' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:06:48: GUIDANCE_SMGR: creating guidance session with uuid: '47b0b75d-ca23-4ce2-a85a-e796574849a3' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:06:48: SYSTEM_DIAGRAM: creating session with uuid: '47b0b75d-ca23-4ce2-a85a-e796574849a3' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:06:54: Dispatch Server: Accepted socket connection from client
+10/31/25 12:06:54: Starting Socket connection
+10/31/25 12:07:39: SESSION_MGR: closing session for UUID '47b0b75d-ca23-4ce2-a85a-e796574849a3' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:07:39: KERNEL_SVC: closing session for UUID '47b0b75d-ca23-4ce2-a85a-e796574849a3' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:07:39: GUIDANCE_SMGR: closing session for UUID '47b0b75d-ca23-4ce2-a85a-e796574849a3' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:07:39: SYSTEM_DIAGRAM: closing session for UUID '47b0b75d-ca23-4ce2-a85a-e796574849a3' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 12:07:39: STOP_SERVER received, server token: cf6fd66a-b293-496c-839b-f7827aa59fe9, passed token: cf6fd66a-b293-496c-839b-f7827aa59fe9
+10/31/25 12:07:39: Socket received request to stop server.
+10/31/25 12:07:39: Dispatch Server: do_await_stop
+10/31/25 12:07:39: SERVER: destructor for server bound to port 63944
+10/31/25 12:07:48: Running xcd server. This server was built by gradle.
+10/31/25 12:07:48: Server was asked to start on port: '64001'
+10/31/25 12:07:48: Server is using token UUID: '9aaaf3ae-49b8-4863-897f-67e0ec0b1f06'
+10/31/25 12:07:48: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 12:07:48: Attempting to start server on port '64001'
+10/31/25 12:07:48: Running Dispatch Server
+10/31/25 12:07:48: Version 2.2.0
+10/31/25 12:07:50: Dispatch Server: Accepted socket connection from client
+10/31/25 12:07:50: Starting Socket connection
+10/31/25 12:07:50: EXCHANGE_TOKEN received, server token: 9aaaf3ae-49b8-4863-897f-67e0ec0b1f06, passed token: 9aaaf3ae-49b8-4863-897f-67e0ec0b1f06
+10/31/25 12:07:50: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 12:07:50: SESSION_MGR: creating session with session uuid: '02a52803-926f-4b25-a647-08f360a74ca5' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:07:50: KERNEL_SVC: creating session with uuid: '02a52803-926f-4b25-a647-08f360a74ca5' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:07:50: GUIDANCE_SMGR: creating guidance session with uuid: '02a52803-926f-4b25-a647-08f360a74ca5' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:07:50: SYSTEM_DIAGRAM: creating session with uuid: '02a52803-926f-4b25-a647-08f360a74ca5' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:07:56: Dispatch Server: Accepted socket connection from client
+10/31/25 12:07:56: Starting Socket connection
+10/31/25 12:08:42: SESSION_MGR: closing session for UUID '02a52803-926f-4b25-a647-08f360a74ca5' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:08:42: KERNEL_SVC: closing session for UUID '02a52803-926f-4b25-a647-08f360a74ca5' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:08:42: GUIDANCE_SMGR: closing session for UUID '02a52803-926f-4b25-a647-08f360a74ca5' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:08:42: SYSTEM_DIAGRAM: closing session for UUID '02a52803-926f-4b25-a647-08f360a74ca5' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:08:42: STOP_SERVER received, server token: 9aaaf3ae-49b8-4863-897f-67e0ec0b1f06, passed token: 9aaaf3ae-49b8-4863-897f-67e0ec0b1f06
+10/31/25 12:08:42: Socket received request to stop server.
+10/31/25 12:08:42: Dispatch Server: do_await_stop
+10/31/25 12:08:42: SERVER: destructor for server bound to port 64001
+10/31/25 12:09:02: Running xcd server. This server was built by gradle.
+10/31/25 12:09:02: Server was asked to start on port: '64069'
+10/31/25 12:09:02: Server is using token UUID: '9b03568d-8377-443e-9c09-50ba6870fdeb'
+10/31/25 12:09:02: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 12:09:02: Attempting to start server on port '64069'
+10/31/25 12:09:02: Running Dispatch Server
+10/31/25 12:09:02: Version 2.2.0
+10/31/25 12:09:03: Dispatch Server: Accepted socket connection from client
+10/31/25 12:09:03: Starting Socket connection
+10/31/25 12:09:03: EXCHANGE_TOKEN received, server token: 9b03568d-8377-443e-9c09-50ba6870fdeb, passed token: 9b03568d-8377-443e-9c09-50ba6870fdeb
+10/31/25 12:09:04: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 12:09:04: SESSION_MGR: creating session with session uuid: '058cb39b-d513-4849-be40-7b5b69946a98' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:09:04: KERNEL_SVC: creating session with uuid: '058cb39b-d513-4849-be40-7b5b69946a98' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:09:04: GUIDANCE_SMGR: creating guidance session with uuid: '058cb39b-d513-4849-be40-7b5b69946a98' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:09:04: SYSTEM_DIAGRAM: creating session with uuid: '058cb39b-d513-4849-be40-7b5b69946a98' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:09:11: Dispatch Server: Accepted socket connection from client
+10/31/25 12:09:11: Starting Socket connection
+10/31/25 12:09:53: Dispatch Server: Accepted socket connection from client
+10/31/25 12:09:53: Starting Socket connection
+10/31/25 12:11:09: Dispatch Server: Accepted socket connection from client
+10/31/25 12:11:09: Starting Socket connection
+10/31/25 12:12:08: SESSION_MGR: closing session for UUID '058cb39b-d513-4849-be40-7b5b69946a98' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:12:08: KERNEL_SVC: closing session for UUID '058cb39b-d513-4849-be40-7b5b69946a98' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:12:08: GUIDANCE_SMGR: closing session for UUID '058cb39b-d513-4849-be40-7b5b69946a98' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:12:08: SYSTEM_DIAGRAM: closing session for UUID '058cb39b-d513-4849-be40-7b5b69946a98' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:12:08: STOP_SERVER received, server token: 9b03568d-8377-443e-9c09-50ba6870fdeb, passed token: 9b03568d-8377-443e-9c09-50ba6870fdeb
+10/31/25 12:12:08: Socket received request to stop server.
+10/31/25 12:12:08: Dispatch Server: do_await_stop
+10/31/25 12:12:08: SERVER: destructor for server bound to port 64069
+10/31/25 12:31:08: Running xcd server. This server was built by gradle.
+10/31/25 12:31:08: Server was asked to start on port: '58221'
+10/31/25 12:31:08: Server is using token UUID: 'ecab198b-7f3e-4069-9e75-51e4da751280'
+10/31/25 12:31:08: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 12:31:08: Attempting to start server on port '58221'
+10/31/25 12:31:08: Running Dispatch Server
+10/31/25 12:31:08: Version 2.2.0
+10/31/25 12:31:09: Dispatch Server: Accepted socket connection from client
+10/31/25 12:31:09: Starting Socket connection
+10/31/25 12:31:09: EXCHANGE_TOKEN received, server token: ecab198b-7f3e-4069-9e75-51e4da751280, passed token: ecab198b-7f3e-4069-9e75-51e4da751280
+10/31/25 12:31:10: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 12:31:10: SESSION_MGR: creating session with session uuid: '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:10: KERNEL_SVC: creating session with uuid: '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:10: GUIDANCE_SMGR: creating guidance session with uuid: '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:10: SYSTEM_DIAGRAM: creating session with uuid: '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:16: Dispatch Server: Accepted socket connection from client
+10/31/25 12:31:16: Starting Socket connection
+10/31/25 12:31:24: SESSION_MGR: closing session for UUID '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:24: KERNEL_SVC: closing session for UUID '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:24: GUIDANCE_SMGR: closing session for UUID '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:24: SYSTEM_DIAGRAM: closing session for UUID '7d3f28f6-11e0-4525-8a27-7d75a8bd54ad' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 12:31:24: STOP_SERVER received, server token: ecab198b-7f3e-4069-9e75-51e4da751280, passed token: ecab198b-7f3e-4069-9e75-51e4da751280
+10/31/25 12:31:24: Socket received request to stop server.
+10/31/25 12:31:24: Dispatch Server: do_await_stop
+10/31/25 12:31:24: SERVER: destructor for server bound to port 58221
+10/31/25 13:17:52: Running xcd server. This server was built by gradle.
+10/31/25 13:17:52: Server was asked to start on port: '59504'
+10/31/25 13:17:52: Server is using token UUID: '22ff66c9-2bf6-4c28-a203-1283daa66738'
+10/31/25 13:17:52: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:17:52: Attempting to start server on port '59504'
+10/31/25 13:17:52: Running Dispatch Server
+10/31/25 13:17:52: Version 2.2.0
+10/31/25 13:17:53: Dispatch Server: Accepted socket connection from client
+10/31/25 13:17:53: Starting Socket connection
+10/31/25 13:17:53: EXCHANGE_TOKEN received, server token: 22ff66c9-2bf6-4c28-a203-1283daa66738, passed token: 22ff66c9-2bf6-4c28-a203-1283daa66738
+10/31/25 13:17:54: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:17:54: SESSION_MGR: creating session with session uuid: '2812af8a-011f-4b38-ab20-a78f6e8c46dd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:17:54: KERNEL_SVC: creating session with uuid: '2812af8a-011f-4b38-ab20-a78f6e8c46dd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:17:54: GUIDANCE_SMGR: creating guidance session with uuid: '2812af8a-011f-4b38-ab20-a78f6e8c46dd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:17:54: SYSTEM_DIAGRAM: creating session with uuid: '2812af8a-011f-4b38-ab20-a78f6e8c46dd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:18:00: Dispatch Server: Accepted socket connection from client
+10/31/25 13:18:00: Starting Socket connection
+10/31/25 13:18:59: SESSION_MGR: closing session for UUID '2812af8a-011f-4b38-ab20-a78f6e8c46dd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:18:59: KERNEL_SVC: closing session for UUID '2812af8a-011f-4b38-ab20-a78f6e8c46dd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:18:59: GUIDANCE_SMGR: closing session for UUID '2812af8a-011f-4b38-ab20-a78f6e8c46dd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:18:59: SYSTEM_DIAGRAM: closing session for UUID '2812af8a-011f-4b38-ab20-a78f6e8c46dd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:18:59: STOP_SERVER received, server token: 22ff66c9-2bf6-4c28-a203-1283daa66738, passed token: 22ff66c9-2bf6-4c28-a203-1283daa66738
+10/31/25 13:18:59: Socket received request to stop server.
+10/31/25 13:18:59: Dispatch Server: do_await_stop
+10/31/25 13:18:59: SERVER: destructor for server bound to port 59504
+10/31/25 13:30:56: Running xcd server. This server was built by gradle.
+10/31/25 13:30:56: Server was asked to start on port: '52645'
+10/31/25 13:30:56: Server is using token UUID: 'ea098b63-0fc0-4b16-859e-a31bfc2602e9'
+10/31/25 13:30:56: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:30:56: Attempting to start server on port '52645'
+10/31/25 13:30:56: Running Dispatch Server
+10/31/25 13:30:56: Version 2.2.0
+10/31/25 13:30:58: Dispatch Server: Accepted socket connection from client
+10/31/25 13:30:58: Starting Socket connection
+10/31/25 13:30:58: EXCHANGE_TOKEN received, server token: ea098b63-0fc0-4b16-859e-a31bfc2602e9, passed token: ea098b63-0fc0-4b16-859e-a31bfc2602e9
+10/31/25 13:30:58: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:30:58: SESSION_MGR: creating session with session uuid: 'edf05542-4b37-49a7-afab-b118fc504835' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:30:58: KERNEL_SVC: creating session with uuid: 'edf05542-4b37-49a7-afab-b118fc504835' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:30:58: GUIDANCE_SMGR: creating guidance session with uuid: 'edf05542-4b37-49a7-afab-b118fc504835' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:30:58: SYSTEM_DIAGRAM: creating session with uuid: 'edf05542-4b37-49a7-afab-b118fc504835' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:31:04: Dispatch Server: Accepted socket connection from client
+10/31/25 13:31:04: Starting Socket connection
+10/31/25 13:31:06: SESSION_MGR: closing session for UUID 'edf05542-4b37-49a7-afab-b118fc504835' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:31:06: KERNEL_SVC: closing session for UUID 'edf05542-4b37-49a7-afab-b118fc504835' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:31:06: GUIDANCE_SMGR: closing session for UUID 'edf05542-4b37-49a7-afab-b118fc504835' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:31:06: SYSTEM_DIAGRAM: closing session for UUID 'edf05542-4b37-49a7-afab-b118fc504835' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:31:06: STOP_SERVER received, server token: ea098b63-0fc0-4b16-859e-a31bfc2602e9, passed token: ea098b63-0fc0-4b16-859e-a31bfc2602e9
+10/31/25 13:31:06: Socket received request to stop server.
+10/31/25 13:31:06: Dispatch Server: do_await_stop
+10/31/25 13:31:06: SERVER: destructor for server bound to port 52645
+10/31/25 13:32:03: Running xcd server. This server was built by gradle.
+10/31/25 13:32:03: Server was asked to start on port: '52731'
+10/31/25 13:32:03: Server is using token UUID: 'a2b85019-fbcd-406e-8fdd-916832206fdd'
+10/31/25 13:32:03: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:32:03: Attempting to start server on port '52731'
+10/31/25 13:32:03: Running Dispatch Server
+10/31/25 13:32:03: Version 2.2.0
+10/31/25 13:32:05: Dispatch Server: Accepted socket connection from client
+10/31/25 13:32:05: Starting Socket connection
+10/31/25 13:32:05: EXCHANGE_TOKEN received, server token: a2b85019-fbcd-406e-8fdd-916832206fdd, passed token: a2b85019-fbcd-406e-8fdd-916832206fdd
+10/31/25 13:32:05: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:32:05: SESSION_MGR: creating session with session uuid: '7a41f643-8430-4e62-99b0-b0d49bac302c' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:05: KERNEL_SVC: creating session with uuid: '7a41f643-8430-4e62-99b0-b0d49bac302c' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:05: GUIDANCE_SMGR: creating guidance session with uuid: '7a41f643-8430-4e62-99b0-b0d49bac302c' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:05: SYSTEM_DIAGRAM: creating session with uuid: '7a41f643-8430-4e62-99b0-b0d49bac302c' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:12: Dispatch Server: Accepted socket connection from client
+10/31/25 13:32:12: Starting Socket connection
+10/31/25 13:32:14: SESSION_MGR: closing session for UUID '7a41f643-8430-4e62-99b0-b0d49bac302c' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:14: KERNEL_SVC: closing session for UUID '7a41f643-8430-4e62-99b0-b0d49bac302c' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:14: GUIDANCE_SMGR: closing session for UUID '7a41f643-8430-4e62-99b0-b0d49bac302c' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:14: SYSTEM_DIAGRAM: closing session for UUID '7a41f643-8430-4e62-99b0-b0d49bac302c' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:32:14: STOP_SERVER received, server token: a2b85019-fbcd-406e-8fdd-916832206fdd, passed token: a2b85019-fbcd-406e-8fdd-916832206fdd
+10/31/25 13:32:14: Socket received request to stop server.
+10/31/25 13:32:14: Dispatch Server: do_await_stop
+10/31/25 13:32:14: SERVER: destructor for server bound to port 52731
+10/31/25 13:38:17: Running xcd server. This server was built by gradle.
+10/31/25 13:38:17: Server was asked to start on port: '53296'
+10/31/25 13:38:17: Server is using token UUID: '2e675ba9-abd4-4cd1-a642-03a3dc902948'
+10/31/25 13:38:17: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:38:17: Attempting to start server on port '53296'
+10/31/25 13:38:17: Running Dispatch Server
+10/31/25 13:38:17: Version 2.2.0
+10/31/25 13:38:19: Dispatch Server: Accepted socket connection from client
+10/31/25 13:38:19: Starting Socket connection
+10/31/25 13:38:19: EXCHANGE_TOKEN received, server token: 2e675ba9-abd4-4cd1-a642-03a3dc902948, passed token: 2e675ba9-abd4-4cd1-a642-03a3dc902948
+10/31/25 13:38:19: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:38:19: SESSION_MGR: creating session with session uuid: '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:19: KERNEL_SVC: creating session with uuid: '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:19: GUIDANCE_SMGR: creating guidance session with uuid: '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:19: SYSTEM_DIAGRAM: creating session with uuid: '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:26: Dispatch Server: Accepted socket connection from client
+10/31/25 13:38:26: Starting Socket connection
+10/31/25 13:38:32: SESSION_MGR: closing session for UUID '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:32: KERNEL_SVC: closing session for UUID '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:32: GUIDANCE_SMGR: closing session for UUID '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:32: SYSTEM_DIAGRAM: closing session for UUID '2fcd0b01-de7d-49f8-8e71-d33c4bec05bd' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:38:32: STOP_SERVER received, server token: 2e675ba9-abd4-4cd1-a642-03a3dc902948, passed token: 2e675ba9-abd4-4cd1-a642-03a3dc902948
+10/31/25 13:38:32: Socket received request to stop server.
+10/31/25 13:38:32: Dispatch Server: do_await_stop
+10/31/25 13:38:32: SERVER: destructor for server bound to port 53296
+10/31/25 13:38:54: Running xcd server. This server was built by gradle.
+10/31/25 13:38:54: Server was asked to start on port: '53354'
+10/31/25 13:38:54: Server is using token UUID: 'd98129c4-c3d7-4606-90e7-d699fc78777c'
+10/31/25 13:38:54: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:38:54: Attempting to start server on port '53354'
+10/31/25 13:38:54: Running Dispatch Server
+10/31/25 13:38:54: Version 2.2.0
+10/31/25 13:38:56: Dispatch Server: Accepted socket connection from client
+10/31/25 13:38:56: Starting Socket connection
+10/31/25 13:38:56: EXCHANGE_TOKEN received, server token: d98129c4-c3d7-4606-90e7-d699fc78777c, passed token: d98129c4-c3d7-4606-90e7-d699fc78777c
+10/31/25 13:38:56: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:38:56: SESSION_MGR: creating session with session uuid: '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:38:56: KERNEL_SVC: creating session with uuid: '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:38:56: GUIDANCE_SMGR: creating guidance session with uuid: '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:38:56: SYSTEM_DIAGRAM: creating session with uuid: '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:39:03: Dispatch Server: Accepted socket connection from client
+10/31/25 13:39:03: Starting Socket connection
+10/31/25 13:39:58: SESSION_MGR: closing session for UUID '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:39:58: KERNEL_SVC: closing session for UUID '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:39:58: GUIDANCE_SMGR: closing session for UUID '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:39:58: SYSTEM_DIAGRAM: closing session for UUID '39c18f05-bd3b-4302-9a6a-fbf58293a6fd' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:39:58: STOP_SERVER received, server token: d98129c4-c3d7-4606-90e7-d699fc78777c, passed token: d98129c4-c3d7-4606-90e7-d699fc78777c
+10/31/25 13:39:58: Socket received request to stop server.
+10/31/25 13:39:58: Dispatch Server: do_await_stop
+10/31/25 13:39:58: SERVER: destructor for server bound to port 53354
+10/31/25 13:40:28: Running xcd server. This server was built by gradle.
+10/31/25 13:40:28: Server was asked to start on port: '53459'
+10/31/25 13:40:28: Server is using token UUID: '6a97af7a-7884-41b2-ae0e-5d86868065f2'
+10/31/25 13:40:28: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:40:28: Attempting to start server on port '53459'
+10/31/25 13:40:28: Running Dispatch Server
+10/31/25 13:40:28: Version 2.2.0
+10/31/25 13:40:30: Dispatch Server: Accepted socket connection from client
+10/31/25 13:40:30: Starting Socket connection
+10/31/25 13:40:30: EXCHANGE_TOKEN received, server token: 6a97af7a-7884-41b2-ae0e-5d86868065f2, passed token: 6a97af7a-7884-41b2-ae0e-5d86868065f2
+10/31/25 13:40:30: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:40:30: SESSION_MGR: creating session with session uuid: '05ba7788-c615-4f45-acc9-2ab7bcabba39' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:40:30: KERNEL_SVC: creating session with uuid: '05ba7788-c615-4f45-acc9-2ab7bcabba39' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:40:30: GUIDANCE_SMGR: creating guidance session with uuid: '05ba7788-c615-4f45-acc9-2ab7bcabba39' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:40:30: SYSTEM_DIAGRAM: creating session with uuid: '05ba7788-c615-4f45-acc9-2ab7bcabba39' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:40:37: Dispatch Server: Accepted socket connection from client
+10/31/25 13:40:37: Starting Socket connection
+10/31/25 13:41:26: SESSION_MGR: closing session for UUID '05ba7788-c615-4f45-acc9-2ab7bcabba39' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:26: KERNEL_SVC: closing session for UUID '05ba7788-c615-4f45-acc9-2ab7bcabba39' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:26: GUIDANCE_SMGR: closing session for UUID '05ba7788-c615-4f45-acc9-2ab7bcabba39' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:26: SYSTEM_DIAGRAM: closing session for UUID '05ba7788-c615-4f45-acc9-2ab7bcabba39' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:26: STOP_SERVER received, server token: 6a97af7a-7884-41b2-ae0e-5d86868065f2, passed token: 6a97af7a-7884-41b2-ae0e-5d86868065f2
+10/31/25 13:41:26: Socket received request to stop server.
+10/31/25 13:41:26: Dispatch Server: do_await_stop
+10/31/25 13:41:26: SERVER: destructor for server bound to port 53459
+10/31/25 13:41:48: Running xcd server. This server was built by gradle.
+10/31/25 13:41:48: Server was asked to start on port: '53571'
+10/31/25 13:41:48: Server is using token UUID: 'c1d1500a-5491-4a9e-ae58-ac614755f4b2'
+10/31/25 13:41:48: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:41:48: Attempting to start server on port '53571'
+10/31/25 13:41:48: Running Dispatch Server
+10/31/25 13:41:48: Version 2.2.0
+10/31/25 13:41:50: Dispatch Server: Accepted socket connection from client
+10/31/25 13:41:50: Starting Socket connection
+10/31/25 13:41:50: EXCHANGE_TOKEN received, server token: c1d1500a-5491-4a9e-ae58-ac614755f4b2, passed token: c1d1500a-5491-4a9e-ae58-ac614755f4b2
+10/31/25 13:41:50: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:41:50: SESSION_MGR: creating session with session uuid: 'd502dfba-ab39-4c1a-a618-f2cf528c1640' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:50: KERNEL_SVC: creating session with uuid: 'd502dfba-ab39-4c1a-a618-f2cf528c1640' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:50: GUIDANCE_SMGR: creating guidance session with uuid: 'd502dfba-ab39-4c1a-a618-f2cf528c1640' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:50: SYSTEM_DIAGRAM: creating session with uuid: 'd502dfba-ab39-4c1a-a618-f2cf528c1640' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:41:56: Dispatch Server: Accepted socket connection from client
+10/31/25 13:41:56: Starting Socket connection
+10/31/25 13:42:43: Dispatch Server: Accepted socket connection from client
+10/31/25 13:42:43: Starting Socket connection
+10/31/25 13:44:52: Dispatch Server: Accepted socket connection from client
+10/31/25 13:44:52: Starting Socket connection
+10/31/25 13:46:11: SESSION_MGR: closing session for UUID 'd502dfba-ab39-4c1a-a618-f2cf528c1640' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:11: KERNEL_SVC: closing session for UUID 'd502dfba-ab39-4c1a-a618-f2cf528c1640' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:11: GUIDANCE_SMGR: closing session for UUID 'd502dfba-ab39-4c1a-a618-f2cf528c1640' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:11: SYSTEM_DIAGRAM: closing session for UUID 'd502dfba-ab39-4c1a-a618-f2cf528c1640' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:11: STOP_SERVER received, server token: c1d1500a-5491-4a9e-ae58-ac614755f4b2, passed token: c1d1500a-5491-4a9e-ae58-ac614755f4b2
+10/31/25 13:46:11: Socket received request to stop server.
+10/31/25 13:46:11: Dispatch Server: do_await_stop
+10/31/25 13:46:11: SERVER: destructor for server bound to port 53571
+10/31/25 13:46:39: Running xcd server. This server was built by gradle.
+10/31/25 13:46:39: Server was asked to start on port: '53292'
+10/31/25 13:46:39: Server is using token UUID: 'dd6d8f2f-f815-4419-af54-00fcac4249a9'
+10/31/25 13:46:39: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:46:39: Attempting to start server on port '53292'
+10/31/25 13:46:39: Running Dispatch Server
+10/31/25 13:46:39: Version 2.2.0
+10/31/25 13:46:41: Dispatch Server: Accepted socket connection from client
+10/31/25 13:46:41: Starting Socket connection
+10/31/25 13:46:41: EXCHANGE_TOKEN received, server token: dd6d8f2f-f815-4419-af54-00fcac4249a9, passed token: dd6d8f2f-f815-4419-af54-00fcac4249a9
+10/31/25 13:46:41: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:46:41: SESSION_MGR: creating session with session uuid: '2a0be210-c821-4457-b25c-aec105ce8bc3' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:41: KERNEL_SVC: creating session with uuid: '2a0be210-c821-4457-b25c-aec105ce8bc3' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:41: GUIDANCE_SMGR: creating guidance session with uuid: '2a0be210-c821-4457-b25c-aec105ce8bc3' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:41: SYSTEM_DIAGRAM: creating session with uuid: '2a0be210-c821-4457-b25c-aec105ce8bc3' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:46:48: Dispatch Server: Accepted socket connection from client
+10/31/25 13:46:48: Starting Socket connection
+10/31/25 13:47:29: Dispatch Server: Accepted socket connection from client
+10/31/25 13:47:29: Starting Socket connection
+10/31/25 13:49:01: Dispatch Server: Accepted socket connection from client
+10/31/25 13:49:01: Starting Socket connection
+10/31/25 13:50:09: SESSION_MGR: closing session for UUID '2a0be210-c821-4457-b25c-aec105ce8bc3' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:50:09: KERNEL_SVC: closing session for UUID '2a0be210-c821-4457-b25c-aec105ce8bc3' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:50:09: GUIDANCE_SMGR: closing session for UUID '2a0be210-c821-4457-b25c-aec105ce8bc3' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:50:09: SYSTEM_DIAGRAM: closing session for UUID '2a0be210-c821-4457-b25c-aec105ce8bc3' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:50:09: STOP_SERVER received, server token: dd6d8f2f-f815-4419-af54-00fcac4249a9, passed token: dd6d8f2f-f815-4419-af54-00fcac4249a9
+10/31/25 13:50:09: Socket received request to stop server.
+10/31/25 13:50:09: Dispatch Server: do_await_stop
+10/31/25 13:50:09: SERVER: destructor for server bound to port 53292
+10/31/25 13:58:03: Running xcd server. This server was built by gradle.
+10/31/25 13:58:03: Server was asked to start on port: '54108'
+10/31/25 13:58:03: Server is using token UUID: '48b0580e-13eb-4f20-8902-45ab7ee3198b'
+10/31/25 13:58:03: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:58:03: Attempting to start server on port '54108'
+10/31/25 13:58:03: Running Dispatch Server
+10/31/25 13:58:03: Version 2.2.0
+10/31/25 13:58:05: Dispatch Server: Accepted socket connection from client
+10/31/25 13:58:05: Starting Socket connection
+10/31/25 13:58:05: EXCHANGE_TOKEN received, server token: 48b0580e-13eb-4f20-8902-45ab7ee3198b, passed token: 48b0580e-13eb-4f20-8902-45ab7ee3198b
+10/31/25 13:58:05: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:58:05: SESSION_MGR: creating session with session uuid: 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:05: KERNEL_SVC: creating session with uuid: 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:05: GUIDANCE_SMGR: creating guidance session with uuid: 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:05: SYSTEM_DIAGRAM: creating session with uuid: 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:11: Dispatch Server: Accepted socket connection from client
+10/31/25 13:58:11: Starting Socket connection
+10/31/25 13:58:16: SESSION_MGR: closing session for UUID 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:16: KERNEL_SVC: closing session for UUID 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:16: GUIDANCE_SMGR: closing session for UUID 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:16: SYSTEM_DIAGRAM: closing session for UUID 'b9d7f610-82d4-4ebd-8790-765e3c0d20c4' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 13:58:16: STOP_SERVER received, server token: 48b0580e-13eb-4f20-8902-45ab7ee3198b, passed token: 48b0580e-13eb-4f20-8902-45ab7ee3198b
+10/31/25 13:58:16: Socket received request to stop server.
+10/31/25 13:58:16: Dispatch Server: do_await_stop
+10/31/25 13:58:16: SERVER: destructor for server bound to port 54108
+10/31/25 13:58:22: Running xcd server. This server was built by gradle.
+10/31/25 13:58:22: Server was asked to start on port: '54118'
+10/31/25 13:58:22: Server is using token UUID: 'a0e225e1-3372-4740-b97e-88cd3ae3eecb'
+10/31/25 13:58:22: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 13:58:22: Attempting to start server on port '54118'
+10/31/25 13:58:22: Running Dispatch Server
+10/31/25 13:58:22: Version 2.2.0
+10/31/25 13:58:23: Dispatch Server: Accepted socket connection from client
+10/31/25 13:58:23: Starting Socket connection
+10/31/25 13:58:23: EXCHANGE_TOKEN received, server token: a0e225e1-3372-4740-b97e-88cd3ae3eecb, passed token: a0e225e1-3372-4740-b97e-88cd3ae3eecb
+10/31/25 13:58:23: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 13:58:23: SESSION_MGR: creating session with session uuid: 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:58:23: KERNEL_SVC: creating session with uuid: 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:58:23: GUIDANCE_SMGR: creating guidance session with uuid: 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:58:23: SYSTEM_DIAGRAM: creating session with uuid: 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:58:31: Dispatch Server: Accepted socket connection from client
+10/31/25 13:58:31: Starting Socket connection
+10/31/25 13:59:18: SESSION_MGR: closing session for UUID 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:59:18: KERNEL_SVC: closing session for UUID 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:59:18: GUIDANCE_SMGR: closing session for UUID 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:59:18: SYSTEM_DIAGRAM: closing session for UUID 'e4003cbb-2b4d-497d-8547-2f9f2096b4cc' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 13:59:18: STOP_SERVER received, server token: a0e225e1-3372-4740-b97e-88cd3ae3eecb, passed token: a0e225e1-3372-4740-b97e-88cd3ae3eecb
+10/31/25 13:59:18: Socket received request to stop server.
+10/31/25 13:59:18: Dispatch Server: do_await_stop
+10/31/25 13:59:18: SERVER: destructor for server bound to port 54118
+10/31/25 14:00:00: Running xcd server. This server was built by gradle.
+10/31/25 14:00:00: Server was asked to start on port: '54324'
+10/31/25 14:00:00: Server is using token UUID: 'c7821076-ee30-4f74-b5b8-78c69ebd2f1c'
+10/31/25 14:00:00: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:00:00: Attempting to start server on port '54324'
+10/31/25 14:00:00: Running Dispatch Server
+10/31/25 14:00:00: Version 2.2.0
+10/31/25 14:00:02: Dispatch Server: Accepted socket connection from client
+10/31/25 14:00:02: Starting Socket connection
+10/31/25 14:00:02: EXCHANGE_TOKEN received, server token: c7821076-ee30-4f74-b5b8-78c69ebd2f1c, passed token: c7821076-ee30-4f74-b5b8-78c69ebd2f1c
+10/31/25 14:00:02: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:00:02: SESSION_MGR: creating session with session uuid: '85535cd0-f6a6-49a0-8496-faae44c4f1a7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:02: KERNEL_SVC: creating session with uuid: '85535cd0-f6a6-49a0-8496-faae44c4f1a7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:02: GUIDANCE_SMGR: creating guidance session with uuid: '85535cd0-f6a6-49a0-8496-faae44c4f1a7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:02: SYSTEM_DIAGRAM: creating session with uuid: '85535cd0-f6a6-49a0-8496-faae44c4f1a7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:09: Dispatch Server: Accepted socket connection from client
+10/31/25 14:00:09: Starting Socket connection
+10/31/25 14:00:58: SESSION_MGR: closing session for UUID '85535cd0-f6a6-49a0-8496-faae44c4f1a7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:58: KERNEL_SVC: closing session for UUID '85535cd0-f6a6-49a0-8496-faae44c4f1a7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:58: GUIDANCE_SMGR: closing session for UUID '85535cd0-f6a6-49a0-8496-faae44c4f1a7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:58: SYSTEM_DIAGRAM: closing session for UUID '85535cd0-f6a6-49a0-8496-faae44c4f1a7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:00:58: STOP_SERVER received, server token: c7821076-ee30-4f74-b5b8-78c69ebd2f1c, passed token: c7821076-ee30-4f74-b5b8-78c69ebd2f1c
+10/31/25 14:00:58: Socket received request to stop server.
+10/31/25 14:00:58: Dispatch Server: do_await_stop
+10/31/25 14:00:58: SERVER: destructor for server bound to port 54324
+10/31/25 14:02:07: Running xcd server. This server was built by gradle.
+10/31/25 14:02:07: Server was asked to start on port: '54560'
+10/31/25 14:02:07: Server is using token UUID: 'f7430c16-d150-4333-a6bb-7e3f92d712c9'
+10/31/25 14:02:07: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:02:07: Attempting to start server on port '54560'
+10/31/25 14:02:07: Running Dispatch Server
+10/31/25 14:02:07: Version 2.2.0
+10/31/25 14:02:09: Dispatch Server: Accepted socket connection from client
+10/31/25 14:02:09: Starting Socket connection
+10/31/25 14:02:09: EXCHANGE_TOKEN received, server token: f7430c16-d150-4333-a6bb-7e3f92d712c9, passed token: f7430c16-d150-4333-a6bb-7e3f92d712c9
+10/31/25 14:02:09: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:02:09: SESSION_MGR: creating session with session uuid: '713712ad-a526-4fd9-9aad-ca0f87956469' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:02:09: KERNEL_SVC: creating session with uuid: '713712ad-a526-4fd9-9aad-ca0f87956469' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:02:09: GUIDANCE_SMGR: creating guidance session with uuid: '713712ad-a526-4fd9-9aad-ca0f87956469' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:02:09: SYSTEM_DIAGRAM: creating session with uuid: '713712ad-a526-4fd9-9aad-ca0f87956469' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:02:16: Dispatch Server: Accepted socket connection from client
+10/31/25 14:02:16: Starting Socket connection
+10/31/25 14:02:58: Dispatch Server: Accepted socket connection from client
+10/31/25 14:02:58: Starting Socket connection
+10/31/25 14:04:14: Dispatch Server: Accepted socket connection from client
+10/31/25 14:04:14: Starting Socket connection
+10/31/25 14:05:09: SESSION_MGR: closing session for UUID '713712ad-a526-4fd9-9aad-ca0f87956469' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:05:09: KERNEL_SVC: closing session for UUID '713712ad-a526-4fd9-9aad-ca0f87956469' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:05:09: GUIDANCE_SMGR: closing session for UUID '713712ad-a526-4fd9-9aad-ca0f87956469' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:05:09: SYSTEM_DIAGRAM: closing session for UUID '713712ad-a526-4fd9-9aad-ca0f87956469' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:05:09: STOP_SERVER received, server token: f7430c16-d150-4333-a6bb-7e3f92d712c9, passed token: f7430c16-d150-4333-a6bb-7e3f92d712c9
+10/31/25 14:05:09: Socket received request to stop server.
+10/31/25 14:05:09: Dispatch Server: do_await_stop
+10/31/25 14:05:09: SERVER: destructor for server bound to port 54560
+10/31/25 14:20:30: Running xcd server. This server was built by gradle.
+10/31/25 14:20:30: Server was asked to start on port: '56024'
+10/31/25 14:20:30: Server is using token UUID: '01b6e8fe-bee4-4fb4-9647-04a89f0350f9'
+10/31/25 14:20:30: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:20:30: Attempting to start server on port '56024'
+10/31/25 14:20:30: Running Dispatch Server
+10/31/25 14:20:30: Version 2.2.0
+10/31/25 14:20:31: Dispatch Server: Accepted socket connection from client
+10/31/25 14:20:31: Starting Socket connection
+10/31/25 14:20:31: EXCHANGE_TOKEN received, server token: 01b6e8fe-bee4-4fb4-9647-04a89f0350f9, passed token: 01b6e8fe-bee4-4fb4-9647-04a89f0350f9
+10/31/25 14:20:32: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:20:32: SESSION_MGR: creating session with session uuid: 'c9c09e61-6a17-45ee-be1d-383320d662cb' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:32: KERNEL_SVC: creating session with uuid: 'c9c09e61-6a17-45ee-be1d-383320d662cb' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:32: GUIDANCE_SMGR: creating guidance session with uuid: 'c9c09e61-6a17-45ee-be1d-383320d662cb' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:32: SYSTEM_DIAGRAM: creating session with uuid: 'c9c09e61-6a17-45ee-be1d-383320d662cb' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:39: Dispatch Server: Accepted socket connection from client
+10/31/25 14:20:39: Starting Socket connection
+10/31/25 14:20:44: SESSION_MGR: closing session for UUID 'c9c09e61-6a17-45ee-be1d-383320d662cb' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:44: KERNEL_SVC: closing session for UUID 'c9c09e61-6a17-45ee-be1d-383320d662cb' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:44: GUIDANCE_SMGR: closing session for UUID 'c9c09e61-6a17-45ee-be1d-383320d662cb' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:44: SYSTEM_DIAGRAM: closing session for UUID 'c9c09e61-6a17-45ee-be1d-383320d662cb' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:20:44: STOP_SERVER received, server token: 01b6e8fe-bee4-4fb4-9647-04a89f0350f9, passed token: 01b6e8fe-bee4-4fb4-9647-04a89f0350f9
+10/31/25 14:20:44: Socket received request to stop server.
+10/31/25 14:20:44: Dispatch Server: do_await_stop
+10/31/25 14:20:44: SERVER: destructor for server bound to port 56024
+10/31/25 14:20:52: Running xcd server. This server was built by gradle.
+10/31/25 14:20:52: Server was asked to start on port: '56059'
+10/31/25 14:20:52: Server is using token UUID: '6afe85eb-f590-41b9-addb-59090c1fbd99'
+10/31/25 14:20:52: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:20:52: Attempting to start server on port '56059'
+10/31/25 14:20:52: Running Dispatch Server
+10/31/25 14:20:52: Version 2.2.0
+10/31/25 14:20:54: Dispatch Server: Accepted socket connection from client
+10/31/25 14:20:54: Starting Socket connection
+10/31/25 14:20:54: EXCHANGE_TOKEN received, server token: 6afe85eb-f590-41b9-addb-59090c1fbd99, passed token: 6afe85eb-f590-41b9-addb-59090c1fbd99
+10/31/25 14:20:54: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:20:54: SESSION_MGR: creating session with session uuid: '4b20e8c3-91e3-47ae-832a-0aae0b9609db' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:20:54: KERNEL_SVC: creating session with uuid: '4b20e8c3-91e3-47ae-832a-0aae0b9609db' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:20:54: GUIDANCE_SMGR: creating guidance session with uuid: '4b20e8c3-91e3-47ae-832a-0aae0b9609db' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:20:54: SYSTEM_DIAGRAM: creating session with uuid: '4b20e8c3-91e3-47ae-832a-0aae0b9609db' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:21:01: Dispatch Server: Accepted socket connection from client
+10/31/25 14:21:01: Starting Socket connection
+10/31/25 14:21:46: SESSION_MGR: closing session for UUID '4b20e8c3-91e3-47ae-832a-0aae0b9609db' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:21:46: KERNEL_SVC: closing session for UUID '4b20e8c3-91e3-47ae-832a-0aae0b9609db' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:21:46: GUIDANCE_SMGR: closing session for UUID '4b20e8c3-91e3-47ae-832a-0aae0b9609db' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:21:46: SYSTEM_DIAGRAM: closing session for UUID '4b20e8c3-91e3-47ae-832a-0aae0b9609db' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:21:46: STOP_SERVER received, server token: 6afe85eb-f590-41b9-addb-59090c1fbd99, passed token: 6afe85eb-f590-41b9-addb-59090c1fbd99
+10/31/25 14:21:46: Socket received request to stop server.
+10/31/25 14:21:46: Dispatch Server: do_await_stop
+10/31/25 14:21:46: SERVER: destructor for server bound to port 56059
+10/31/25 14:21:59: Running xcd server. This server was built by gradle.
+10/31/25 14:21:59: Server was asked to start on port: '56129'
+10/31/25 14:21:59: Server is using token UUID: '447c3cd8-3961-47ba-a1bf-804fc423f028'
+10/31/25 14:21:59: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:21:59: Attempting to start server on port '56129'
+10/31/25 14:21:59: Running Dispatch Server
+10/31/25 14:21:59: Version 2.2.0
+10/31/25 14:22:01: Dispatch Server: Accepted socket connection from client
+10/31/25 14:22:01: Starting Socket connection
+10/31/25 14:22:01: EXCHANGE_TOKEN received, server token: 447c3cd8-3961-47ba-a1bf-804fc423f028, passed token: 447c3cd8-3961-47ba-a1bf-804fc423f028
+10/31/25 14:22:01: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:22:01: SESSION_MGR: creating session with session uuid: '2c7eaace-b1af-4be3-a2d6-675e358382ba' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:01: KERNEL_SVC: creating session with uuid: '2c7eaace-b1af-4be3-a2d6-675e358382ba' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:01: GUIDANCE_SMGR: creating guidance session with uuid: '2c7eaace-b1af-4be3-a2d6-675e358382ba' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:01: SYSTEM_DIAGRAM: creating session with uuid: '2c7eaace-b1af-4be3-a2d6-675e358382ba' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:08: Dispatch Server: Accepted socket connection from client
+10/31/25 14:22:08: Starting Socket connection
+10/31/25 14:22:56: SESSION_MGR: closing session for UUID '2c7eaace-b1af-4be3-a2d6-675e358382ba' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:56: KERNEL_SVC: closing session for UUID '2c7eaace-b1af-4be3-a2d6-675e358382ba' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:56: GUIDANCE_SMGR: closing session for UUID '2c7eaace-b1af-4be3-a2d6-675e358382ba' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:56: SYSTEM_DIAGRAM: closing session for UUID '2c7eaace-b1af-4be3-a2d6-675e358382ba' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:22:56: STOP_SERVER received, server token: 447c3cd8-3961-47ba-a1bf-804fc423f028, passed token: 447c3cd8-3961-47ba-a1bf-804fc423f028
+10/31/25 14:22:56: Socket received request to stop server.
+10/31/25 14:22:56: Dispatch Server: do_await_stop
+10/31/25 14:22:56: SERVER: destructor for server bound to port 56129
+10/31/25 14:28:31: Running xcd server. This server was built by gradle.
+10/31/25 14:28:31: Server was asked to start on port: '56676'
+10/31/25 14:28:31: Server is using token UUID: '28cf3a30-7a36-4800-bbd1-774daf7e5404'
+10/31/25 14:28:31: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:28:31: Attempting to start server on port '56676'
+10/31/25 14:28:31: Running Dispatch Server
+10/31/25 14:28:31: Version 2.2.0
+10/31/25 14:28:33: Dispatch Server: Accepted socket connection from client
+10/31/25 14:28:33: Starting Socket connection
+10/31/25 14:28:33: EXCHANGE_TOKEN received, server token: 28cf3a30-7a36-4800-bbd1-774daf7e5404, passed token: 28cf3a30-7a36-4800-bbd1-774daf7e5404
+10/31/25 14:28:33: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:28:33: SESSION_MGR: creating session with session uuid: 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:33: KERNEL_SVC: creating session with uuid: 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:33: GUIDANCE_SMGR: creating guidance session with uuid: 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:33: SYSTEM_DIAGRAM: creating session with uuid: 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:40: Dispatch Server: Accepted socket connection from client
+10/31/25 14:28:40: Starting Socket connection
+10/31/25 14:28:46: SESSION_MGR: closing session for UUID 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:46: KERNEL_SVC: closing session for UUID 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:46: GUIDANCE_SMGR: closing session for UUID 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:46: SYSTEM_DIAGRAM: closing session for UUID 'bd2cfcbb-467b-400e-a5a7-b62fb9321a74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:28:46: STOP_SERVER received, server token: 28cf3a30-7a36-4800-bbd1-774daf7e5404, passed token: 28cf3a30-7a36-4800-bbd1-774daf7e5404
+10/31/25 14:28:46: Socket received request to stop server.
+10/31/25 14:28:46: Dispatch Server: do_await_stop
+10/31/25 14:28:46: SERVER: destructor for server bound to port 56676
+10/31/25 14:29:09: Running xcd server. This server was built by gradle.
+10/31/25 14:29:09: Server was asked to start on port: '56728'
+10/31/25 14:29:09: Server is using token UUID: 'c453b234-45c2-46f4-b4e0-8cf3ce3fb983'
+10/31/25 14:29:09: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:29:09: Attempting to start server on port '56728'
+10/31/25 14:29:09: Running Dispatch Server
+10/31/25 14:29:09: Version 2.2.0
+10/31/25 14:29:11: Dispatch Server: Accepted socket connection from client
+10/31/25 14:29:11: Starting Socket connection
+10/31/25 14:29:11: EXCHANGE_TOKEN received, server token: c453b234-45c2-46f4-b4e0-8cf3ce3fb983, passed token: c453b234-45c2-46f4-b4e0-8cf3ce3fb983
+10/31/25 14:29:11: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:29:11: SESSION_MGR: creating session with session uuid: 'df706be4-ac14-4bbb-ba8d-dc821a479150' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:29:11: KERNEL_SVC: creating session with uuid: 'df706be4-ac14-4bbb-ba8d-dc821a479150' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:29:11: GUIDANCE_SMGR: creating guidance session with uuid: 'df706be4-ac14-4bbb-ba8d-dc821a479150' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:29:11: SYSTEM_DIAGRAM: creating session with uuid: 'df706be4-ac14-4bbb-ba8d-dc821a479150' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:29:17: Dispatch Server: Accepted socket connection from client
+10/31/25 14:29:17: Starting Socket connection
+10/31/25 14:30:03: SESSION_MGR: closing session for UUID 'df706be4-ac14-4bbb-ba8d-dc821a479150' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:30:03: KERNEL_SVC: closing session for UUID 'df706be4-ac14-4bbb-ba8d-dc821a479150' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:30:03: GUIDANCE_SMGR: closing session for UUID 'df706be4-ac14-4bbb-ba8d-dc821a479150' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:30:03: SYSTEM_DIAGRAM: closing session for UUID 'df706be4-ac14-4bbb-ba8d-dc821a479150' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:30:03: STOP_SERVER received, server token: c453b234-45c2-46f4-b4e0-8cf3ce3fb983, passed token: c453b234-45c2-46f4-b4e0-8cf3ce3fb983
+10/31/25 14:30:03: Socket received request to stop server.
+10/31/25 14:30:03: Dispatch Server: do_await_stop
+10/31/25 14:30:03: SERVER: destructor for server bound to port 56728
+10/31/25 14:30:14: Running xcd server. This server was built by gradle.
+10/31/25 14:30:14: Server was asked to start on port: '56818'
+10/31/25 14:30:14: Server is using token UUID: 'b5b1f6e9-cec6-412f-a4f8-370452e82f12'
+10/31/25 14:30:14: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:30:14: Attempting to start server on port '56818'
+10/31/25 14:30:14: Running Dispatch Server
+10/31/25 14:30:14: Version 2.2.0
+10/31/25 14:30:16: Dispatch Server: Accepted socket connection from client
+10/31/25 14:30:16: Starting Socket connection
+10/31/25 14:30:16: EXCHANGE_TOKEN received, server token: b5b1f6e9-cec6-412f-a4f8-370452e82f12, passed token: b5b1f6e9-cec6-412f-a4f8-370452e82f12
+10/31/25 14:30:16: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:30:16: SESSION_MGR: creating session with session uuid: 'f7b92a96-84e0-4a04-be07-745c3211e679' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:30:16: KERNEL_SVC: creating session with uuid: 'f7b92a96-84e0-4a04-be07-745c3211e679' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:30:16: GUIDANCE_SMGR: creating guidance session with uuid: 'f7b92a96-84e0-4a04-be07-745c3211e679' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:30:16: SYSTEM_DIAGRAM: creating session with uuid: 'f7b92a96-84e0-4a04-be07-745c3211e679' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:30:24: Dispatch Server: Accepted socket connection from client
+10/31/25 14:30:24: Starting Socket connection
+10/31/25 14:31:21: SESSION_MGR: closing session for UUID 'f7b92a96-84e0-4a04-be07-745c3211e679' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:31:21: KERNEL_SVC: closing session for UUID 'f7b92a96-84e0-4a04-be07-745c3211e679' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:31:21: GUIDANCE_SMGR: closing session for UUID 'f7b92a96-84e0-4a04-be07-745c3211e679' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:31:21: SYSTEM_DIAGRAM: closing session for UUID 'f7b92a96-84e0-4a04-be07-745c3211e679' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:31:21: STOP_SERVER received, server token: b5b1f6e9-cec6-412f-a4f8-370452e82f12, passed token: b5b1f6e9-cec6-412f-a4f8-370452e82f12
+10/31/25 14:31:21: Socket received request to stop server.
+10/31/25 14:31:21: Dispatch Server: do_await_stop
+10/31/25 14:31:21: SERVER: destructor for server bound to port 56818
+10/31/25 14:32:01: Running xcd server. This server was built by gradle.
+10/31/25 14:32:01: Server was asked to start on port: '52503'
+10/31/25 14:32:01: Server is using token UUID: '65440b58-24bd-4fce-a11f-e1cddc234230'
+10/31/25 14:32:01: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:32:01: Attempting to start server on port '52503'
+10/31/25 14:32:01: Running Dispatch Server
+10/31/25 14:32:01: Version 2.2.0
+10/31/25 14:32:03: Dispatch Server: Accepted socket connection from client
+10/31/25 14:32:03: Starting Socket connection
+10/31/25 14:32:03: EXCHANGE_TOKEN received, server token: 65440b58-24bd-4fce-a11f-e1cddc234230, passed token: 65440b58-24bd-4fce-a11f-e1cddc234230
+10/31/25 14:32:03: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:32:03: SESSION_MGR: creating session with session uuid: 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:32:03: KERNEL_SVC: creating session with uuid: 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:32:03: GUIDANCE_SMGR: creating guidance session with uuid: 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:32:03: SYSTEM_DIAGRAM: creating session with uuid: 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:32:11: Dispatch Server: Accepted socket connection from client
+10/31/25 14:32:11: Starting Socket connection
+10/31/25 14:32:56: Dispatch Server: Accepted socket connection from client
+10/31/25 14:32:56: Starting Socket connection
+10/31/25 14:34:09: Dispatch Server: Accepted socket connection from client
+10/31/25 14:34:09: Starting Socket connection
+10/31/25 14:35:01: SESSION_MGR: closing session for UUID 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:35:01: KERNEL_SVC: closing session for UUID 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:35:01: GUIDANCE_SMGR: closing session for UUID 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:35:01: SYSTEM_DIAGRAM: closing session for UUID 'b2a80bc5-cb2b-41f3-a309-f3e7c4b75316' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:35:01: STOP_SERVER received, server token: 65440b58-24bd-4fce-a11f-e1cddc234230, passed token: 65440b58-24bd-4fce-a11f-e1cddc234230
+10/31/25 14:35:01: Socket received request to stop server.
+10/31/25 14:35:01: Dispatch Server: do_await_stop
+10/31/25 14:35:01: SERVER: destructor for server bound to port 52503
+10/31/25 14:46:18: Running xcd server. This server was built by gradle.
+10/31/25 14:46:18: Server was asked to start on port: '59809'
+10/31/25 14:46:18: Server is using token UUID: '598cf94d-0afa-4472-bae3-5d92a9c6fa52'
+10/31/25 14:46:18: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:46:18: Attempting to start server on port '59809'
+10/31/25 14:46:18: Running Dispatch Server
+10/31/25 14:46:18: Version 2.2.0
+10/31/25 14:46:20: Dispatch Server: Accepted socket connection from client
+10/31/25 14:46:20: Starting Socket connection
+10/31/25 14:46:20: EXCHANGE_TOKEN received, server token: 598cf94d-0afa-4472-bae3-5d92a9c6fa52, passed token: 598cf94d-0afa-4472-bae3-5d92a9c6fa52
+10/31/25 14:46:20: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:46:20: SESSION_MGR: creating session with session uuid: 'abb17d32-3893-4177-b284-9a010395ce74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:20: KERNEL_SVC: creating session with uuid: 'abb17d32-3893-4177-b284-9a010395ce74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:20: GUIDANCE_SMGR: creating guidance session with uuid: 'abb17d32-3893-4177-b284-9a010395ce74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:20: SYSTEM_DIAGRAM: creating session with uuid: 'abb17d32-3893-4177-b284-9a010395ce74' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:27: Dispatch Server: Accepted socket connection from client
+10/31/25 14:46:27: Starting Socket connection
+10/31/25 14:46:33: SESSION_MGR: closing session for UUID 'abb17d32-3893-4177-b284-9a010395ce74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:33: KERNEL_SVC: closing session for UUID 'abb17d32-3893-4177-b284-9a010395ce74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:33: GUIDANCE_SMGR: closing session for UUID 'abb17d32-3893-4177-b284-9a010395ce74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:33: SYSTEM_DIAGRAM: closing session for UUID 'abb17d32-3893-4177-b284-9a010395ce74' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:46:33: STOP_SERVER received, server token: 598cf94d-0afa-4472-bae3-5d92a9c6fa52, passed token: 598cf94d-0afa-4472-bae3-5d92a9c6fa52
+10/31/25 14:46:33: Socket received request to stop server.
+10/31/25 14:46:33: Dispatch Server: do_await_stop
+10/31/25 14:46:33: SERVER: destructor for server bound to port 59809
+10/31/25 14:48:20: Running xcd server. This server was built by gradle.
+10/31/25 14:48:20: Server was asked to start on port: '59940'
+10/31/25 14:48:20: Server is using token UUID: '2f4fe47c-f82e-417f-b4cb-3f24244503a2'
+10/31/25 14:48:20: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:48:20: Attempting to start server on port '59940'
+10/31/25 14:48:20: Running Dispatch Server
+10/31/25 14:48:20: Version 2.2.0
+10/31/25 14:48:21: Dispatch Server: Accepted socket connection from client
+10/31/25 14:48:21: Starting Socket connection
+10/31/25 14:48:21: EXCHANGE_TOKEN received, server token: 2f4fe47c-f82e-417f-b4cb-3f24244503a2, passed token: 2f4fe47c-f82e-417f-b4cb-3f24244503a2
+10/31/25 14:48:22: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:48:22: SESSION_MGR: creating session with session uuid: 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:48:22: KERNEL_SVC: creating session with uuid: 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:48:22: GUIDANCE_SMGR: creating guidance session with uuid: 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:48:22: SYSTEM_DIAGRAM: creating session with uuid: 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' and name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:48:29: Dispatch Server: Accepted socket connection from client
+10/31/25 14:48:29: Starting Socket connection
+10/31/25 14:49:16: SESSION_MGR: closing session for UUID 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:49:16: KERNEL_SVC: closing session for UUID 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:49:16: GUIDANCE_SMGR: closing session for UUID 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:49:16: SYSTEM_DIAGRAM: closing session for UUID 'b91dea0b-a3a9-4542-8b5b-37b679e1cbac' with name 'v++_compile_lz4CompressEngineRun'
+10/31/25 14:49:16: STOP_SERVER received, server token: 2f4fe47c-f82e-417f-b4cb-3f24244503a2, passed token: 2f4fe47c-f82e-417f-b4cb-3f24244503a2
+10/31/25 14:49:16: Socket received request to stop server.
+10/31/25 14:49:16: Dispatch Server: do_await_stop
+10/31/25 14:49:16: SERVER: destructor for server bound to port 59940
+10/31/25 14:49:54: Running xcd server. This server was built by gradle.
+10/31/25 14:49:54: Server was asked to start on port: '60051'
+10/31/25 14:49:54: Server is using token UUID: '87c1d1ba-7a72-4230-bb64-b1223e4df4af'
+10/31/25 14:49:54: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:49:54: Attempting to start server on port '60051'
+10/31/25 14:49:54: Running Dispatch Server
+10/31/25 14:49:54: Version 2.2.0
+10/31/25 14:49:56: Dispatch Server: Accepted socket connection from client
+10/31/25 14:49:56: Starting Socket connection
+10/31/25 14:49:56: EXCHANGE_TOKEN received, server token: 87c1d1ba-7a72-4230-bb64-b1223e4df4af, passed token: 87c1d1ba-7a72-4230-bb64-b1223e4df4af
+10/31/25 14:49:56: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:49:56: SESSION_MGR: creating session with session uuid: '4b811d04-43e9-4955-a68c-a39a7d24dc9c' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:49:56: KERNEL_SVC: creating session with uuid: '4b811d04-43e9-4955-a68c-a39a7d24dc9c' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:49:56: GUIDANCE_SMGR: creating guidance session with uuid: '4b811d04-43e9-4955-a68c-a39a7d24dc9c' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:49:56: SYSTEM_DIAGRAM: creating session with uuid: '4b811d04-43e9-4955-a68c-a39a7d24dc9c' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:50:02: Dispatch Server: Accepted socket connection from client
+10/31/25 14:50:02: Starting Socket connection
+10/31/25 14:50:46: SESSION_MGR: closing session for UUID '4b811d04-43e9-4955-a68c-a39a7d24dc9c' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:50:46: KERNEL_SVC: closing session for UUID '4b811d04-43e9-4955-a68c-a39a7d24dc9c' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:50:46: GUIDANCE_SMGR: closing session for UUID '4b811d04-43e9-4955-a68c-a39a7d24dc9c' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:50:46: SYSTEM_DIAGRAM: closing session for UUID '4b811d04-43e9-4955-a68c-a39a7d24dc9c' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:50:46: STOP_SERVER received, server token: 87c1d1ba-7a72-4230-bb64-b1223e4df4af, passed token: 87c1d1ba-7a72-4230-bb64-b1223e4df4af
+10/31/25 14:50:46: Socket received request to stop server.
+10/31/25 14:50:46: Dispatch Server: do_await_stop
+10/31/25 14:50:46: SERVER: destructor for server bound to port 60051
+10/31/25 14:51:17: Running xcd server. This server was built by gradle.
+10/31/25 14:51:17: Server was asked to start on port: '60150'
+10/31/25 14:51:17: Server is using token UUID: '5580da0a-d139-4fe3-bb82-918b54e1e1c2'
+10/31/25 14:51:17: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/31/25 14:51:17: Attempting to start server on port '60150'
+10/31/25 14:51:17: Running Dispatch Server
+10/31/25 14:51:17: Version 2.2.0
+10/31/25 14:51:19: Dispatch Server: Accepted socket connection from client
+10/31/25 14:51:19: Starting Socket connection
+10/31/25 14:51:19: EXCHANGE_TOKEN received, server token: 5580da0a-d139-4fe3-bb82-918b54e1e1c2, passed token: 5580da0a-d139-4fe3-bb82-918b54e1e1c2
+10/31/25 14:51:19: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/31/25 14:51:19: SESSION_MGR: creating session with session uuid: '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:51:19: KERNEL_SVC: creating session with uuid: '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:51:19: GUIDANCE_SMGR: creating guidance session with uuid: '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:51:19: SYSTEM_DIAGRAM: creating session with uuid: '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' and name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:51:25: Dispatch Server: Accepted socket connection from client
+10/31/25 14:51:25: Starting Socket connection
+10/31/25 14:52:09: Dispatch Server: Accepted socket connection from client
+10/31/25 14:52:09: Starting Socket connection
+10/31/25 14:53:34: Dispatch Server: Accepted socket connection from client
+10/31/25 14:53:34: Starting Socket connection
+10/31/25 14:54:35: SESSION_MGR: closing session for UUID '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:54:35: KERNEL_SVC: closing session for UUID '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:54:35: GUIDANCE_SMGR: closing session for UUID '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:54:35: SYSTEM_DIAGRAM: closing session for UUID '0d8a0c39-2b9b-4adc-a216-8d382b65f5f7' with name 'vitis-run_compile_lz4CompressEngineRun'
+10/31/25 14:54:35: STOP_SERVER received, server token: 5580da0a-d139-4fe3-bb82-918b54e1e1c2, passed token: 5580da0a-d139-4fe3-bb82-918b54e1e1c2
+10/31/25 14:54:35: Socket received request to stop server.
+10/31/25 14:54:35: Dispatch Server: do_await_stop
+10/31/25 14:54:35: SERVER: destructor for server bound to port 60150

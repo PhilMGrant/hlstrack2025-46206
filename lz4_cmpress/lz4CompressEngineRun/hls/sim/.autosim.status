@@ -1,0 +1,14 @@
+set status(tv_done) 0
+set status(tvin) "lz4CompressEngineRun.autotvin.dat"
+set status(wrapc_done) 1
+set status(bc_done) 0
+set status(bc_tb_done) 0
+set status(bc_tb_new_done) 0
+set status(tvout) "lz4CompressEngineRun.autotvout.dat"
+set status(sc_done) 0
+set status(cas_done) 0
+set status(hdl_tvin) ""
+set status(hdl_tvout) ""
+set status(vlog_needed) 0
+set status(tb_needed) 1
+set status(argv) "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/tests/lz4_compress/sample.txt.encoded"

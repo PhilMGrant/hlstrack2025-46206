@@ -1,0 +1,373 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Fri Oct 31 14:54:35 +0800 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         lz4CompressEngineRun
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  7 ns
+    * C-Synthesis target clock:    7 ns
+    * C-Synthesis uncertainty:     10%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              3881
+FF:               3477
+DSP:              0
+BRAM:             90
+URAM:             0
+SRL:              89
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 7.000       |
+| Post-Synthesis | 5.788       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                              | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                              | 3881 | 3477 |     | 90   |      |     |        |      |         |          |        |
+|   (inst)                                                                          |      | 2    |     |      |      |     |        |      |         |          |        |
+|   bestMatchStream_U                                                               | 38   | 9    |     |      |      |     |        |      |         |          |        |
+|   boosterStream_U                                                                 | 45   | 9    |     |      |      |     |        |      |         |          |        |
+|   compressdStream_U                                                               | 43   | 9    |     |      |      |     |        |      |         |          |        |
+|   core_idx_c_U                                                                    | 16   | 9    |     |      |      |     |        |      |         |          |        |
+|   entry_proc_U0                                                                   | 2    | 1    |     |      |      |     |        |      |         |          |        |
+|   input_size_c1_U                                                                 | 53   | 70   |     |      |      |     |        |      |         |          |        |
+|   input_size_c2_U                                                                 | 35   | 70   |     |      |      |     |        |      |         |          |        |
+|   input_size_c_U                                                                  | 59   | 70   |     |      |      |     |        |      |         |          |        |
+|   lz4Compress_4096_8_U0                                                           | 720  | 936  |     | 34   |      |     |        |      |         |          |        |
+|     input_size_c_U                                                                | 25   | 70   |     |      |      |     |        |      |         |          |        |
+|     lenOffset_Stream_U                                                            | 75   | 41   |     | 2    |      |     |        |      |         |          |        |
+|     lit_outStream_U                                                               | 54   | 69   |     | 32   |      |     |        |      |         |          |        |
+|     lz4CompressPart1_4096_8_U0                                                    | 260  | 383  |     |      |      |     |        |      |         |          |        |
+|       (lz4CompressPart1_4096_8_U0)                                                | 54   | 176  |     |      |      |     |        |      |         |          |        |
+|     lz4CompressPart2_U0                                                           | 301  | 369  |     |      |      |     |        |      |         |          |        |
+|       (lz4CompressPart2_U0)                                                       | 4    | 38   |     |      |      |     |        |      |         |          |        |
+|     start_for_lz4CompressPart2_U0_U                                               | 5    | 4    |     |      |      |     |        |      |         |          |        |
+|   lzBestMatchFilter_6_65536_U0                                                    | 246  | 448  |     |      |      |     |        |      |         |          |        |
+|     (lzBestMatchFilter_6_65536_U0)                                                | 10   | 179  |     |      |      |     |        |      |         |          |        |
+|     grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135              | 236  | 269  |     |      |      |     |        |      |         |          |        |
+|       (grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135)          | 116  | 267  |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                    | 120  | 2    |     |      |      |     |        |      |         |          |        |
+|   lzBooster_255_16384_64_U0                                                       | 251  | 299  |     | 8    |      |     |        |      |         |          |        |
+|     (lzBooster_255_16384_64_U0)                                                   | 20   | 82   |     |      |      |     |        |      |         |          |        |
+|     grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_169                         | 223  | 217  |     |      |      |     |        |      |         |          |        |
+|       (grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_169)                     | 177  | 215  |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                    | 46   | 2    |     |      |      |     |        |      |         |          |        |
+|     local_mem_U                                                                   | 8    |      |     | 8    |      |     |        |      |         |          |        |
+|   lzCompress_6_4_65536_6_1_1024_64_U0                                             | 2375 | 1532 |     | 48   |      |     |        |      |         |          |        |
+|     (lzCompress_6_4_65536_6_1_1024_64_U0)                                         | 51   | 173  |     |      |      |     |        |      |         |          |        |
+|     dict_1_U                                                                      |      |      |     | 12   |      |     |        |      |         |          |        |
+|     dict_2_U                                                                      |      |      |     | 12   |      |     |        |      |         |          |        |
+|     dict_3_U                                                                      |      |      |     | 12   |      |     |        |      |         |          |        |
+|     dict_U                                                                        |      |      |     | 12   |      |     |        |      |         |          |        |
+|     grp_lzCompress_6_4_65536_6_1_1024_64_Outline_VITIS_LOOP_84_2_fu_158           | 15   | 45   |     |      |      |     |        |      |         |          |        |
+|     grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush_fu_150               | 19   | 11   |     |      |      |     |        |      |         |          |        |
+|       (grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_dict_flush_fu_150)           | 2    | 9    |     |      |      |     |        |      |         |          |        |
+|     grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_fu_174              | 2238 | 1279 |     |      |      |     |        |      |         |          |        |
+|       (grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_fu_174)          | 2187 | 1277 |     |      |      |     |        |      |         |          |        |
+|     grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover_fu_197     | 25   | 14   |     |      |      |     |        |      |         |          |        |
+|       (grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_compress_leftover_fu_197) |      | 12   |     |      |      |     |        |      |         |          |        |
+|     grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes_fu_208            | 27   | 10   |     |      |      |     |        |      |         |          |        |
+|       (grp_lzCompress_6_4_65536_6_1_1024_64_Pipeline_lz_left_bytes_fu_208)        | 3    | 8    |     |      |      |     |        |      |         |          |        |
+|   start_for_lz4Compress_4096_8_U0_U                                               | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   start_for_lzBestMatchFilter_6_65536_U0_U                                        | 4    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_lzBooster_255_16384_64_U0_U                                           | 5    | 4    |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 7.30%  | OK     |
+| FD                                                        | 50%       | 3.27%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.51%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 0.00%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 32.14% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 32.14% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 99     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.64   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                       | ENDPOINT PIN                                                                                         | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                      |                                                                                                      |              |            |                |          DELAY |        DELAY |
++-------+-------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 1.212 | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[0] |            5 |         17 |          5.172 |          1.309 |        3.863 |
+| Path2 | 1.212 | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[1] |            5 |         17 |          5.172 |          1.309 |        3.863 |
+| Path3 | 1.212 | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[2] |            5 |         17 |          5.172 |          1.309 |        3.863 |
+| Path4 | 1.212 | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[3] |            5 |         17 |          5.172 |          1.309 |        3.863 |
+| Path5 | 1.212 | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]/C | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg/WEBWE[4] |            5 |         17 |          5.172 |          1.309 |        3.863 |
++-------+-------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                                          | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                                          | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                                          | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                                          | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                          | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/lit_count_loc_load_reg_278_reg[4]                                   | FLOP_LATCH.flop.FDRE |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_7                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_3                                        | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/max_lit_limit_ce0_INST_0_i_1                                        | LUT.others.LUT4      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_63 | LUT.others.LUT5      |
+    | lz4Compress_4096_8_U0/lz4CompressPart1_4096_8_U0/grp_lz4CompressPart1_4096_8_Pipeline_lz4_divide_fu_158/mem_reg_i_60 | LUT.others.LUT1      |
+    | lz4Compress_4096_8_U0/lenOffset_Stream_U/U_lz4CompressEngineRun_fifo_w64_d512_B_ram/mem_reg                          | BMEM.bram.RAMB36E1   |
+    +----------------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+-----------------------------------------------------------------------------+
+| Report Type              | Report Location                                                             |
++--------------------------+-----------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/lz4CompressEngineRun_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/lz4CompressEngineRun_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/lz4CompressEngineRun_power_synth.rpt                    |
+| timing                   | impl/verilog/report/lz4CompressEngineRun_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/lz4CompressEngineRun_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/lz4CompressEngineRun_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/lz4CompressEngineRun_utilization_hierarchical_synth.rpt |
++--------------------------+-----------------------------------------------------------------------------+
+
+

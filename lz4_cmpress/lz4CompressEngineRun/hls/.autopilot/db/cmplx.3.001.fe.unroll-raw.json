@@ -1,0 +1,90 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 4 1 3",
+    "file": "lz4_compress_test.cpp",
+    "fileloc": 49,
+    "instructions": 16,
+    "name": "lz4CompressEngineRun",
+    "total_instructions": 1650
+  },
+  "1": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "lz_optional.hpp",
+    "fileloc": 600,
+    "instructions": 130,
+    "loads": {
+      "G": 11,
+      "L": 2
+    },
+    "name": "lzBooster<255, 16384, 64>",
+    "stores": {
+      "G": 11,
+      "L": 1
+    },
+    "total_instructions": 130
+  },
+  "2": {
+    "basicblocks": 252,
+    "calls": "",
+    "file": "lz_compress.hpp",
+    "fileloc": 58,
+    "instructions": 1034,
+    "loads": {
+      "L": 101
+    },
+    "name": "lzCompress<6, 4, 65536, 6, 1, 1024, 64>",
+    "stores": {
+      "L": 42
+    },
+    "total_instructions": 1034
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "5 6",
+    "file": "lz4_compress.hpp",
+    "fileloc": 376,
+    "instructions": 11,
+    "name": "lz4Compress<4096, 8>",
+    "total_instructions": 281
+  },
+  "4": {
+    "basicblocks": 35,
+    "calls": "",
+    "file": "lz_optional.hpp",
+    "fileloc": 325,
+    "instructions": 189,
+    "loads": {
+      "G": 6,
+      "L": 19
+    },
+    "name": "lzBestMatchFilter<6, 65536>",
+    "stores": {
+      "G": 6,
+      "L": 18
+    },
+    "total_instructions": 189
+  },
+  "5": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "lz4_compress.hpp",
+    "fileloc": 45,
+    "instructions": 75,
+    "name": "lz4CompressPart1<4096, 8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 75
+  },
+  "6": {
+    "basicblocks": 67,
+    "calls": "",
+    "file": "lz4_compress.hpp",
+    "fileloc": 130,
+    "instructions": 195,
+    "name": "lz4CompressPart2",
+    "total_instructions": 195
+  }
+}

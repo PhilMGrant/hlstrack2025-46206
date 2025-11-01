@@ -1,0 +1,12 @@
+{
+  "name": "lz4_cmpress",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "lz4CompressEngineRun"
+  },
+  "template": "empty_hls_component"
+}

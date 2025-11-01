@@ -1,0 +1,256 @@
+{
+    "1": {
+        "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_lz_compress",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_compress.hpp",
+        "fileloc": "90",
+        "instructions": "398",
+        "total_instructions": "398",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_compress.hpp",
+        "fileloc": "58",
+        "instructions": "63",
+        "total_instructions": "592",
+        "calls": "3 13 1 11 5",
+        "basicblocks": "3",
+        "loads": {
+            "L": "15"
+        }
+    },
+    "3": {
+        "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_dict_flush",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_compress.hpp",
+        "fileloc": "75",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "lz4CompressPart2",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\\lz4_compress.hpp",
+        "fileloc": "139",
+        "instructions": "17",
+        "total_instructions": "191",
+        "calls": "12",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_lz_left_bytes",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_compress.hpp",
+        "fileloc": "212",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "lz4CompressPart1<4096, 1>",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\\lz4_compress.hpp",
+        "fileloc": "45",
+        "instructions": "34",
+        "total_instructions": "92",
+        "calls": "8",
+        "basicblocks": "5",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "7": {
+        "name": "lzBooster<255, 16384, 64>",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_optional.hpp",
+        "fileloc": "586",
+        "instructions": "70",
+        "total_instructions": "178",
+        "calls": "9",
+        "basicblocks": "12",
+        "loads": {
+            "G": "6",
+            "L": "8"
+        },
+        "stores": {
+            "G": "6",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "lz4CompressPart1<4096, 1>_Pipeline_lz4_divide",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\\lz4_compress.hpp",
+        "fileloc": "45",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "11",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "lzBooster<255, 16384, 64>_Pipeline_lz_booster",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_optional.hpp",
+        "fileloc": "592",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "12"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "lzBestMatchFilter<6, 65536>",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_optional.hpp",
+        "fileloc": "325",
+        "instructions": "46",
+        "total_instructions": "138",
+        "calls": "14",
+        "basicblocks": "6",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_lz_compress_leftover",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_compress.hpp",
+        "fileloc": "205",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "lz4CompressPart2_Pipeline_lz4_compress",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\\lz4_compress.hpp",
+        "fileloc": "139",
+        "instructions": "174",
+        "total_instructions": "174",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "19"
+        },
+        "stores": {
+            "L": "45"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Outline_VITIS_LOOP_84_2",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_compress.hpp",
+        "fileloc": "82",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "11"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "lzBestMatchFilter<6, 65536>_Pipeline_lz_bestMatchFilter",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\/lz_optional.hpp",
+        "fileloc": "325",
+        "instructions": "92",
+        "total_instructions": "92",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "lz4CompressEngineRun",
+        "file": "lz4_compress_test.cpp",
+        "fileloc": "47",
+        "instructions": "42",
+        "total_instructions": "1253",
+        "calls": "2 10 7 15",
+        "basicblocks": "1"
+    },
+    "15": {
+        "name": "lz4Compress<4096, 1>",
+        "file": "D:\/Xillinx_Project\/PROJECT\/data_compression\/L1\/tests\/lz4_compress\/..\/..\/..\/L1\/include\/hw\\lz4_compress.hpp",
+        "fileloc": "385",
+        "instructions": "20",
+        "total_instructions": "303",
+        "calls": "6 4",
+        "basicblocks": "1"
+    }
+}

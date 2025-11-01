@@ -1,0 +1,7 @@
+Running: xsim.dir/lz4CompressEngineRun/xsimk.exe -simmode gui -wdb lz4CompressEngineRun.wdb -simrunnum 0 -socket 60113
+Design successfully loaded
+Design Loading Memory Usage: 30220 KB (Peak: 30220 KB)
+Design Loading CPU Usage: 405 ms
+Simulation completed
+Simulation Memory Usage: 33468 KB (Peak: 33468 KB)
+Simulation CPU Usage: 515 ms

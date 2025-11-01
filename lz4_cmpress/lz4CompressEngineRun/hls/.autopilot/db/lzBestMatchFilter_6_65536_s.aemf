@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761893348690">
+  <ports id="1" name="compressdStream" type="PortType" originalName="inStream" coreName="FIFO_SRL" coreId="4294967295" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>fence</dataOutputObjs>
+    <dataOutputObjs>fence</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>fence</dataOutputObjs>
+  </ports>
+  <ports id="2" name="bestMatchStream" type="PortType" originalName="outStream" coreName="FIFO_SRL" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>fence</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>fence</dataInputObjs>
+    <dataInputObjs>fence</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="input_size" type="PortType" coreName="FIFO_SRL" coreId="4294967295" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>fence</dataOutputObjs>
+  </ports>
+  <ports id="4" name="input_size_c1" type="PortType" coreName="FIFO_SRL" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>fence</dataInputObjs>
+  </ports>
+  <edges id="66" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.3"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="81" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="83" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="85" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="87" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="89" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="91" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="94" source_obj="//@ports.2" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="95" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@ports.3"/>
+  <edges id="96" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="99" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="100" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@ports.1"/>
+  <edges id="103" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="104" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="105" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="106" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="107" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="108" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="110" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="111" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@ports.1"/>
+  <edges id="112" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="114" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="119" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="120" source_obj="//@blocks.1/@node_objs.9" sink_obj="//@ports.1"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.9" sink_obj="//@ports.1"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.10"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.11"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.12"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.13"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.14"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.15"/>
+  <edges id="131" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.16"/>
+  <edges id="132" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.17"/>
+  <edges id="133" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="134" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="137" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="140" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="146" source_obj="//@blocks.1/@node_objs.15" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="148" source_obj="//@blocks.1/@node_objs.14" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="151" source_obj="//@blocks.1/@node_objs.13" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="154" source_obj="//@blocks.1/@node_objs.12" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="157" source_obj="//@blocks.1/@node_objs.11" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="160" source_obj="//@blocks.1/@node_objs.10" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="163" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="166" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="167" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="168" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="169" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="170" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="286" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="287" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="288" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="289" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="290" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="291" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2" is_back_edge="1"/>
+  <edges id="292" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="293" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="294" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="295" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="296" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="297" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="298" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="299" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="300" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="301" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="302" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="303" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="304" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="305" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="306" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="307" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="308" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="309" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="310" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.9" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="311" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.10"/>
+  <edges id="312" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.11"/>
+  <edges id="313" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.12"/>
+  <edges id="314" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.13"/>
+  <edges id="315" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.14"/>
+  <edges id="316" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.15"/>
+  <edges id="317" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="318" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="319" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="320" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="321" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="322" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="323" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.16" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="324" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="325" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.16" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="326" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <blocks id="20" name="entry" type="BlockType">
+    <controlOutputObjs>cleanup.cont</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="compare_window_17_loc" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="compare_window_16_loc" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="compare_window_15_loc" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="compare_window_14_loc" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="compare_window_13_loc" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="compare_window_12_loc" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="input_size_2" originalName="input_size" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" bitwidth="32" opcode="read" m_display="0" m_delay="3.15" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>input_size</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="input_size_c1_write_ln0" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" opcode="write" m_display="0" m_delay="3.15" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>input_size_c1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="icmp_ln327" lineNumber="327" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." rtlName="icmp_ln327_fu_156_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.55" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="327" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln327" lineNumber="327" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="327" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+      <controlInputObjs>cleanup.cont</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp">
+      <validLinenumbers>327</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name="if.end" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc76</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i_8" lineNumber="388" originalName="i" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="3" opcode="alloca" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="compare_window" lineNumber="335" originalName="compare_window" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.15" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="compare_window_16" lineNumber="335" originalName="compare_window" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_delay="3.15" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="compare_window_17" lineNumber="335" originalName="compare_window" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="read" nodeLabel="3.0" m_display="0" m_delay="3.15" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="compare_window_18" lineNumber="335" originalName="compare_window" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="read" nodeLabel="4.0" m_display="0" m_delay="3.15" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="compare_window_19" lineNumber="335" originalName="compare_window" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="read" nodeLabel="5.0" m_display="0" m_delay="3.15" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="compare_window_20" lineNumber="335" originalName="compare_window" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_delay="3.15" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln339" lineNumber="339" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="fence" nodeLabel="7.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="339" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>input_size</dataInputObjs>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>input_size_c1</dataOutputObjs>
+      <dataOutputObjs>bestMatchStream</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln335" lineNumber="335" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." rtlName="grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135" coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="1.58" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="335" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>bestMatchStream</dataOutputObjs>
+      <constName>lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="fence" nodeLabel="9.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>compressdStream</dataInputObjs>
+      <dataOutputObjs>bestMatchStream</dataOutputObjs>
+      <dataOutputObjs>bestMatchStream</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="compare_window_12_loc_load" coreId="4294967295" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="compare_window_13_loc_load" coreId="4294967295" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="compare_window_14_loc_load" coreId="4294967295" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="compare_window_15_loc_load" coreId="4294967295" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="compare_window_16_loc_load" coreId="4294967295" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="compare_window_17_loc_load" coreId="4294967295" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="i_8_write_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <controlInputObjs>for.inc76</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp">
+      <validLinenumbers>388</validLinenumbers>
+      <validLinenumbers>335</validLinenumbers>
+      <validLinenumbers>339</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="44" name="for.inc76" type="BlockType">
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlInputObjs>for.inc76.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>cleanup.cont.loopexit</controlOutputObjs>
+    <controlOutputObjs>for.inc76.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="i" lineNumber="388" originalName="i" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="3" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sparsemux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="icmp_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." rtlName="icmp_ln388_fu_216_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="1.65" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="add_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." rtlName="add_ln388_fu_222_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="3" opcode="add" nodeLabel="10.0" m_display="0" m_delay="1.65" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.inc76.split</controlInputObjs>
+      <controlInputObjs>cleanup.cont.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp">
+      <validLinenumbers>388</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name="for.inc76.split" type="BlockType">
+    <controlInputObjs>for.inc76</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc76</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="tmp_s" lineNumber="390" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." rtlName="sparsemux_13_3_32_1_1_U67" coreName="BinarySparseMux_DontCare" implIndex="compactencoding_dontcare" control="no" opType="sparsemux" coreId="137" contextFuncName="lzBestMatchFilter_6_65536_s" bitwidth="32" opcode="sparsemux" nodeLabel="10.0" m_display="0" m_delay="2.06" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="390" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="bestMatchStream_write_ln390" lineNumber="390" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="write" nodeLabel="10.0" m_display="0" m_delay="3.15" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="390" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>sparsemux</dataInputObjs>
+      <dataOutputObjs>bestMatchStream</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="i_8_write_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="store" nodeLabel="10.0" m_display="0" m_delay="1.58" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln388" lineNumber="388" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="388" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+      <controlInputObjs>for.inc76</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp">
+      <validLinenumbers>390</validLinenumbers>
+      <validLinenumbers>388</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="54" name="cleanup.cont.loopexit" type="BlockType">
+    <controlInputObjs>for.inc76</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>cleanup.cont</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <controlInputObjs>cleanup.cont</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="56" name="cleanup.cont" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>cleanup.cont.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="_ln392" lineNumber="392" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lzBestMatchFilter_6_65536_s" opcode="ret" nodeLabel="10.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp" linenumber="392" fileDirectory="D:\Xillinx_Project\PROJECT\lz4_cmpress" functionName="lzBestMatchFilter&amp;lt;6, 65536&amp;gt;"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp">
+      <validLinenumbers>392</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <regnodes realName="compare_window_19_reg_332">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_reg_312">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_20_reg_337">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_17_loc_reg_260">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_18_reg_327">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_14_loc_reg_278">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_15_loc_reg_272">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_16_reg_317">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln327_reg_301">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_13_loc_reg_284">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_16_loc_reg_266">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="input_size_2_reg_296">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_17_reg_322">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="i_8_reg_305">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="compare_window_12_loc_reg_290">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <expressionNodes realName="compare_window_16_loc_fu_84">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="fence_ln388_fu_183">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln388_fu_216">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="compare_window_14_loc_fu_92">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_8_fu_104">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln388_fu_222">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="compare_window_17_loc_fu_80">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="compare_window_12_loc_fu_100">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="compare_window_15_loc_fu_88">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln327_fu_156">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_228">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="fence_ln339_fu_167">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="compare_window_13_loc_fu_96">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135">
+    <nodeIds>29</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="compare_window_13_loc_load_load_fu_198">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln388_store_fu_162">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="compare_window_12_loc_load_load_fu_195">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="compare_window_14_loc_load_load_fu_201">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln388_store_fu_255">
+    <nodeIds>50</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_read_fu_122">
+    <nodeIds>22</nodeIds>
+    <nodeIds>23</nodeIds>
+    <nodeIds>24</nodeIds>
+    <nodeIds>25</nodeIds>
+    <nodeIds>26</nodeIds>
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="input_size_2_read_fu_108">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_114">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln390_write_fu_128">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="compare_window_16_loc_load_load_fu_207">
+    <nodeIds>35</nodeIds>
+  </ioNodes>
+  <ioNodes realName="compare_window_15_loc_load_load_fu_204">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioNodes realName="compare_window_17_loc_load_load_fu_210">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_fu_213">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioPorts name="bestMatchStream">
+    <contents name="call">
+      <nodeIds>29</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="compressdStream">
+    <contents name="call">
+      <nodeIds>29</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+      <nodeIds>23</nodeIds>
+      <nodeIds>24</nodeIds>
+      <nodeIds>25</nodeIds>
+      <nodeIds>26</nodeIds>
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_size">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_size_c1">
+    <contents name="write">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="29" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="11">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="lzBestMatchFilter_6_65536_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-2" mMaxLatency="-2">
+      <basicBlocks>20</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="lz_bestMatchFilter_left_over" mII="-1" mDepth="-1" mMinTripCount="6" mMaxTripCount="6" mMinLatency="6" mMaxLatency="6" mType="1">
+      <basicBlocks>44</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>54</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>56</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

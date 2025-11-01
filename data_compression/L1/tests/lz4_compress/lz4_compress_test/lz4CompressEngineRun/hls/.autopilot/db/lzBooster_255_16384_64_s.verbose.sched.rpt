@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vitis HLS Report for 'lzBooster_255_16384_64_s'
+================================================================
+* Date:           Sun Oct 26 16:53:26 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        lz4CompressEngineRun
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  15.00 ns|  9.517 ns|     1.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- lz_booster_left_bytes  |       64|       64|         1|          -|          -|    64|        no|
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 6 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 6 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.77>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%outValue_loc = alloca i64 1"   --->   Operation 7 'alloca' 'outValue_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_loc28 = alloca i64 1"   --->   Operation 8 'alloca' 'p_loc28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%new_match_len_loc = alloca i64 1"   --->   Operation 9 'alloca' 'new_match_len_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%new_matchFlag_1_0_0_07_loc = alloca i64 1"   --->   Operation 10 'alloca' 'new_matchFlag_1_0_0_07_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 11 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%new_match_loc_loc = alloca i64 1"   --->   Operation 12 'alloca' 'new_match_loc_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %input_size, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] ( I:3.63ns O:3.63ns )   --->   "%input_size_1 = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %input_size"   --->   Operation 14 'read' 'input_size_1' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %input_size_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i32P0A, i32 %input_size_c, i32 %input_size_1"   --->   Operation 16 'write' 'write_ln0' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %boosterStream, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 17 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %boosterStream, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bestMatchStream, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%local_mem = alloca i64 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:588]   --->   Operation 20 'alloca' 'local_mem' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 90 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16384> <RAM>
+ST_1 : Operation 21 [1/1] (2.55ns)   --->   "%icmp_ln587 = icmp_eq  i32 %input_size_1, i32 0" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:587]   --->   Operation 21 'icmp' 'icmp_ln587' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln587 = br i1 %icmp_ln587, void %if.end, void %return" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:587]   --->   Operation 22 'br' 'br_ln587' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln589 = specmemcore void @_ssdm_op_SpecMemCore, i8 %local_mem, i64 666, i64 22, i64 18446744073709551615" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:589]   --->   Operation 23 'specmemcore' 'specmemcore_ln589' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load = load i1 %guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 24 'load' 'guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%match_loc_reg_load = load i32 %match_loc_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 25 'load' 'match_loc_reg_load' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%trunc_ln659 = trunc i32 %match_loc_reg_load" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:659]   --->   Operation 26 'trunc' 'trunc_ln659' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%nextMatchCh_load = load i8 %nextMatchCh" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:659]   --->   Operation 27 'load' 'nextMatchCh_load' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%br_ln600 = br i1 %guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load, void %init.check11, void %lz_booster" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 28 'br' 'br_ln600' <Predicate = (!icmp_ln587)> <Delay = 1.58>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln600 = zext i14 %trunc_ln659" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 29 'zext' 'zext_ln600' <Predicate = (!icmp_ln587 & !guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%local_mem_addr = getelementptr i8 %local_mem, i64 0, i64 %zext_ln600" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 30 'getelementptr' 'local_mem_addr' <Predicate = (!icmp_ln587 & !guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load)> <Delay = 0.00>
+ST_1 : Operation 31 [2/2] (3.25ns)   --->   "%local_mem_load = load i14 %local_mem_addr" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 31 'load' 'local_mem_load' <Predicate = (!icmp_ln587 & !guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load)> <Delay = 3.25> <CoreInst = "RAM_2P_BRAM">   --->   Core 90 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16384> <RAM>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 32 [1/2] ( I:3.25ns O:3.25ns )   --->   "%local_mem_load = load i14 %local_mem_addr" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 32 'load' 'local_mem_load' <Predicate = (!guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load)> <Delay = 3.25> <CoreInst = "RAM_2P_BRAM">   --->   Core 90 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16384> <RAM>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%store_ln600 = store i1 1, i1 %guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 33 'store' 'store_ln600' <Predicate = (!guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (1.58ns)   --->   "%br_ln600 = br void %lz_booster" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 34 'br' 'br_ln600' <Predicate = (!guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh_load)> <Delay = 1.58>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%fence_ln603 = fence void @_ssdm_op_Fence, i32 %input_size, i32 %input_size_c, i32 4294967295, i32 %bestMatchStream, i32 %boosterStream" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:603]   --->   Operation 35 'fence' 'fence_ln603' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.10>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%nextMatchCh_loc_0 = phi i8 %local_mem_load, void %init.check11, i8 %nextMatchCh_load, void %if.end" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 36 'phi' 'nextMatchCh_loc_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (2.55ns)   --->   "%sub = add i32 %input_size_1, i32 4294967232"   --->   Operation 37 'add' 'sub' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (2.55ns)   --->   "%icmp_ln603 = icmp_eq  i32 %sub, i32 0" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:603]   --->   Operation 38 'icmp' 'icmp_ln603' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%skip_len_reg_load = load i16 %skip_len_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:630]   --->   Operation 39 'load' 'skip_len_reg_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%match_len_reg_load = load i32 %match_len_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:632]   --->   Operation 40 'load' 'match_len_reg_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%matchFlag_reg_load = load i1 %matchFlag_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:652]   --->   Operation 41 'load' 'matchFlag_reg_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [2/2] (2.55ns)   --->   "%call_ln600 = call void @lzBooster<255, 16384, 64>_Pipeline_lz_booster, i32 %match_loc_reg_load, i8 %nextMatchCh_loc_0, i1 %matchFlag_reg_load, i32 %match_len_reg_load, i16 %skip_len_reg_load, i32 %sub, i8 %local_mem, i32 %bestMatchStream, i32 %boosterStream, i32 %new_match_loc_loc, i8 %p_loc, i1 %new_matchFlag_1_0_0_07_loc, i32 %new_match_len_loc, i16 %p_loc28, i32 %outValue_loc" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 42 'call' 'call_ln600' <Predicate = true> <Delay = 2.55> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 43 [1/2] (0.00ns)   --->   "%call_ln600 = call void @lzBooster<255, 16384, 64>_Pipeline_lz_booster, i32 %match_loc_reg_load, i8 %nextMatchCh_loc_0, i1 %matchFlag_reg_load, i32 %match_len_reg_load, i16 %skip_len_reg_load, i32 %sub, i8 %local_mem, i32 %bestMatchStream, i32 %boosterStream, i32 %new_match_loc_loc, i8 %p_loc, i1 %new_matchFlag_1_0_0_07_loc, i32 %new_match_len_loc, i16 %p_loc28, i32 %outValue_loc" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 43 'call' 'call_ln600' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 3.54>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%nextMatchCh_flag_0 = phi i1 1, void %init.check11, i1 0, void %if.end"   --->   Operation 44 'phi' 'nextMatchCh_flag_0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%new_match_loc_loc_load = load i32 %new_match_loc_loc"   --->   Operation 45 'load' 'new_match_loc_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%p_loc_load = load i8 %p_loc"   --->   Operation 46 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%new_matchFlag_1_0_0_07_loc_load = load i1 %new_matchFlag_1_0_0_07_loc"   --->   Operation 47 'load' 'new_matchFlag_1_0_0_07_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%new_match_len_loc_load = load i32 %new_match_len_loc"   --->   Operation 48 'load' 'new_match_len_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%p_loc28_load = load i16 %p_loc28"   --->   Operation 49 'load' 'p_loc28_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%outValue_loc_load = load i32 %outValue_loc"   --->   Operation 50 'load' 'outValue_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (1.58ns)   --->   "%br_ln603 = br i1 %icmp_ln603, void %for.cond.for.cond.cleanup_crit_edge.split, void %for.end" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:603]   --->   Operation 51 'br' 'br_ln603' <Predicate = true> <Delay = 1.58>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%store_ln630 = store i16 %p_loc28_load, i16 %skip_len_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:630]   --->   Operation 52 'store' 'store_ln630' <Predicate = (!icmp_ln603)> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%store_ln632 = store i32 %new_match_len_loc_load, i32 %match_len_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:632]   --->   Operation 53 'store' 'store_ln632' <Predicate = (!icmp_ln603)> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%store_ln652 = store i1 %new_matchFlag_1_0_0_07_loc_load, i1 %matchFlag_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:652]   --->   Operation 54 'store' 'store_ln652' <Predicate = (!icmp_ln603)> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%store_ln633 = store i32 %new_match_loc_loc_load, i32 %match_loc_reg" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:633]   --->   Operation 55 'store' 'store_ln633' <Predicate = (!icmp_ln603)> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (1.58ns)   --->   "%br_ln603 = br void %for.end" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:603]   --->   Operation 56 'br' 'br_ln603' <Predicate = (!icmp_ln603)> <Delay = 1.58>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%nextMatchCh_flag_1 = phi i1 %nextMatchCh_flag_0, void %lz_booster, i1 1, void %for.cond.for.cond.cleanup_crit_edge.split"   --->   Operation 57 'phi' 'nextMatchCh_flag_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%nextMatchCh_new_1 = phi i8 %nextMatchCh_loc_0, void %lz_booster, i8 %p_loc_load, void %for.cond.for.cond.cleanup_crit_edge.split" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 58 'phi' 'nextMatchCh_new_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] ( I:3.54ns O:3.54ns )   --->   "%write_ln664 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %boosterStream, i32 %outValue_loc_load" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:664]   --->   Operation 59 'write' 'write_ln664' <Predicate = true> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %nextMatchCh_flag_1, void %for.end.new, void %mergeST"   --->   Operation 60 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln600 = store i8 %nextMatchCh_new_1, i8 %nextMatchCh" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600]   --->   Operation 61 'store' 'store_ln600' <Predicate = (nextMatchCh_flag_1)> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.end.new"   --->   Operation 62 'br' 'br_ln0' <Predicate = (nextMatchCh_flag_1)> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%i_4 = alloca i32 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 63 'alloca' 'i_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 64 [1/1] (1.58ns)   --->   "%store_ln666 = store i7 0, i7 %i_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 64 'store' 'store_ln666' <Predicate = true> <Delay = 1.58>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln666 = br void %for.inc76" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 65 'br' 'br_ln666' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 7.09>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%i = load i7 %i_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 66 'load' 'i' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_6 : Operation 67 [1/1] (1.87ns)   --->   "%icmp_ln666 = icmp_eq  i7 %i, i7 64" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 67 'icmp' 'icmp_ln666' <Predicate = (!icmp_ln587)> <Delay = 1.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 68 [1/1] (1.87ns)   --->   "%i_6 = add i7 %i, i7 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 68 'add' 'i_6' <Predicate = (!icmp_ln587)> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln666 = br i1 %icmp_ln666, void %for.inc76.split, void %return.loopexit" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 69 'br' 'br_ln666' <Predicate = (!icmp_ln587)> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%specpipeline_ln667 = specpipeline void @_ssdm_op_SpecPipeline, i32 0, i32 0, i32 1, i32 0, void @empty_9" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:667]   --->   Operation 70 'specpipeline' 'specpipeline_ln667' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%speclooptripcount_ln666 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 71 'speclooptripcount' 'speclooptripcount_ln666' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%specloopname_ln666 = specloopname void @_ssdm_op_SpecLoopName, void @empty" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 72 'specloopname' 'specloopname_ln666' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] ( I:3.54ns O:3.54ns )   --->   "%bestMatchStream_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %bestMatchStream" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:668]   --->   Operation 73 'read' 'bestMatchStream_read' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_6 : Operation 74 [1/1] ( I:3.54ns O:3.54ns )   --->   "%write_ln668 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %boosterStream, i32 %bestMatchStream_read" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:668]   --->   Operation 74 'write' 'write_ln668' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_6 : Operation 75 [1/1] (1.58ns)   --->   "%store_ln666 = store i7 %i_6, i7 %i_4" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 75 'store' 'store_ln666' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 1.58>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln666 = br void %for.inc76" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666]   --->   Operation 76 'br' 'br_ln666' <Predicate = (!icmp_ln587 & !icmp_ln666)> <Delay = 0.00>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln0 = br void %return"   --->   Operation 77 'br' 'br_ln0' <Predicate = (!icmp_ln587 & icmp_ln666)> <Delay = 0.00>
+ST_6 : Operation 78 [1/1] (0.00ns)   --->   "%ret_ln670 = ret" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:670]   --->   Operation 78 'ret' 'ret_ln670' <Predicate = (icmp_ln666) | (icmp_ln587)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 15.000ns, clock uncertainty: 1.500ns.
+
+ <State 1>: 7.774ns
+The critical path consists of the following:
+	fifo read operation ('input_size') on port 'input_size' [18]  (3.634 ns)
+	'icmp' operation 1 bit ('icmp_ln587', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:587) [25]  (2.552 ns)
+	multiplexor before 'phi' operation 1 bit ('nextMatchCh_flag_0') [41]  (1.588 ns)
+
+ <State 2>: 3.254ns
+The critical path consists of the following:
+	'load' operation 8 bit ('local_mem_load', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:600) on array 'local_mem', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:588 [37]  (3.254 ns)
+
+ <State 3>: 5.104ns
+The critical path consists of the following:
+	'add' operation 32 bit ('sub') [43]  (2.552 ns)
+	'icmp' operation 1 bit ('icmp_ln603', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:603) [44]  (2.552 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 3.549ns
+The critical path consists of the following:
+	'load' operation 32 bit ('outValue_loc_load') on local variable 'outValue_loc' [55]  (0.000 ns)
+	fifo write operation ('write_ln664', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:664) on port 'boosterStream' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:664) [66]  (3.549 ns)
+
+ <State 6>: 7.098ns
+The critical path consists of the following:
+	'load' operation 7 bit ('i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666) on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666 [76]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln666', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:666) [77]  (1.870 ns)
+	fifo read operation ('bestMatchStream_read', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:668) on port 'bestMatchStream' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:668) [84]  (3.549 ns)
+	fifo write operation ('write_ln668', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:668) on port 'boosterStream' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:668) [85]  (3.549 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
