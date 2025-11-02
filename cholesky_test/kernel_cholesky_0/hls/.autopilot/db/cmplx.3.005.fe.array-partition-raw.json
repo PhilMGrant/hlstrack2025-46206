@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "2",
+    "calls": "5",
     "file": "kernel_cholesky_0.cpp",
     "fileloc": 24,
     "instructions": 72,
@@ -15,31 +15,34 @@
     "total_instructions": 1378
   },
   "1": {
-    "basicblocks": 40,
+    "basicblocks": 1,
     "calls": "",
-    "file": "cholesky.hpp",
-    "fileloc": 261,
-    "instructions": 236,
-    "name": "cholesky_rsqrt<34, 2, AP_RND_CONV, AP_SAT, 0, 33, 17, AP_RND_CONV, AP_SAT, 0>",
-    "stores": {
-      "L": 1
+    "file": "hls_x_complex.h",
+    "fileloc": 351,
+    "instructions": 25,
+    "loads": {
+      "L": 2
     },
-    "total_instructions": 236
+    "name": "x_conj<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 25
   },
   "2": {
-    "basicblocks": 9,
-    "calls": "4 5 6 5 3 1 5",
-    "file": "cholesky.hpp",
-    "fileloc": 422,
-    "instructions": 499,
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 96,
+    "instructions": 185,
     "loads": {
-      "L": 20
+      "L": 4
     },
-    "name": "choleskyAlt<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >",
+    "name": "operator*=",
     "stores": {
-      "L": 15
+      "L": 2
     },
-    "total_instructions": 1306
+    "total_instructions": 185
   },
   "3": {
     "basicblocks": 42,
@@ -66,33 +69,30 @@
     "total_instructions": 94
   },
   "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "hls_x_complex.h",
-    "fileloc": 351,
-    "instructions": 25,
+    "basicblocks": 9,
+    "calls": "4 1 2 1 3 6 1",
+    "file": "cholesky.hpp",
+    "fileloc": 422,
+    "instructions": 499,
     "loads": {
-      "L": 2
+      "L": 20
     },
-    "name": "x_conj<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "name": "choleskyAlt<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >",
     "stores": {
-      "L": 2
+      "L": 15
     },
-    "total_instructions": 25
+    "total_instructions": 1306
   },
   "6": {
-    "basicblocks": 1,
+    "basicblocks": 40,
     "calls": "",
-    "file": "hls_x_complex.h",
-    "fileloc": 96,
-    "instructions": 185,
-    "loads": {
-      "L": 4
-    },
-    "name": "operator*=",
+    "file": "cholesky.hpp",
+    "fileloc": 261,
+    "instructions": 236,
+    "name": "cholesky_rsqrt<34, 2, AP_RND_CONV, AP_SAT, 0, 33, 17, AP_RND_CONV, AP_SAT, 0>",
     "stores": {
-      "L": 2
+      "L": 1
     },
-    "total_instructions": 185
+    "total_instructions": 236
   }
 }

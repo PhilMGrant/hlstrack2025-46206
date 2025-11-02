@@ -63,7 +63,7 @@ WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sat Nov  1 16:31:06 2025
+  **** Start of session at: Sat Nov  1 18:47:38 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -76,7 +76,7 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/dat
 WARNING: [IP_Flow 19-4832] The IP name 'kernel_cholesky_0_dsqrt_64ns_64ns_64_57_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'kernel_cholesky_0_dsqrt_64ns_64ns_64_57_no_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'kernel_cholesky_0_dsqrt_64ns_64ns_64_57_no_dsp_1_ip'...
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  1 16:31:14 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  1 18:47:46 2025...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
@@ -681,7 +681,7 @@ Built simulation snapshot kernel_cholesky_0
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sat Nov  1 16:31:58 2025
+  **** Start of session at: Sat Nov  1 18:48:26 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -708,7 +708,7 @@ source kernel_cholesky_0.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 21231 ns : File "D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0/hls/sim/verilog/kernel_cholesky_0.autotb.v" Line 311
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Nov  1 16:32:01 2025...
+INFO: [Common 17-206] Exiting xsim at Sat Nov  1 18:48:29 2025...
 INFO: [COSIM 212-316] Starting C post checking ...
 Running 1 fixed point tests per matrix type on 3 x 3 matrices with LowerTriangular set to 0
 RESULTS_TABLE,Test,IMAT,L Matching,DUT Ratio,LAPACK Ratio,Relative Ratio Difference
@@ -735,5 +735,5 @@ TB:Pass
 
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 9
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 98.649 seconds; peak allocated memory: 336.457 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 44s
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 94.773 seconds; peak allocated memory: 336.277 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 40s

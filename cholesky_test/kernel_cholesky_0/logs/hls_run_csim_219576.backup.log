@@ -1,0 +1,99 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1998] cannot find relative file path '../../host' in directory(s): D:/Xillinx_Project/PROJECT/cholesky_test
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L2/include -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/host/test_cholesky.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/datas/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0 -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/host/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/. -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw -I../../host -ID:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../../utils/L1/include/.' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.top=kernel_cholesky_0' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=6ns' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=10%' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.6ns.
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=syn' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from D:/Xillinx_Project/PROJECT/cholesky_test/hls_config.cfg(13)
+WARNING: [HLS 200-1998] cannot find relative file path '../../../../host' in directory(s): D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0/solution D:/Xillinx_Project/PROJECT/cholesky_test
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp in debug mode
+csim.mk:94: recipe for target 'obj/kernel_cholesky_0.o' failed
+In file included from ../../../../../solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp:17:
+In file included from D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/tests/cholesky/kernel/./kernel_cholesky.hpp:20:
+In file included from D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/dut_type.hpp:20:
+In file included from D:/Xilinx/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+In file included from ../../../../../solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp:18:
+In file included from D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./xf_solver_L1.hpp:29:
+In file included from D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky_inverse.hpp:33:
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:286:18: error: non-type template argument is not a constant expression
+        ap_fixed<W2 + shift_amount, I2 + shift_amount, Q2, O2, N2> temp = 
+                 ^~~~~~~~~~~~~~~~~
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:541:9: note: in instantiation of function template specialization 'xf::solver::cholesky_rsqrt<34, 2, AP_RND_CONV, AP_SAT, 0, 33, 17, AP_RND_CONV, AP_SAT, 0>' requested here
+        cholesky_rsqrt(hls::x_real(A_minus_sum_cast_diag), new_L_diag_recip);
+        ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:721:20: note: in instantiation of function template specialization 'xf::solver::choleskyAlt<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>' requested here
+            return choleskyAlt<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
+                   ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:761:11: note: in instantiation of function template specialization 'xf::solver::choleskyTop<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>' requested here
+    ret = choleskyTop<LowerTriangularL, RowsColsA, TRAITS, InputType, OutputType>(A, L);
+          ^
+../../../../../solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp:26:23: note: in instantiation of function template specialization 'xf::solver::cholesky<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>>' requested here
+    ret = xf::solver::cholesky<LOWER_TRIANGULAR, DIM, MATRIX_IN_T, MATRIX_OUT_T>(matrixAStrm, matrixLStrm);
+                      ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:286:23: note: read of non-const variable 'shift_amount' is not allowed in a constant expression
+        ap_fixed<W2 + shift_amount, I2 + shift_amount, Q2, O2, N2> temp = 
+                      ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:283:13: note: declared here
+        int shift_amount = 8; // 根据精度需求调整
+            ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:258:11: error: call to 'x_rsqrt' is ambiguous
+    res = x_rsqrt(x);
+          ^~~~~~~
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:604:9: note: in instantiation of function template specialization 'xf::solver::cholesky_rsqrt<ap_fixed<34, 2, AP_RND_CONV, AP_SAT, 0>, ap_fixed<33, 17, AP_RND_CONV, AP_SAT, 0>>' requested here
+        cholesky_rsqrt(hls::x_real(A_minus_sum_cast_diag), new_L_diag_recip);
+        ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:723:20: note: in instantiation of function template specialization 'xf::solver::choleskyAlt2<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>' requested here
+            return choleskyAlt2<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
+                   ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/./hw/cholesky.hpp:761:11: note: in instantiation of function template specialization 'xf::solver::choleskyTop<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>' requested here
+    ret = choleskyTop<LowerTriangularL, RowsColsA, TRAITS, InputType, OutputType>(A, L);
+          ^
+../../../../../solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp:26:23: note: in instantiation of function template specialization 'xf::solver::cholesky<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0>>>>' requested here
+    ret = xf::solver::cholesky<LOWER_TRIANGULAR, DIM, MATRIX_IN_T, MATRIX_OUT_T>(matrixAStrm, matrixLStrm);
+                      ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw/utils/x_matrix_utils.hpp:127:13: note: candidate function
+static half x_rsqrt(half x) {
+            ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw/utils/x_matrix_utils.hpp:130:14: note: candidate function
+static float x_rsqrt(float x) {
+             ^
+D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/complex_fixed_arch0/../../../../L1/include/hw/utils/x_matrix_utils.hpp:133:15: note: candidate function
+static double x_rsqrt(double x) {
+              ^
+1 warning and 2 errors generated.
+make: *** [obj/kernel_cholesky_0.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.781 seconds; peak allocated memory: 263.211 MB.

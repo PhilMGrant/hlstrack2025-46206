@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'kernel_cholesky_0'
 ================================================================
 + General Information: 
-    * Date:           Sat Nov  1 16:29:59 2025
+    * Date:           Sat Nov  1 18:46:40 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        kernel_cholesky_0
     * Solution:       hls (Vivado IP Flow Target)

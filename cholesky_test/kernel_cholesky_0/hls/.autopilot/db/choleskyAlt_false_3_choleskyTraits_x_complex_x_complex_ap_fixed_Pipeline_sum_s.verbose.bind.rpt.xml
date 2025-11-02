@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'choleskyAlt_false_3_choleskyTraits_x_complex_x_complex_ap_fixed_Pipeline_sum_s'" level="0">
-<item name = "Date">Sat Nov  1 16:29:50 2025
+<item name = "Date">Sat Nov  1 18:46:31 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">kernel_cholesky_0</item>

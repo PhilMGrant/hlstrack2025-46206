@@ -1,7 +1,7 @@
-Running: xsim.dir/kernel_cholesky_0/xsimk.exe -simmode gui -wdb kernel_cholesky_0.wdb -simrunnum 0 -socket 52071
+Running: xsim.dir/kernel_cholesky_0/xsimk.exe -simmode gui -wdb kernel_cholesky_0.wdb -simrunnum 0 -socket 63086
 Design successfully loaded
-Design Loading Memory Usage: 37420 KB (Peak: 37420 KB)
-Design Loading CPU Usage: 343 ms
+Design Loading Memory Usage: 37404 KB (Peak: 37404 KB)
+Design Loading CPU Usage: 311 ms
 Simulation completed
-Simulation Memory Usage: 41048 KB (Peak: 41048 KB)
-Simulation CPU Usage: 358 ms
+Simulation Memory Usage: 41036 KB (Peak: 41036 KB)
+Simulation CPU Usage: 311 ms

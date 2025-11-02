@@ -623,7 +623,7 @@ Built simulation snapshot kernel_cholesky_0
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sat Nov  1 16:31:58 2025
+  **** Start of session at: Sat Nov  1 18:48:26 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -650,7 +650,7 @@ source kernel_cholesky_0.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 21231 ns : File "D:/Xillinx_Project/PROJECT/cholesky_test/kernel_cholesky_0/hls/sim/verilog/kernel_cholesky_0.autotb.v" Line 311
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Nov  1 16:32:01 2025...
+INFO: [Common 17-206] Exiting xsim at Sat Nov  1 18:48:29 2025...
 Running 1 fixed point tests per matrix type on 3 x 3 matrices with LowerTriangular set to 0
 RESULTS_TABLE,Test,IMAT,L Matching,DUT Ratio,LAPACK Ratio,Relative Ratio Difference
 RESULTS_TABLE,0,1,1,0.333333,0.333333,0
