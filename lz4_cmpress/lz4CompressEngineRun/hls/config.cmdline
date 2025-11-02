@@ -1,3 +1,0 @@
-relativeroot=D:/Xillinx_Project/PROJECT/lz4_cmpress
-original_argv=--mode hls --impl --config D:\Xillinx_Project\PROJECT\lz4_cmpress\hls_config.cfg --work_dir lz4CompressEngineRun 
-

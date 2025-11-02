@@ -1,3 +1,0 @@
-relativeroot=D:/Xillinx_Project/hlstrack2025/cholesky_test
-original_argv=--mode hls --impl --config D:\Xillinx_Project\hlstrack2025\cholesky_test\hls_config.cfg --work_dir kernel_cholesky_0 
-
