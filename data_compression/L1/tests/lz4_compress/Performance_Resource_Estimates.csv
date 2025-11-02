@@ -1,8 +1,0 @@
-"MODULES & LOOPS","AVG II","MAX II","MIN II","AVG LATENCY","MAX LATENCY","MIN LATENCY","TOTAL EXECUTION TIME"
-"lz4CompressEngineRun (4)",,,,4506,4506,4506,4506
-"lzCompress_6_4_65536_6_1_4096_64_s (5)",,,,4175,4175,4175,
-"lzBestMatchFilter_6_65536_s (2)",,,,4204,4204,4204,
-"lzBooster_255_16384_64_s (2)",,,,4218,4218,4218,
-"lz4Compress_4096_1_s (2)",,,,4503,4503,4503,
-"lz4CompressPart1_4096_1_s (1)",,,,4503,4503,4503,
-"lz4CompressPart2 (1)",,,,4502,4502,4502,
