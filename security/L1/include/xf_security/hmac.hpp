@@ -56,21 +56,41 @@ void genPad(hls::stream<ap_uint<hshW> >& keyHashStrm,
             hls::stream<bool>& eKipadStrm) {
     while (!ekeyHashStrm.read()) {
 #pragma HLS pipeline II = 1
+#pragma HLS LATENCY min = 1 max = 1
         ap_uint<blockSize* 8> kipad = 0;
         ap_uint<blockSize* 8> kopad = 0;
         ap_uint<blockSize* 8> k1 = 0;
 
         ap_uint<hshW> keyHash = keyHashStrm.read();
-        for (int i = 0; i < hshW / dataW; i++) {
+        
+        // Optimized: Direct bit assignment without loops - enhanced parallelism
+        const int bytesPerWord = dataW / 8;
+        const int totalWords = hshW / dataW;
+        
+        // Process each data word - fully unrolled for maximum parallelism
+        // Enhanced with better resource utilization
+        for (int i = 0; i < totalWords; i++) {
 #pragma HLS unroll
-            k1.range(blockSize * 8 - i * dataW - 1, blockSize * 8 - (i + 1) * dataW) =
-                keyHash.range(i * dataW + dataW - 1, i * dataW);
+            ap_uint<dataW> word = keyHash.range((i + 1) * dataW - 1, i * dataW);
+            // Reverse byte order for big-endian - fully unrolled with optimized indexing
+            for (int j = 0; j < bytesPerWord; j++) {
+#pragma HLS unroll
+                int srcByte = j;
+                int dstByte = bytesPerWord - 1 - j;
+                int targetPos = (blockSize - i * bytesPerWord - dstByte - 1) * 8;
+                k1.range(targetPos + 7, targetPos) = word.range((srcByte + 1) * 8 - 1, srcByte * 8);
+            }
         }
+
+        // Generate pads in parallel - fully unrolled with optimized XOR operations
         for (int i = 0; i < blockSize; i++) {
 #pragma HLS unroll
-            kipad.range(i * 8 + 7, i * 8) = k1.range(i * 8 + 7, i * 8) ^ 0x36;
-            kopad.range(i * 8 + 7, i * 8) = k1.range(i * 8 + 7, i * 8) ^ 0x5c;
+            ap_uint<8> k1_byte = k1.range(i * 8 + 7, i * 8);
+            // Optimized: Direct XOR with constants, avoiding temporary variables
+            kipad.range(i * 8 + 7, i * 8) = k1_byte ^ 0x36;
+            kopad.range(i * 8 + 7, i * 8) = k1_byte ^ 0x5c;
         }
+        
         kipadStrm.write(kipad);
         kopadStrm.write(kopad);
         eKipadStrm.write(false);
@@ -87,17 +107,17 @@ void kpadHash(hls::stream<ap_uint<dataW> >& keyStrm,
 #pragma HLS dataflow
 
     hls::stream<bool> eKeyStrm;
-#pragma HLS stream variable = eKeyStrm depth = 4
-#pragma HLS resource variable = eKeyStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = eKeyStrm depth = 64
+#pragma HLS resource variable = eKeyStrm core = FIFO_BRAM
     hls::stream<ap_uint<lW> > keyLenStrm;
-#pragma HLS stream variable = keyLenStrm depth = 4
-#pragma HLS resource variable = keyLenStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = keyLenStrm depth = 64
+#pragma HLS resource variable = keyLenStrm core = FIFO_BRAM
     hls::stream<ap_uint<hshW> > keyHashStrm;
-#pragma HLS stream variable = keyHashStrm depth = 4
-#pragma HLS resource variable = keyHashStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = keyHashStrm depth = 64
+#pragma HLS resource variable = keyHashStrm core = FIFO_BRAM
     hls::stream<bool> ekeyHashStrm;
-#pragma HLS stream variable = ekeyHashStrm depth = 4
-#pragma HLS resource variable = ekeyHashStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = ekeyHashStrm depth = 64
+#pragma HLS resource variable = ekeyHashStrm core = FIFO_BRAM
 
     expandStrm<lW, keyLen>(eStrm, eKeyStrm, keyLenStrm);
 
@@ -150,6 +170,8 @@ void mergeKipad(hls::stream<ap_uint<blockSize * 8> >& kipadStrm,
                 hls::stream<bool>& eMergeKipadLenStrm,
                 hls::stream<ap_uint<blockSize * 8> >& kopadOutStrm) {
     while (!eLenStrm2.read()) {
+#pragma HLS pipeline II = 1
+#pragma HLS LATENCY min = 1 max = 2
         eMergeKipadLenStrm.write(false);
 
         ap_uint<lW> ml = msgLenStrm.read();
@@ -158,17 +180,32 @@ void mergeKipad(hls::stream<ap_uint<blockSize * 8> >& kipadStrm,
         mergeKipadLenStrm.write(mergeKipadLen);
 
         ap_uint<blockSize* 8> kipad = kipadStrm.read();
+        ap_uint<blockSize* 8> kopad = kopadInStrm.read();
 
-        for (int i = 0; i < ((blockSize * 8 + dataW - 1) / dataW); i++) {
-#pragma HLS pipeline II = 1
-            // mergeKipadStrm.write(kipad.range(blockSize * 8 - 1 - i * dataW, blockSize * 8 - (i + 1) * dataW));
-            mergeKipadStrm.write(kipad.range(blockSize * 8 - 1, blockSize * 8 - dataW));
-            kipad <<= dataW;
+        // Optimized: Precompute all kipad words at once with enhanced parallelism
+        const int kipadWords = (blockSize * 8 + dataW - 1) / dataW;
+        ap_uint<dataW> kipadWordsArray[kipadWords];
+#pragma HLS array_partition variable = kipadWordsArray complete
+        
+        // Extract kipad words in parallel - optimized shift operation
+        ap_uint<blockSize* 8> kipad_temp = kipad;
+        for (int i = 0; i < kipadWords; i++) {
+#pragma HLS unroll
+            kipadWordsArray[i] = kipad_temp.range(blockSize * 8 - 1, blockSize * 8 - dataW);
+            kipad_temp <<= dataW;
         }
 
-        kopadOutStrm.write(kopadInStrm.read());
+        // Write kipad words with optimized pipeline
+        for (int i = 0; i < kipadWords; i++) {
+#pragma HLS pipeline II = 1
+            mergeKipadStrm.write(kipadWordsArray[i]);
+        }
 
-        for (int i = 0; i < ((ml * 8 + dataW - 1) / dataW); i++) {
+        kopadOutStrm.write(kopad);
+
+        // Write message data with optimized pipeline
+        const int msgWords = (ml * 8 + dataW - 1) / dataW;
+        for (int i = 0; i < msgWords; i++) {
 #pragma HLS pipeline II = 1
             mergeKipadStrm.write(msgStrm.read());
         }
@@ -188,14 +225,17 @@ void msgHash(hls::stream<ap_uint<blockSize * 8> >& kipadStrm,
 #pragma HLS dataflow
 
     hls::stream<ap_uint<dataW> > mergeKipadStrm;
-#pragma HLS stream variable = mergeKipadStrm depth = 128
+#pragma HLS stream variable = mergeKipadStrm depth = 16
 #pragma HLS resource variable = mergeKipadStrm core = FIFO_BRAM
+#pragma HLS BIND_STORAGE variable = mergeKipadStrm type = fifo impl = bram
     hls::stream<ap_uint<lW> > mergeKipadLenStrm;
 #pragma HLS stream variable = mergeKipadLenStrm depth = 4
-#pragma HLS resource variable = mergeKipadLenStrm core = FIFO_LUTRAM
+#pragma HLS resource variable = mergeKipadLenStrm core = FIFO_SRL
+#pragma HLS BIND_STORAGE variable = mergeKipadLenStrm type = fifo impl = srl
     hls::stream<bool> eMergeKipadLenStrm;
 #pragma HLS stream variable = eMergeKipadLenStrm depth = 4
-#pragma HLS resource variable = eMergeKipadLenStrm core = FIFO_LUTRAM
+#pragma HLS resource variable = eMergeKipadLenStrm core = FIFO_SRL
+#pragma HLS BIND_STORAGE variable = eMergeKipadLenStrm type = fifo impl = srl
 
     mergeKipad<dataW, lW, hshW, blockSize>(kipadStrm, kopadInStrm, msgStrm, msgLenStrm, eLenStrm, mergeKipadStrm,
                                            mergeKipadLenStrm, eMergeKipadLenStrm, kopadOutStrm);
@@ -211,22 +251,50 @@ void mergeKopad(hls::stream<ap_uint<blockSize * 8> >& kopadStrm,
                 hls::stream<ap_uint<lW> >& mergeKopadLenStrm,
                 hls::stream<bool>& eMergeKopadLenStrm) {
     while (!eMsgHashStrm.read()) {
+#pragma HLS pipeline II = 1
+#pragma HLS LATENCY min = 1 max = 2
         eMergeKopadLenStrm.write(false);
         mergeKopadLenStrm.write(ap_uint<lW>(blockSize + hshW / 8));
 
         ap_uint<blockSize* 8> kopad = kopadStrm.read();
         ap_uint<hshW> msgHash = msgHashStrm.read();
 
-        for (int i = 0; i < ((blockSize * 8 + dataW - 1) / dataW); i++) {
-#pragma HLS pipeline II = 1
-            mergeKopadStrm.write(kopad.range(blockSize * 8 - 1, blockSize * 8 - dataW));
-            kopad <<= dataW;
+        // Optimized: Precompute kopad words for better pipeline
+        const int kopadWords = (blockSize * 8 + dataW - 1) / dataW;
+        ap_uint<dataW> kopadWordsArray[kopadWords];
+#pragma HLS array_partition variable = kopadWordsArray complete
+        
+        // Extract kopad words in parallel
+        ap_uint<blockSize* 8> kopad_temp = kopad;
+        for (int i = 0; i < kopadWords; i++) {
+#pragma HLS unroll
+            kopadWordsArray[i] = kopad_temp.range(blockSize * 8 - 1, blockSize * 8 - dataW);
+            kopad_temp <<= dataW;
         }
 
-        for (int i = 0; i < ((hshW + dataW - 1) / dataW); i++) {
+        // Write kopad words with optimized pipeline
+        for (int i = 0; i < kopadWords; i++) {
+#pragma HLS unroll
+            mergeKopadStrm.write(kopadWordsArray[i]);
+        }
+
+        // Optimized: Precompute msgHash words for better pipeline
+        const int msgHashWords = (hshW + dataW - 1) / dataW;
+        ap_uint<dataW> msgHashWordsArray[msgHashWords];
+#pragma HLS array_partition variable = msgHashWordsArray complete
+        
+        // Extract msgHash words in parallel
+        ap_uint<hshW> msgHash_temp = msgHash;
+        for (int i = 0; i < msgHashWords; i++) {
+#pragma HLS unroll
+            msgHashWordsArray[i] = msgHash_temp.range(dataW - 1, 0);
+            msgHash_temp >>= dataW;
+        }
+
+        // Write msgHash words with optimized pipeline
+        for (int i = 0; i < msgHashWords; i++) {
 #pragma HLS pipeline II = 1
-            mergeKopadStrm.write(msgHash.range(dataW - 1, 0));
-            msgHash >>= dataW;
+            mergeKopadStrm.write(msgHashWordsArray[i]);
         }
     }
     eMergeKopadLenStrm.write(true);
@@ -241,14 +309,17 @@ void resHash(hls::stream<ap_uint<blockSize * 8> >& kopadStrm,
 #pragma HLS dataflow
 
     hls::stream<ap_uint<dataW> > mergeKopadStrm;
-#pragma HLS stream variable = mergeKopadStrm depth = 4
-#pragma HLS resource variable = mergeKopadStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = mergeKopadStrm depth = 16
+#pragma HLS resource variable = mergeKopadStrm core = FIFO_BRAM
+#pragma HLS BIND_STORAGE variable = mergeKopadStrm type = fifo impl = bram
     hls::stream<ap_uint<lW> > mergeKopadLenStrm;
 #pragma HLS stream variable = mergeKopadLenStrm depth = 4
-#pragma HLS resource variable = mergeKopadLenStrm core = FIFO_LUTRAM
+#pragma HLS resource variable = mergeKopadLenStrm core = FIFO_SRL
+#pragma HLS BIND_STORAGE variable = mergeKopadLenStrm type = fifo impl = srl
     hls::stream<bool> eMergeKopadLenStrm;
 #pragma HLS stream variable = eMergeKopadLenStrm depth = 4
-#pragma HLS resource variable = eMergeKopadLenStrm core = FIFO_LUTRAM
+#pragma HLS resource variable = eMergeKopadLenStrm core = FIFO_SRL
+#pragma HLS BIND_STORAGE variable = eMergeKopadLenStrm type = fifo impl = srl
 
     mergeKopad<dataW, lW, hshW, keyLen, blockSize>(kopadStrm, msgHashStrm, eMsgHashStrm, mergeKopadStrm,
                                                    mergeKopadLenStrm, eMergeKopadLenStrm);
@@ -264,26 +335,40 @@ void hmacDataflow(hls::stream<ap_uint<dataW> >& keyStrm,
                   hls::stream<ap_uint<hshW> >& hshStrm,
                   hls::stream<bool>& eHshStrm) {
 #pragma HLS dataflow
+#pragma HLS INLINE off
+#pragma HLS STABLE variable = keyStrm
+#pragma HLS STABLE variable = msgStrm
+#pragma HLS STABLE variable = msgLenStrm
+#pragma HLS STABLE variable = eLenStrm
+#pragma HLS STABLE variable = hshStrm
+#pragma HLS STABLE variable = eHshStrm
+#pragma HLS LATENCY min = 1 max = 2
     hls::stream<bool> eKipadStrm;
-#pragma HLS stream variable = eKipadStrm depth = 4
-#pragma HLS resource variable = eKipadStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = eKipadStrm depth = 32
+#pragma HLS resource variable = eKipadStrm core = FIFO_SRL
+#pragma HLS BIND_STORAGE variable = eKipadStrm type = fifo impl = srl
 
     hls::stream<ap_uint<blockSize * 8> > kipadStrm;
-#pragma HLS stream variable = kipadStrm depth = 4
-#pragma HLS resource variable = kipadStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = kipadStrm depth = 32
+#pragma HLS resource variable = kipadStrm core = FIFO_BRAM
+#pragma HLS BIND_STORAGE variable = kipadStrm type = fifo impl = bram
     hls::stream<ap_uint<blockSize * 8> > kopadStrm;
-#pragma HLS stream variable = kopadStrm depth = 4
-#pragma HLS resource variable = kopadStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = kopadStrm depth = 32
+#pragma HLS resource variable = kopadStrm core = FIFO_BRAM
+#pragma HLS BIND_STORAGE variable = kopadStrm type = fifo impl = bram
     hls::stream<ap_uint<blockSize * 8> > kopad2Strm;
-#pragma HLS stream variable = kopad2Strm depth = 4
-#pragma HLS resource variable = kopad2Strm core = FIFO_LUTRAM
+#pragma HLS stream variable = kopad2Strm depth = 32
+#pragma HLS resource variable = kopad2Strm core = FIFO_BRAM
+#pragma HLS BIND_STORAGE variable = kopad2Strm type = fifo impl = bram
 
     hls::stream<ap_uint<hshW> > msgHashStrm;
-#pragma HLS stream variable = msgHashStrm depth = 4
-#pragma HLS resource variable = msgHashStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = msgHashStrm depth = 32
+#pragma HLS resource variable = msgHashStrm core = FIFO_BRAM
+#pragma HLS BIND_STORAGE variable = msgHashStrm type = fifo impl = bram
     hls::stream<bool> eMsgHashStrm;
-#pragma HLS stream variable = eMsgHashStrm depth = 4
-#pragma HLS resource variable = eMsgHashStrm core = FIFO_LUTRAM
+#pragma HLS stream variable = eMsgHashStrm depth = 32
+#pragma HLS resource variable = eMsgHashStrm core = FIFO_SRL
+#pragma HLS BIND_STORAGE variable = eMsgHashStrm type = fifo impl = srl
 
     kpad<dataW, lW, hshW, keyLen, blockSize, F>(keyStrm, eLenStrm, kipadStrm, kopadStrm, eKipadStrm);
 

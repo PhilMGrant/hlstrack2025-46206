@@ -669,15 +669,15 @@ static void md5(
 
     // 512-bit processing block stream
     hls::stream<internal::blockType> blk_strm;
-#pragma HLS stream variable = blk_strm depth = 2
+#pragma HLS stream variable = blk_strm depth = 1
 
     // number of blocks stream
     hls::stream<ap_uint<64> > nblk_strm;
-#pragma HLS stream variable = nblk_strm depth = 2
+#pragma HLS stream variable = nblk_strm depth = 1
 
     // end flag of number of blocks stream
     hls::stream<bool> end_nblk_strm;
-#pragma HLS stream variable = end_nblk_strm depth = 2
+#pragma HLS stream variable = end_nblk_strm depth = 1
 
     // padding and appending message words into blocks
     internal::preProcessing(msg_strm, len_strm, end_len_strm, blk_strm, nblk_strm, end_nblk_strm);

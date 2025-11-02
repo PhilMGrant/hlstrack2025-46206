@@ -27,7 +27,7 @@ set PROJ "hmac_sha256_test.prj"
 set SOLN "solution1"
 
 if {![info exists CLKP]} {
-  set CLKP 15.0
+  set CLKP 13.7
 }
 
 open_project -reset $PROJ

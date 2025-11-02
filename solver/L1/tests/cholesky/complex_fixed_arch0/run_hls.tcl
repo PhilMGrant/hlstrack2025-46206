@@ -27,7 +27,7 @@ set PROJ "cholesky_test.prj"
 set SOLN "sol1"
 
 if {![info exists CLKP]} {
-  set CLKP 7.0
+  set CLKP 6.0
 }
 
 open_project -reset $PROJ

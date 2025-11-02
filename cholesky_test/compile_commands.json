@@ -1,6 +1,6 @@
 [
   {
-    "directory": "D:\\Xillinx_Project\\PROJECT\\cholesky_test",
+    "directory": "D:\\Xillinx_Project\\hlstrack2025\\cholesky_test",
     "arguments": [
       "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
       "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
@@ -26,7 +26,7 @@
     "file": "D:/Xillinx_Project/PROJECT/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp"
   },
   {
-    "directory": "D:\\Xillinx_Project\\PROJECT\\cholesky_test",
+    "directory": "D:\\Xillinx_Project\\hlstrack2025\\cholesky_test",
     "arguments": [
       "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
       "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",

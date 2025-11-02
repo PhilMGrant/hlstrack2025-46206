@@ -490,6 +490,8 @@ LOOP_SHA1_MAIN:
         LOOP_SHA1_UPDATE_80_ROUNDS:
             for (ap_uint<7> t = 0; t < 80; t++) {
 #pragma HLS pipeline II = 1
+#pragma HLS latency min = 1 max = 1
+#pragma HLS UNROLL factor = 4
                 ap_uint<w> Wt = w_strm.read();
 #if !defined(__SYNTHESIS__) && DEBUG
                 std::cout << "W[" << std::dec << t << "] = " << std::hex << Wt << std::endl;
@@ -588,28 +590,28 @@ void sha1(
 
     // 512-bit processing block stream
     hls::stream<internal::blockType> blk_strm("blk_strm");
-#pragma HLS stream variable = blk_strm depth = 4
+#pragma HLS stream variable = blk_strm depth = 2
 #pragma HLS resource variable = blk_strm core = FIFO_LUTRAM
 
     // number of blocks stream
     hls::stream<ap_uint<64> > nblk_strm1("nblk_strm1");
-#pragma HLS stream variable = nblk_strm1 depth = 4
+#pragma HLS stream variable = nblk_strm1 depth = 2
 #pragma HLS resource variable = nblk_strm1 core = FIFO_LUTRAM
     hls::stream<ap_uint<64> > nblk_strm2("nblk_strm2");
-#pragma HLS stream variable = nblk_strm2 depth = 4
+#pragma HLS stream variable = nblk_strm2 depth = 2
 #pragma HLS resource variable = nblk_strm2 core = FIFO_LUTRAM
 
     // end flag of number of blocks stream
     hls::stream<bool> end_nblk_strm1("end_nblk_strm1");
-#pragma HLS stream variable = end_nblk_strm1 depth = 4
+#pragma HLS stream variable = end_nblk_strm1 depth = 2
 #pragma HLS resource variable = end_nblk_strm1 core = FIFO_LUTRAM
     hls::stream<bool> end_nblk_strm2("end_nblk_strm2");
-#pragma HLS stream variable = end_nblk_strm2 depth = 4
+#pragma HLS stream variable = end_nblk_strm2 depth = 2
 #pragma HLS resource variable = end_nblk_strm2 core = FIFO_LUTRAM
 
     // message schedule stream
     hls::stream<ap_uint<w> > w_strm("w_strm");
-#pragma HLS stream variable = w_strm depth = 320
+#pragma HLS stream variable = w_strm depth = 160
 #pragma HLS resource variable = w_strm core = FIFO_BRAM
 
     // padding and appending message words into blocks

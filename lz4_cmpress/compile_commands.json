@@ -1,6 +1,6 @@
 [
   {
-    "directory": "D:\\Xillinx_Project\\PROJECT\\lz4_cmpress",
+    "directory": "D:\\Xillinx_Project\\hlstrack2025\\lz4_cmpress",
     "arguments": [
       "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
       "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",

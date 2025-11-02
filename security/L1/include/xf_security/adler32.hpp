@@ -90,18 +90,20 @@ void adler32(hls::stream<ap_uint<32> >& adlerStrm,
         ap_uint<32> s2 = ((adler >> 16) & 0xffff);
         ap_uint<W * 8> inData;
         for (ap_uint<32> i = 0; i < len / W; i++) {
-#pragma HLS PIPELINE II = 1
+#pragma HLS unroll
 #pragma HLS loop_tripcount max = 100 min = 100
             inData = inStrm.read();
             ap_uint<12> sTmp0 = inData.range(7, 0);
             ap_uint<16> sTmp1 = inData.range(7, 0);
             for (int i = 1; i < W; i++) {
+#pragma HLS unroll 
                 sTmp0 += inData.range(i * 8 + 7, i * 8);
                 sTmp1 += sTmp0;
             }
 
             ap_uint<32> sTmp2 = s1 * W + sTmp1;
             for (int j = 0; j <= W; j++) {
+#pragma HLS unroll
                 if (sTmp2 >= internal::BASE[W - j]) {
                     sTmp2 -= internal::BASE[W - j];
                     break;
@@ -122,7 +124,7 @@ void adler32(hls::stream<ap_uint<32> >& adlerStrm,
         }
 
         for (int j = 0; j < len % W; j++) {
-#pragma HLS PIPELINE II = 1
+#pragma HLS unroll
 #pragma HLS loop_tripcount max = W min = W
             if (j == 0) inData = inStrm.read();
             s1 += inData(j * 8 + 7, j * 8);
@@ -170,12 +172,14 @@ void adler32(hls::stream<ap_uint<32> >& adlerStrm,
             ap_uint<12> sTmp0 = inData.range(7, 0);
             ap_uint<16> sTmp1 = inData.range(7, 0);
             for (int i = 1; i < W; i++) {
+#pragma HLS unroll
                 sTmp0 += inData.range(i * 8 + 7, i * 8);
                 sTmp1 += sTmp0;
             }
 
             ap_uint<32> sTmp2 = s1 * W + sTmp1;
             for (int j = 0; j <= W; j++) {
+#pragma HLS unroll
                 if (sTmp2 >= internal::BASE[W - j]) {
                     sTmp2 -= internal::BASE[W - j];
                     break;
@@ -198,7 +202,7 @@ void adler32(hls::stream<ap_uint<32> >& adlerStrm,
         }
 
         for (int j = 0; j < inPackLen.range(4, 0); j++) {
-#pragma HLS PIPELINE II = 1
+#pragma HLS unroll
 #pragma HLS loop_tripcount max = W min = W
             if (j == 0) inData = inStrm.read();
             s1 += inData(j * 8 + 7, j * 8);
@@ -249,12 +253,14 @@ void adler32(hls::stream<ap_uint<32> >& adlerStrm,
             ap_uint<12> sTmp0 = inData.range(7, 0);
             ap_uint<16> sTmp1 = inData.range(7, 0);
             for (int i = 1; i < W; i++) {
+#pragma HLS unroll
                 sTmp0 += inData.range(i * 8 + 7, i * 8);
                 sTmp1 += sTmp0;
             }
 
             ap_uint<32> sTmp2 = s1 * W + sTmp1;
             for (int j = 0; j <= W; j++) {
+#pragma HLS unroll
                 if (sTmp2 >= internal::BASE[W - j]) {
                     sTmp2 -= internal::BASE[W - j];
                     break;
@@ -276,7 +282,7 @@ void adler32(hls::stream<ap_uint<32> >& adlerStrm,
 
         if (inPackLen != 0) {
             for (int j = 0; j < inPackLen; j++) {
-#pragma HLS PIPELINE II = 1
+#pragma HLS unroll
 #pragma HLS loop_tripcount max = W min = W
                 if (j == 0) inData = inStrm.read();
                 s1 += inData(j * 8 + 7, j * 8);
